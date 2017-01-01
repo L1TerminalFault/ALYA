@@ -78,7 +78,7 @@
           Get In Touch
         </div>
         <div
-          class="/font-[Haas] text-[clamp(35px,4vw,50px)] leading-none font-bold text-white shadow-sm"
+          class="/font-[Haas] text-[clamp(35px,4vw,50px)] font-bold text-white shadow-sm"
         >
           Let's build the future together.
         </div>
@@ -138,7 +138,7 @@
           class="flex flex-col gap-6 rounded-3xl border border-white/5 bg-gray-900 p-10"
         >
           <div class="/font-[Haas] text-2xl font-bold">Global Headquarters</div>
-          <div class="/font-[Switzer] text-lg leading-relaxed text-gray-400">
+          <div class="/font-[Switzer] text-lg text-gray-400">
             Bole, Near Atlas Traffic Light,
             <br />
             KT Apartment Building @ 7th floor
@@ -163,9 +163,8 @@
           </div>
           <div class="mt-2 flex flex-col gap-2">
             <NuxtLink
-
               to="mailto:aliyaconstructionplc@gmail.com"
-              class="hover:text-brand-500 w-fit cursor-pointer border-b border-dashed border-gray-500 pb-1 /font-[Switzer] text-base text-white transition-colors"
+              class="hover:text-brand-500 /font-[Switzer] w-fit cursor-pointer border-b border-dashed border-gray-500 pb-1 text-base text-white transition-colors"
             >
               aliyaconstructionplc@gmail.com
             </NuxtLink>

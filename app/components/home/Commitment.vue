@@ -1,4 +1,4 @@
-<<script setup lang="tsx">
+<script setup lang="tsx">
   import gsap from "gsap";
   import ScrollTrigger from "gsap/ScrollTrigger";
   import { SplitText } from "gsap/all";
@@ -170,25 +170,25 @@
 <template>
   <div
     ref="ringRef"
-    class="pointer-events-none fixed top-0 left-0 z-[9999] rounded-full border border-white"
+    class="pointer-events-none fixed top-0 left-0 z-9999 rounded-full border border-white"
     style="width: 26px; height: 26px; margin-left: -13px; margin-top: -13px"
   ></div>
   <div
     ref="dotRef"
-    class="pointer-events-none fixed top-0 left-0 z-[9999] rounded-full bg-white"
+    class="pointer-events-none fixed top-0 left-0 z-9999 rounded-full bg-white"
     style="width: 6px; height: 6px; margin-left: -3px; margin-top: -3px"
   ></div>
 
   <div
-    class="parent /font-[Haas55] relative z-0 flex h-auto w-full flex-col gap-20 overflow-visible /bg-white max-lg:h-auto /max-lg:py-30 lg:gap-54 max-2xl:aspect-[16/19] 2xl:h-full"
+    class="parent /font-[Haas55] /bg-white /max-lg:py-30 relative z-0 flex h-auto w-full flex-col gap-20 overflow-visible max-2xl:aspect-16/19 max-lg:h-auto lg:gap-54 2xl:h-full"
   >
     <div
-      class="absolute flex w-full flex-col items-center justify-center max-lg:aspect-[4/3] max-lg:-translate-y-[25%] lg:aspect-video lg:-translate-y-1/2"
+      class="absolute flex w-full flex-col items-center justify-center max-lg:aspect-4/3 max-lg:-translate-y-[25%] lg:aspect-video lg:-translate-y-1/2"
     >
       <div :class="loaded ? '' : 'hidden'" class="lparent z-0 h-full w-full">
         <svg
           id="curve"
-          class="h-max w-full max-lg:hidden shadow-lg shadow-black"
+          class="h-max w-full shadow-lg shadow-black max-lg:hidden"
           width="1920"
           height="1940"
           viewBox="0 0 1920 1940"
@@ -216,18 +216,18 @@
     </div>
 
     <div
-      class="relative z-10 flex lg:aspect-video h-max w-full max-lg:min-h-[70vh] max-lg:bg-[#7f1d1d] items-center justify-center text-white"
+      class="relative z-10 flex h-max w-full items-center justify-center text-white max-lg:min-h-[70vh] max-lg:bg-[#7f1d1d] lg:aspect-video"
     >
       <div
-        class="focus /font-[Haas75] relative flex flex-col items-center justify-center gap-8 px-5 lg:gap-12 lg:px-0 text-2xl font-bold 2xl:text-8xl"
+        class="focus /font-[Haas75] relative flex flex-col items-center justify-center gap-8 px-5 text-2xl font-bold lg:gap-12 lg:px-0 2xl:text-8xl"
       >
         <div
-          class="sptext perspective-text max-w-[85%] text-center text-[clamp(2.5rem,6vw,8.5rem)] leading-[1.1] font-bold 2xl:max-w-[75%]"
+          class="sptext perspective-text max-w-[85%] text-center text-[clamp(2.5rem,6vw,8.5rem)] font-bold 2xl:max-w-[75%]"
         >
           OUR COMMITMENT TO QUALITY, SAFETY,
         </div>
         <div
-          class="cptext /font-[Haas55] max-w-[90%] lg:max-w-[75%] text-center text-[clamp(16px,2.2vw,32px)] leading-[1.4] font-thin 2xl:max-w-[45%]"
+          class="cptext /font-[Haas55] max-w-[90%] text-center text-[clamp(16px,2.2vw,32px)] font-thin lg:max-w-[75%] 2xl:max-w-[45%]"
         >
           At the heart of every project we take on is a dedication to delivering
           reliability. We build results that stand the test of time.
@@ -251,14 +251,14 @@
     </div>
 
     <div
-      class="relative z-0 -mt-43 flex lg:aspect-video h-max w-full max-lg:min-h-[70vh] w-full items-center justify-center bg-[#7f1d1d]"
+      class="relative z-0 -mt-43 flex h-max w-full items-center justify-center bg-[#7f1d1d] max-lg:min-h-[70vh] lg:aspect-video"
     >
       <div
         class="absolute inset-0 h-full w-full overflow-hidden bg-transparent"
       >
         <NuxtImg
           src="/pal10.jpeg"
-	  :placeholder="1"
+          :placeholder="1"
           class="fade h-full w-full bg-white object-cover opacity-50"
         />
         <div class="fade absolute inset-0 -z-10 h-full bg-black"></div>
@@ -270,13 +270,14 @@
         class="focus2 relative z-10 flex w-full flex-col items-center justify-center gap-10 px-5 text-center text-white"
       >
         <div
-          class="sptext2 perspective-text /font-[Haas55] w-full max-w-[90%] text-[clamp(45px,6vw,150px)] leading-tight font-bold"
+          class="sptext2 perspective-text /font-[Haas55] w-full max-w-[90%] text-[clamp(45px,6vw,150px)] font-bold"
         >
-          Building Fast With <br />
+          Building Fast With
+          <br />
           Quality And Speed
         </div>
         <div
-          class="cptext2 /font-[Switzer] w-full max-w-175 text-[clamp(16px,1.8vw,28px)] leading-[1.4] font-normal opacity-90"
+          class="cptext2 /font-[Switzer] w-full max-w-175 text-[clamp(16px,1.8vw,28px)] font-normal opacity-90"
         >
           We don't just build; we accelerate. By combining cutting-edge material
           logistics with a veteran workforce.

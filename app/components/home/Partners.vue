@@ -46,7 +46,7 @@
       ></div>
 
       <div
-        class="antext flex max-w-70 flex-col text-center text-[clamp(30px,5vw,76px)] leading-none font-bold lg:max-w-100"
+        class="antext flex max-w-70 flex-col text-center text-[clamp(30px,5vw,76px)] font-bold lg:max-w-100"
       >
         <span class="text-nowrap">Our Trusted</span>
         <span class="text-nowrap text-blue-400">Partners</span>

@@ -36,9 +36,7 @@
       class="parentelm flex h-fit w-full flex-col justify-center px-10 pt-80 pb-120 text-black"
     >
       <div class="z-10 flex w-max max-w-[66%] flex-col gap-20">
-        <div
-          class="/font-[Inter] flex flex-col text-[clamp(30px,5vw,85px)] leading-[97%]"
-        >
+        <div class="/font-[Inter] flex flex-col text-[clamp(30px,5vw,85px)]">
           <div class="title text-nowrap">Building Fast With</div>
           <div class="title text-nowrap">Quality And speed</div>
         </div>
@@ -55,9 +53,7 @@
               >
                 {{ palette.title }}
               </div>
-              <div
-                class="content /font-[Inter] text-[clamp(13px,2vw,22px)] leading-[105.2%]"
-              >
+              <div class="content /font-[Inter] text-[clamp(13px,2vw,22px)]">
                 {{ palette.desc }}
               </div>
             </div>
@@ -73,9 +69,7 @@
               >
                 {{ palette.title }}
               </div>
-              <div
-                class="content /font-[Inter] text-[clamp(13px,2vw,22px)] leading-[105.2%]"
-              >
+              <div class="content /font-[Inter] text-[clamp(13px,2vw,22px)]">
                 {{ palette.desc }}
               </div>
             </div>

@@ -67,7 +67,9 @@
     />
 
     <div class="w-full max-w-350 px-5 py-30">
-      <div class="grid grid-cols-1 grid-flow-row gap-8 md:grid-cols-2 lg:grid-cols-3">
+      <div
+        class="grid grid-flow-row grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3"
+      >
         <div
           v-for="(img, i) in images"
           :key="i"

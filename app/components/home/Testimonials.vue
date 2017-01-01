@@ -12,9 +12,8 @@
 
   const reviews = [
     {
-
-            name: "Art. Ephrem Tamiru",
-            title:
+      name: "Art. Ephrem Tamiru",
+      title:
         "Meticulous Attention to Complex Multi-Level Residential Architecture",
       desc: "Building a complex 2+B+G+3 residence requires careful multi-level structural balancing. Their seasoned site engineers maintained stringent oversight, making the final building layout feel premium.",
       image1: "/test3.jpg",
@@ -92,20 +91,20 @@
   const currentReview = computed(() => reviews[counter.value]);
 
   // Predict next index to gracefully pre-load images onto the background container
-  const nextCounter = computed(() => (counter.value + 1) % reviews.length);
-  const nextReview = computed(() => reviews[nextCounter.value]);
+  // const nextCounter = computed(() => (counter.value + 1) % reviews.length);
+  // const nextReview = computed(() => reviews[nextCounter.value]);
 
   // Dynamically map resources to prevent swapping artifacts
-  const image1Source = computed(() =>
-    isFirstImageFront.value ?
-      currentReview.value?.image1
-      : nextReview.value?.image1
-  );
-  const image2Source = computed(() =>
-    isFirstImageFront.value
-      ? nextReview.value?.image2
-      : currentReview.value?.image2
-  );
+  // const image1Source = computed(() =>
+  //   isFirstImageFront.value
+  //     ? currentReview.value?.image1
+  //     : nextReview.value?.image1
+  // );
+  // const image2Source = computed(() =>
+  //   isFirstImageFront.value
+  //     ? nextReview.value?.image2
+  //     : currentReview.value?.image2
+  // );
 
   const splitElements = () => {
     if (titleSplit) titleSplit.revert();
@@ -224,26 +223,30 @@
 </script>
 
 <template>
-  <div class="w-svw overflow-hidden bg-transparent py-20 lg:my-40 lg:py-40 text-white">
+  <div
+    class="w-svw overflow-hidden bg-transparent py-20 text-white lg:my-40 lg:py-40"
+  >
     <div class="max-467.5 mx-auto w-full">
       <div class="flex flex-col items-center gap-25">
         <div
-          class="revhead /font-[Haas] flex w-full justify-center leading-[110%] px-10 text-center text-[clamp(30px,4vw,48px)] uppercase"
+          class="revhead /font-[Haas] flex w-full justify-center px-10 text-center text-[clamp(30px,4vw,48px)] uppercase"
         >
           what others think about us
         </div>
 
         <div
-          class="h-auto w-full flex max-w-467.5 lg:aspect-[2.8/1] px-5 py-5 lg:px-17 lg:py-10"
+          class="flex h-auto w-full max-w-467.5 px-5 py-5 lg:aspect-[2.8/1] lg:px-17 lg:py-10"
         >
-          <div class="flex h-full w-full flex-col lg:flex-row gap-10 px-0 lg:px-5 lg:gap-30">
+          <div
+            class="flex h-full w-full flex-col gap-10 px-0 lg:flex-row lg:gap-30 lg:px-5"
+          >
             <!-- Dynamic Image Swapping Stack -->
             <div
-              class="test relative flex h-[380px] max-lg:my-40 lg:h-auto w-full flex-1 items-center justify-center overflow-visible lg:h-full"
+              class="test relative flex h-95 w-full flex-1 items-center justify-center overflow-visible max-lg:my-40 lg:h-full"
             >
               <img
                 src="/test3.jpg"
-                class="/image1 absolute h-[280px] w-[240px] lg:h-130 lg:w-120 rounded-[40px] lg:rounded-[100px] object-cover"
+                class="/image1 absolute h-70 w-60 rounded-[40px] object-cover lg:h-130 lg:w-120 lg:rounded-[100px]"
               />
               <!-- img
                 :src="image2Source"
@@ -256,22 +259,24 @@
             </div>
 
             <!-- Content Area -->
-            <div class="flex h-full w-full lg:w-[60%] flex-col justify-between gap-10">
+            <div
+              class="flex h-full w-full flex-col justify-between gap-10 lg:w-[60%]"
+            >
               <div class="flex flex-col gap-6 lg:gap-10.5">
                 <div
-                  class="review-title /font-[Haas] pr-0 lg:pr-10 text-[clamp(24px,3vw,58px)] leading-tight font-thin uppercase italic"
+                  class="review-title /font-[Haas] pr-0 text-[clamp(24px,3vw,58px)] font-thin uppercase italic lg:pr-10"
                 >
-                  {{ currentReview.title }}
+                  {{ currentReview?.title }}
                 </div>
                 <div
-                  class="review-description /font-[Switzer] text-[clamp(13px,2vw,22px)] leading-[1.4] text-gray-400"
+                  class="review-description /font-[Switzer] text-[clamp(13px,2vw,22px)] text-gray-400"
                 >
-                  " {{ currentReview.desc }} "
+                  " {{ currentReview?.desc }} "
                 </div>
                 <div
                   class="review-author mt-2 text-[clamp(12px,1.5vw,18px)] font-semibold tracking-wider text-white uppercase"
                 >
-                  — {{ currentReview.name }}
+                  — {{ currentReview?.name }}
                 </div>
               </div>
 

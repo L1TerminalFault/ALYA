@@ -92,12 +92,10 @@
         <div class="text-brand-500 /font-[Switzer] text-sm font-bold uppercase">
           Our Story
         </div>
-        <div
-          class="/font-[Haas] text-[clamp(35px,4vw,60px)] /leading-none font-bold"
-        >
+        <div class="/font-[Haas] text-[clamp(35px,4vw,60px)] font-bold">
           Decades of Excellence in Construction
         </div>
-        <div class="/font-[Switzer] text-lg /leading-relaxed text-gray-400">
+        <div class="/font-[Switzer] text-lg text-gray-400">
           Founded with a vision to redefine the construction landscape, Aliya
           has grown from a specialized contractor into a full-suite enterprise
           construction firm. Our journey is paved with milestones of structural
@@ -110,11 +108,11 @@
         </div>
       </div>
       <div
-        class="group relative h-full aspect-square w-full overflow-hidden rounded-2xl lg:w-1/2"
+        class="group relative aspect-square h-full w-full overflow-hidden rounded-2xl lg:w-1/2"
       >
         <img
           src="/pal40.jpg"
-          class="h-full w-3/4 object-cover rounded-2xl origin-top transition-transform duration-1000 group-hover:scale-100.4"
+          class="group-hover:scale-100.4 h-full w-3/4 origin-top rounded-2xl object-cover transition-transform duration-1000"
         />
       </div>
     </div>
@@ -131,13 +129,11 @@
             >
               Building with Experience
             </div>
-            <div
-              class="/font-[Haas] text-[clamp(30px,3.3vw,50px)] /leading-tight font-bold"
-            >
+            <div class="/font-[Haas] text-[clamp(30px,3.3vw,50px)] font-bold">
               Reliability, and Professional Execution
             </div>
             <div
-              class="/font-[Switzer] flex flex-col gap-4 text-lg /leading-relaxed text-gray-400"
+              class="/font-[Switzer] flex flex-col gap-4 text-lg text-gray-400"
             >
               <p>
                 Based in Addis Ababa,
@@ -167,7 +163,7 @@
               Who We Are
             </div>
             <div
-              class="/font-[Switzer] mt-2 flex flex-col gap-4 text-lg /leading-relaxed text-gray-400"
+              class="/font-[Switzer] mt-2 flex flex-col gap-4 text-lg text-gray-400"
             >
               <p>
                 Founded by
@@ -188,8 +184,8 @@
             </div>
 
             <button
-              @click="downloadProfile"
               class="/font-[Switzer] mt-4 w-fit rounded-full bg-white px-6 py-3 font-bold text-black transition-colors hover:bg-gray-200"
+              @click="downloadProfile"
             >
               Download Company Profile
             </button>
@@ -207,9 +203,9 @@
           <div class="/font-[Haas] text-2xl font-bold text-white">
             Our Background
           </div>
-          <div class="/font-[Switzer] text-base /leading-relaxed text-gray-400">
-            ALIYA CONSTRUCTION PLC is company established by ENGINEER BELAY TAYE in 2014
-            G.C. to play a major role in the booming local construction
+          <div class="/font-[Switzer] text-base text-gray-400">
+            ALIYA CONSTRUCTION PLC is company established by ENGINEER BELAY TAYE
+            in 2014 G.C. to play a major role in the booming local construction
             industry. The capital of the company has been fully paid at the time
             of its establishment and since then it has continued to increase
             significantly. The company has a Business License from Addis Ababa
@@ -217,8 +213,8 @@
             OR/AND Grade-4 Building Contractor. It has TIN certificate given
             from Federal Democratic Republic of Ethiopia Bureau of Revenue. And
             also registered for VAT and received certificate from the same
-            office. At present the Company’s general manager is Engineer Belay Taye all
-            his legal papers are attached herewith.
+            office. At present the Company’s general manager is Engineer Belay
+            Taye all his legal papers are attached herewith.
           </div>
         </div>
         <div
@@ -227,7 +223,7 @@
           <div class="/font-[Haas] mb-2 text-2xl font-bold text-white">
             Our Commitment
           </div>
-          <div class="/font-[Switzer] text-base /leading-relaxed text-white/80">
+          <div class="/font-[Switzer] text-base text-white/80">
             At Aliya Construction PLC, we believe construction is more than
             completing structures. Every project represents responsibility,
             planning, and long-term value. We remain committed to delivering
@@ -248,9 +244,7 @@
             <div class="/font-[Haas] text-2xl font-bold text-white">
               Our Vision
             </div>
-            <div
-              class="/font-[Switzer] text-base /leading-relaxed text-gray-400"
-            >
+            <div class="/font-[Switzer] text-base text-gray-400">
               To become a leading construction company recognized for integrity,
               excellence, and delivering results beyond client expectations.
             </div>
@@ -266,9 +260,7 @@
             <div class="/font-[Haas] text-2xl font-bold text-white">
               Our Mission
             </div>
-            <div
-              class="/font-[Switzer] text-base leading-relaxed text-gray-400"
-            >
+            <div class="/font-[Switzer] text-base text-gray-400">
               To provide quality construction services through competitive
               pricing, safe working environments, efficient project management,
               and timely project completion.
@@ -280,9 +272,7 @@
             <div class="/font-[Haas] mb-2 text-2xl font-bold text-white">
               Our Commitment
             </div>
-            <div
-              class="/font-[Switzer] text-base leading-relaxed text-white/80"
-            >
+            <div class="/font-[Switzer] text-base text-white/80">
               At Aliya Construction PLC, we believe construction is more than
               completing structures. Every project represents responsibility,
               planning, and long-term value. We remain committed to delivering
@@ -299,7 +289,7 @@
             <div class="/font-[Haas] text-[clamp(30px,3vw,45px)] font-bold">
               What We Do
             </div>
-            <div class="/font-[Switzer] text-lg leading-relaxed text-gray-400">
+            <div class="/font-[Switzer] text-lg text-gray-400">
               Aliya Construction PLC delivers construction services across
               multiple sectors:
             </div>
@@ -332,7 +322,7 @@
             <div class="/font-[Haas] text-[clamp(30px,3vw,45px)] font-bold">
               Our Approach
             </div>
-            <div class="/font-[Switzer] text-lg leading-relaxed text-gray-400">
+            <div class="/font-[Switzer] text-lg text-gray-400">
               We follow a structured project delivery process that focuses on
               planning, supervision, and quality assurance.
             </div>
@@ -374,7 +364,9 @@
     </div>
 
     <!-- Capabilities & Machinery Section -->
-    <div class="/flex hidden w-full /flex-col items-center bg-gray-900 px-5 py-30">
+    <div
+      class="/flex /flex-col hidden w-full items-center bg-gray-900 px-5 py-30"
+    >
       <div class="flex w-full max-w-7xl flex-col gap-15">
         <div class="flex flex-col items-center gap-12 text-center">
           <div
@@ -400,7 +392,7 @@
               Our Staff (34+ Core Professionals)
             </div>
             <div
-              class="/font-[Switzer] flex flex-col gap-4 text-lg leading-relaxed text-gray-400"
+              class="/font-[Switzer] flex flex-col gap-4 text-lg text-gray-400"
             >
               <p>
                 We boast a foundational company of highly skilled
@@ -442,7 +434,7 @@
               Heavy Machinery Fleet
             </div>
             <div
-              class="/font-[Switzer] flex flex-col gap-4 text-lg leading-relaxed text-gray-400"
+              class="/font-[Switzer] flex flex-col gap-4 text-lg text-gray-400"
             >
               <p>
                 To assure uninterrupted velocity across operations, we maintain
@@ -496,15 +488,15 @@
           </div>
         </div>
         <div
-          class="flex /grid w-full /grid-cols-1 items-center justify-evenly gap-20 /md:grid-cols-2"
+          class="/grid /grid-cols-1 /md:grid-cols-2 flex w-full items-center justify-evenly gap-20"
         >
           <div
             v-for="(leader, i) in leaders"
             :key="i"
-            class="group flex w-full cursor-pointer max-h-[65vh] flex-col items-center justify-center gap-5"
+            class="group flex max-h-[65vh] w-full cursor-pointer flex-col items-center justify-center gap-5"
           >
             <div
-              class="aspect-3/4 relative /w-2/5 overflow-hidden rounded-2xl bg-gray-800 shadow-lg"
+              class="/w-2/5 relative aspect-3/4 overflow-hidden rounded-2xl bg-gray-800 shadow-lg"
             >
               <img
                 :src="leader.img"

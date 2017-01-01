@@ -82,7 +82,7 @@
           data-name="Layer 6"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 238.56 205.68"
-          class="md:size-40 size-20"
+          class="size-20 md:size-40"
         >
           <defs></defs>
           <polyline
@@ -123,7 +123,7 @@
               ? 'blur-0 /max-w-180 opacity-100'
               : 'max-w-0 opacity-0 blur-lg'
           "
-          class="/font-[Inter] block items-baseline justify-center gap-2 overflow-hidden pt-5 pl-1 text-2xl md:text-6xl font-bold text-nowrap text-black transition-all delay-1200 duration-2500 ease-in-out"
+          class="/font-[Inter] block items-baseline justify-center gap-2 overflow-hidden pt-5 pl-1 text-2xl font-bold text-nowrap text-black transition-all delay-1200 duration-2500 ease-in-out md:text-6xl"
         >
           <span
             :class="animate ? 'text-brand-600 text-shadow-lg' : 'text-black'"
@@ -135,9 +135,8 @@
             :class="
               animate ? 'text-2xl text-black/75' : 'text-[50px] text-black'
             "
-            class="hidden span-text pt-3 transition-all delay-3500 duration-800 ease-in-out"
-          >
-          </span>
+            class="span-text hidden pt-3 transition-all delay-3500 duration-800 ease-in-out"
+          ></span>
         </div>
       </div>
     </div>
@@ -145,7 +144,7 @@
     <div v-if="introDone" class="flex h-max w-full flex-col text-white">
       <HomeHero />
       <div
-        class="/bg-black/5 /p-140 pointer-events-none h-[100svh] w-full lg:h-auto lg:aspect-[8/7]"
+        class="/bg-black/5 /p-140 pointer-events-none h-svh w-full lg:aspect-8/7 lg:h-auto"
       ></div>
       <div
         class="relative z-10 flex h-max w-full flex-col items-center justify-center shadow-[0_-20px_50px_rgba(0,0,0,0.5)]"

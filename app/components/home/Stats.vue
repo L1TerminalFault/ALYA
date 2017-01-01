@@ -51,9 +51,7 @@
         :key="i"
         class="stat-card flex flex-col items-center gap-3"
       >
-        <div
-          class="text-brand-500 text-6xl leading-none font-black lg:text-[100px]"
-        >
+        <div class="text-brand-500 text-6xl font-black lg:text-[100px]">
           <AnimatedCounter :target="stat.value" :suffix="stat.suffix" />
         </div>
         <div

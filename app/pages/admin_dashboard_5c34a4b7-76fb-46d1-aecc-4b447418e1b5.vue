@@ -35,42 +35,47 @@
     />
 
     <div class="flex w-full max-w-7xl flex-col gap-20 px-5 py-30 lg:flex-row">
-      <div v-if="fetching" class="flex w-full p-10 items-center justify-center">Loading...</div>
-      <div v-if="!fetching && !users?.length" class="flex w-full p-10 items-center justify-center">No Requests</div>
-        <table v-if="!fetching && users?.length" class="min-w-full w-max">
-          <thead>
-            <tr class="">
-              <th class="p-3">Email</th>
-              <th class="p-3">Full Name</th>
-              <th class="p-3">Project Detail</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr
-              v-for="user in users"
-              :key="user?._id"
-              class=""
-            >
-              <td class="p-3">
-	    <NuxtLink
-			    :to="'mailto:' + user.email"
-			    target="_blank"
-			    class="p-3 flex transition-all rounded-full bg-white/5 hover:bg-white/10 text-nowrap"
-	    >
-			    <div v-if="user?.email">{{user.email}}</div>
-			    <div v-if="!user?.email" class="text-gray-500/50">No email</div>
-	      </NuxtLink>
-	      </td>
-              <td class="p-3">
-			    <div v-if="user?.fullName">{{user.fullName}}</div>
-			    <div v-if="!user?.fullName" class="text-gray-500/50">No name</div>
-		    </td>
-              <td class="p-3">
-			    <div v-if="user?.details">{{user.details}}</div>
-			    <div v-if="!user?.details" class="text-gray-500/50">No detail</div>
-	      </td>
-            </tr>
-          </tbody>
+      <div v-if="fetching" class="flex w-full items-center justify-center p-10">
+        Loading...
+      </div>
+      <div
+        v-if="!fetching && !users?.length"
+        class="flex w-full items-center justify-center p-10"
+      >
+        No Requests
+      </div>
+      <table v-if="!fetching && users?.length" class="w-max min-w-full">
+        <thead>
+          <tr class="">
+            <th class="p-3">Email</th>
+            <th class="p-3">Full Name</th>
+            <th class="p-3">Project Detail</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr v-for="user in users" :key="user?._id" class="">
+            <td class="p-3">
+              <NuxtLink
+                :to="'mailto:' + user.email"
+                target="_blank"
+                class="flex rounded-full bg-white/5 p-3 text-nowrap transition-all hover:bg-white/10"
+              >
+                <div v-if="user?.email">{{ user.email }}</div>
+                <div v-if="!user?.email" class="text-gray-500/50">No email</div>
+              </NuxtLink>
+            </td>
+            <td class="p-3">
+              <div v-if="user?.fullName">{{ user.fullName }}</div>
+              <div v-if="!user?.fullName" class="text-gray-500/50">No name</div>
+            </td>
+            <td class="p-3">
+              <div v-if="user?.details">{{ user.details }}</div>
+              <div v-if="!user?.details" class="text-gray-500/50">
+                No detail
+              </div>
+            </td>
+          </tr>
+        </tbody>
       </table>
     </div>
 

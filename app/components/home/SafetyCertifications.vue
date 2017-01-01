@@ -42,7 +42,7 @@
         <div class="text-brand-500 /font-[Switzer] text-sm font-bold uppercase">
           Safety & Standards
         </div>
-        <div class="/font-[Haas] text-3xl leading-tight font-bold md:text-5xl">
+        <div class="/font-[Haas] text-3xl font-bold md:text-5xl">
           Uncompromising on Safety & Industry Standards
         </div>
       </div>

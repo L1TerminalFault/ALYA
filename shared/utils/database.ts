@@ -10,7 +10,7 @@ export const fAddUser = async ({ fullName, email, details }: UserType) => {
       body: JSON.stringify({
         fullName,
         email,
-	details,
+        details,
       }),
     })
   ).json();

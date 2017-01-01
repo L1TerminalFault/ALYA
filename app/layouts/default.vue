@@ -11,7 +11,7 @@
 </script>
 
 <template>
-  <div class="min-h-screen bg-white font-[Futura]! leading-[105%]! text-white">
+  <div class="min-h-screen bg-white font-[Futura]! text-white">
     <NavBar />
     <CursorBlob :class="loaded ? '' : 'hidden'" />
 

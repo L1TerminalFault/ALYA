@@ -102,7 +102,7 @@
     transition: opacity 0.3s ease;
   }
 
-  .dot {
-    /* No border, solid fill */
-  }
+  /* .dot {
+    No border, solid fill
+  } */
 </style>

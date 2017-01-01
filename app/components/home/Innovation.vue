@@ -60,14 +60,10 @@
           >
             Innovation At Core
           </div>
-          <div
-            class="/font-[Haas] text-4xl leading-[1.1] font-bold lg:text-[70px]"
-          >
+          <div class="/font-[Haas] text-4xl font-bold lg:text-[70px]">
             Engineering the Future
           </div>
-          <div
-            class="/font-[Switzer] mt-4 max-w-lg text-xl leading-relaxed text-gray-400"
-          >
+          <div class="/font-[Switzer] mt-4 max-w-lg text-xl text-gray-400">
             We push the boundaries of modern construction using proprietary
             technology and state-of-the-art management systems.
           </div>
@@ -78,12 +74,10 @@
             :key="i"
             class="innov-card hover:border-brand-500/50 flex flex-col gap-3 rounded-2xl border border-gray-800 bg-gray-900 p-6 shadow-lg transition-colors"
           >
-            <div
-              class="/font-[Haas] text-xl leading-tight font-bold text-white"
-            >
+            <div class="/font-[Haas] text-xl font-bold text-white">
               {{ tech.name }}
             </div>
-            <div class="/font-[Switzer] text-sm leading-relaxed text-gray-400">
+            <div class="/font-[Switzer] text-sm text-gray-400">
               {{ tech.desc }}
             </div>
           </div>

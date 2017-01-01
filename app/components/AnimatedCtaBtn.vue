@@ -10,7 +10,7 @@
   >
     <!-- The Mask Container: This handles the tight cropping -->
     <div
-      class="relative flex h-[1.2em] /translate-y-0.5 items-center overflow-hidden"
+      class="/translate-y-0.5 relative flex h-[1.2em] items-center overflow-hidden"
     >
       <!-- Top Layer -->
       <div ref="topLayer" class="flex">

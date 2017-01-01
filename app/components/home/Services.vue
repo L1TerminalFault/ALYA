@@ -47,12 +47,10 @@
         <div class="text-brand-600 /font-[Switzer] text-sm font-bold uppercase">
           What We Offer
         </div>
-        <div
-          class="/font-[Haas] text-[clamp(40px,5vw,70px)] leading-tight font-bold"
-        >
+        <div class="/font-[Haas] text-[clamp(40px,5vw,70px)] font-bold">
           Enterprise Solutions
         </div>
-        <div class="/font-[Switzer] mt-2 text-xl leading-relaxed text-gray-600">
+        <div class="/font-[Switzer] mt-2 text-xl text-gray-600">
           From sourcing through to last-mile delivery, we manage complex supply
           chains with precision and reliability.
         </div>
@@ -76,7 +74,7 @@
             class="absolute bottom-0 left-0 flex w-full translate-y-4 flex-col gap-2 p-8 transition-transform duration-500 group-hover:translate-y-0"
           >
             <div
-              class="/font-[Haas55] text-2xl leading-tight font-bold text-white drop-shadow-md"
+              class="/font-[Haas55] text-2xl font-bold text-white drop-shadow-md"
             >
               {{ svc.title }}
             </div>

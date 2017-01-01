@@ -5,30 +5,30 @@
     @mouseenter="onMouseEnter"
     @mouseleave="onMouseLeave"
   >
-  <div
-    class="relative inline-block overflow-hidden px-1 leading-3.75 whitespace-nowrap uppercase"
-  >
-    <!-- Top Layer -->
-    <div ref="topLayer" class="flex py-1">
-      <span
-        v-for="(char, i) in text"
-        :key="`top-${i}`"
-        class="inline-block"
-        v-html="char === ' ' ? '&nbsp;' : char"
-      />
-    </div>
+    <div
+      class="relative inline-block overflow-hidden px-1 whitespace-nowrap uppercase"
+    >
+      <!-- Top Layer -->
+      <div ref="topLayer" class="flex py-1">
+        <span
+          v-for="(char, i) in text"
+          :key="`top-${i}`"
+          class="inline-block"
+          v-html="char === ' ' ? '&nbsp;' : char"
+        />
+      </div>
 
-    <!-- Bottom Layer -->
-    <div ref="bottomLayer" class="absolute inset-0 flex px-1 py-1">
-      <span
-        v-for="(char, i) in text"
-        :key="`bottom-${i}`"
-        class="inline-block"
-        v-html="char === ' ' ? '&nbsp;' : char"
-      />
+      <!-- Bottom Layer -->
+      <div ref="bottomLayer" class="absolute inset-0 flex px-1 py-1">
+        <span
+          v-for="(char, i) in text"
+          :key="`bottom-${i}`"
+          class="inline-block"
+          v-html="char === ' ' ? '&nbsp;' : char"
+        />
+      </div>
     </div>
-  </div>
-	</NuxtLink>
+  </NuxtLink>
 </template>
 
 <script setup>

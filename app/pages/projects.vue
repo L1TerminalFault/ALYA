@@ -11,7 +11,7 @@
     <PageHeader
       title="Our Work"
       subtitle="A showcase of structural excellence and architectural innovation."
-      bgImage="https://aliyaconstructionplc.com/wp-content/uploads/2026/05/WhatsApp-Image-2026-05-17-at-10.16.10-AM-2-1024x724.jpeg"
+      bg-image="https://aliyaconstructionplc.com/wp-content/uploads/2026/05/WhatsApp-Image-2026-05-17-at-10.16.10-AM-2-1024x724.jpeg"
     />
 
     <div class="w-full max-w-7xl px-5 py-30">
@@ -24,7 +24,7 @@
         >
           <NuxtImg
             :src="project.img"
-			  :placeholder="1"
+            :placeholder="1"
             class="absolute inset-0 size-full object-cover transition-transform duration-1000 group-hover:scale-110"
           />
           <div
@@ -40,7 +40,7 @@
                 {{ project.category }} &middot; {{ project.location }}
               </div>
               <div
-                class="px-2 py-1 /font-[Switzer] text-[8px] text-nowrap uppercase italic opacity-90"
+                class="/font-[Switzer] px-2 py-1 text-[8px] text-nowrap uppercase italic opacity-90"
                 :class="
                   project.status === 'Completed'
                     ? 'text-[#b0ffb090]'
@@ -50,9 +50,7 @@
                 {{ project.status }}
               </div>
             </div>
-            <div
-              class="pr-4 /font-[Haas55] text-2xl leading-tight font-bold text-white"
-            >
+            <div class="/font-[Haas55] pr-4 text-2xl font-bold text-white">
               {{ project.name }}
             </div>
             <div

@@ -71,14 +71,12 @@
         <div class="text-brand-600 /font-[Switzer] text-lg font-bold uppercase">
           How We Work
         </div>
-        <div
-          class="/font-[Haas] text-[clamp(40px,5vw,70px)] leading-[1.1] font-bold"
-        >
+        <div class="/font-[Haas] text-[clamp(40px,5vw,70px)] font-bold">
           Our Proven
           <br />
           Methodology
         </div>
-        <div class="/font-[Switzer] mt-4 text-xl leading-relaxed text-gray-600">
+        <div class="/font-[Switzer] mt-4 text-xl text-gray-600">
           A systematic, phased approach ensures that every project is delivered
           on time, within budget, and to our strict quality protocols.
         </div>
@@ -111,7 +109,7 @@
             <div class="/font-[Haas75] text-2xl font-bold text-gray-950">
               {{ step.title }}
             </div>
-            <div class="/font-[Switzer] text-lg leading-snug text-gray-600">
+            <div class="/font-[Switzer] text-lg text-gray-600">
               {{ step.desc }}
             </div>
           </div>
