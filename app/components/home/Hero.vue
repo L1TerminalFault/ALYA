@@ -130,6 +130,8 @@
         const textY = -percentY * 30;
 
         gsap.to(heroBg.value, {
+          x: percentX * 35,
+          y: percentY * 35,
           duration: 1.3,
           ease: "power2.out",
           overwrite: "auto",
