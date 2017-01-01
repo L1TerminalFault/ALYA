@@ -123,16 +123,14 @@
         const percentX = e.clientX / window.innerWidth - 0.5;
         const percentY = e.clientY / window.innerHeight - 0.5;
 
-        const bgX = percentX * 40;
-        const bgY = percentY * 40;
+        // const bgX = percentX * 40;
+        // const bgY = percentY * 40;
 
         const textX = -percentX * 30;
         const textY = -percentY * 30;
 
         gsap.to(heroBg.value, {
-          x: bgX * 35,
-          y: bgY * 35,
-          duration: 1.4,
+          duration: 1.3,
           ease: "power2.out",
           overwrite: "auto",
         });
