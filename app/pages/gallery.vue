@@ -8,7 +8,7 @@
     "/pal2.jpeg",
     "/pal17.jpg",
     "/pal40.jpg",
-    "/pal43.jpg",
+    "/pal60.jpg",
     "/pal48.jpg",
     "/pal44.jpg",
     "/pal46.jpg",
@@ -81,7 +81,7 @@
           />
           <div
             class="bg-brand-900/40 absolute inset-0 opacity-0 mix-blend-multiply transition-opacity duration-500 group-hover:opacity-100"
-	    ></div>
+          ></div>
         </div>
       </div>
     </div>
@@ -96,7 +96,7 @@
       <NuxtImg
         :src="selectedImage"
         :placeholder="1"
-        class="inset-0 max-h-[80vh] max-w-[80vw] min-h-[60svh] min-w-[60svw] w-full h-full overflow-hidden rounded-lg object-contain shadow-2xl"
+        class="inset-0 h-full max-h-[80vh] min-h-[60svh] w-full max-w-[80vw] min-w-[60svw] overflow-hidden rounded-lg object-contain shadow-2xl"
         @click.stop
       />
 

@@ -31,11 +31,11 @@
       <div class="flex flex-col gap-15 lg:flex-row">
         <div class="flex w-full flex-col gap-8 lg:w-2/3">
           <div
-            class="/font-[Haas] text-[clamp(35px,4vw,50px)] leading-tight font-bold"
+            class="/font-[Haas] text-[clamp(35px,4vw,50px)] font-bold"
           >
             Project Overview
           </div>
-          <div class="/font-[Switzer] text-lg leading-relaxed text-gray-400">
+          <div class="/font-[Switzer] text-lg text-gray-400">
             The {{ projectName }} represents the pinnacle of modern construction
             methodology. Blending sustainable practices with extreme structural
             integrity, this project was successfully delivered on time and

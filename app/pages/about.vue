@@ -93,11 +93,11 @@
           Our Story
         </div>
         <div
-          class="/font-[Haas] text-[clamp(35px,4vw,60px)] leading-none font-bold"
+          class="/font-[Haas] text-[clamp(35px,4vw,60px)] /leading-none font-bold"
         >
           Decades of Excellence in Construction
         </div>
-        <div class="/font-[Switzer] text-lg leading-relaxed text-gray-400">
+        <div class="/font-[Switzer] text-lg /leading-relaxed text-gray-400">
           Founded with a vision to redefine the construction landscape, Aliya
           has grown from a specialized contractor into a full-suite enterprise
           construction firm. Our journey is paved with milestones of structural
@@ -132,12 +132,12 @@
               Building with Experience
             </div>
             <div
-              class="/font-[Haas] text-[clamp(30px,3.3vw,50px)] leading-tight font-bold"
+              class="/font-[Haas] text-[clamp(30px,3.3vw,50px)] /leading-tight font-bold"
             >
               Reliability, and Professional Execution
             </div>
             <div
-              class="/font-[Switzer] flex flex-col gap-4 text-lg leading-relaxed text-gray-400"
+              class="/font-[Switzer] flex flex-col gap-4 text-lg /leading-relaxed text-gray-400"
             >
               <p>
                 Based in Addis Ababa,
@@ -167,7 +167,7 @@
               Who We Are
             </div>
             <div
-              class="/font-[Switzer] mt-2 flex flex-col gap-4 text-lg leading-relaxed text-gray-400"
+              class="/font-[Switzer] mt-2 flex flex-col gap-4 text-lg /leading-relaxed text-gray-400"
             >
               <p>
                 Founded by
@@ -207,7 +207,7 @@
           <div class="/font-[Haas] text-2xl font-bold text-white">
             Our Background
           </div>
-          <div class="/font-[Switzer] text-base leading-relaxed text-gray-400">
+          <div class="/font-[Switzer] text-base /leading-relaxed text-gray-400">
             ALIYA CONSTRUCTION PLC is company established by ENGINEER BELAY TAYE in 2014
             G.C. to play a major role in the booming local construction
             industry. The capital of the company has been fully paid at the time
@@ -227,7 +227,7 @@
           <div class="/font-[Haas] mb-2 text-2xl font-bold text-white">
             Our Commitment
           </div>
-          <div class="/font-[Switzer] text-base leading-relaxed text-white/80">
+          <div class="/font-[Switzer] text-base /leading-relaxed text-white/80">
             At Aliya Construction PLC, we believe construction is more than
             completing structures. Every project represents responsibility,
             planning, and long-term value. We remain committed to delivering
@@ -249,7 +249,7 @@
               Our Vision
             </div>
             <div
-              class="/font-[Switzer] text-base leading-relaxed text-gray-400"
+              class="/font-[Switzer] text-base /leading-relaxed text-gray-400"
             >
               To become a leading construction company recognized for integrity,
               excellence, and delivering results beyond client expectations.
