@@ -131,7 +131,7 @@ const handleShuffle = async () => {
 </script>
 
 <template>
-  <div class="w-svw my-40 bg-transparent text-black overflow-hidden">
+  <div class="w-svw my-40 bg-transparent text-white overflow-hidden">
     <div class="max-467.5 w-full mx-auto">
       <div class="flex flex-col items-center gap-25">
 
@@ -144,9 +144,9 @@ const handleShuffle = async () => {
 
             <div class="test relative flex h-auto flex-1 items-center justify-center lg:h-full overflow-visible">
               <!-- Inline styles ensure initial z-index is defined for GSAP -->
-              <img src="/testi1.jpg" class="image1 absolute h-130 object-contain w-120 rounded-[100px] p-3"
+              <img src="https://aliyaconstructionplc.com/wp-content/uploads/2026/05/Gemini_Generated_Image_7vq7zm7vq7zm7vq7-842x1024.png" class="image1 absolute h-130 object-contain w-120 rounded-[100px] p-3"
                 style="z-index: 10;" />
-              <img src="/testi2.jpg" class="image2 absolute h-130 object-contain mt-10 w-120 rounded-[100px] p-3"
+              <img src="https://aliyaconstructionplc.com/wp-content/uploads/2026/05/Gemini_Generated_Image_95nmj795nmj795nm-777x1024.png" class="image2 absolute h-130 object-contain mt-10 w-120 rounded-[100px] p-3"
                 style="z-index: 0;" />
             </div>
 
@@ -156,19 +156,19 @@ const handleShuffle = async () => {
                   class="review-title pr-10 font-[Haas] text-[clamp(20px,3vw,58px)] leading-[105.2%] font-thin uppercase italic">
                   {{ review.title }}
                 </div>
-                <div class="review-description font-[Switzer] text-[clamp(13px,2vw,22px)] leading-[1.4] text-[#3F3F3F]">
+                <div class="review-description font-[Switzer] text-[clamp(13px,2vw,22px)] leading-[1.4] text-gray-400">
                   " {{ review.desc }} "
                 </div>
               </div>
 
               <div class="flex w-full gap-3.75">
                 <button @click="handleShuffle"
-                  class="flex w-full items-center justify-center rounded-full border border-black p-6.5 transition-all hover:bg-black/5 active:scale-95">
-                  <img src="/arrow-max-left.svg" class="max-lg:size-5" />
+                  class="flex w-full items-center justify-center rounded-full border border-white p-6.5 transition-all hover:bg-white/10 active:scale-95">
+                  <img src="/arrow-max-left.svg" class="max-lg:size-5 invert" />
                 </button>
                 <button @click="handleShuffle"
-                  class="flex w-full items-center justify-center rounded-full border border-black p-6.5 transition-all hover:bg-black/5 active:scale-95">
-                  <img src="/arrow-max-right.svg" class="max-lg:size-5" />
+                  class="flex w-full items-center justify-center rounded-full border border-white p-6.5 transition-all hover:bg-white/10 active:scale-95">
+                  <img src="/arrow-max-right.svg" class="max-lg:size-5 invert" />
                 </button>
               </div>
             </div>

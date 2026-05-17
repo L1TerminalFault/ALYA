@@ -1,119 +1,45 @@
 <script setup lang="ts">
-  import gsap from "gsap";
-  import { ScrollTrigger } from "gsap/ScrollTrigger";
-  import { SplitText } from "gsap/SplitText";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { onMounted } from "vue";
 
-  onMounted(async () => {
-    gsap.registerPlugin(ScrollTrigger);
-    gsap.registerPlugin(SplitText);
+const services = [
+  { title: "Pre-Construction", desc: "Design-build planning and risk management.", img: "https://aliyaconstructionplc.com/wp-content/uploads/2026/05/building-new-concrete-house_1398-2995.jpg" },
+  { title: "General Contracting", desc: "Full-scale project execution with expert logistics.", img: "https://aliyaconstructionplc.com/wp-content/uploads/2026/05/building-new-concrete-house_1398-2995.jpg" },
+  { title: "Civil Infrastructure", desc: "High-level civil engineering solutions.", img: "https://aliyaconstructionplc.com/wp-content/uploads/2026/05/building-new-concrete-house_1398-2995.jpg" }
+];
 
-    const splitedText1 = new SplitText(".titlet", { type: "lines" });
-
-    const charssplit = new SplitText(".desct", { type: "words,chars" });
-
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".left-palette",
-        start: "top 70%",
-      },
-    });
-
-    tl.fromTo(
-      charssplit.words,
-      { opacity: 0, y: 20 },
-      { opacity: 1, y: 0, duration: 0.4, stagger: 0.05, ease: "back.out" }
-    )
-      .fromTo(
-        charssplit.chars,
-        { filter: "blur(20px)" },
-        {
-          filter: "blur(0px)",
-          duration: 0.1,
-          stagger: 0.01,
-          ease: "power2.inOut",
-        },
-        "<"
-      )
-      .fromTo(
-        splitedText1.lines,
-        {
-          opacity: 0,
-          y: 40,
-        },
-        {
-          opacity: 1,
-          y: 0,
-          duration: 0.6,
-          stagger: 0.15,
-          ease: "back",
-        },
-        "<"
-      )
-      .fromTo(
-        ".center-palette",
-        {
-          translateY: "20px",
-        },
-        {
-          translateY: "0px",
-          opacity: 1,
-          duration: 0.6,
-          ease: "power1.out",
-        },
-        "<"
-      )
-      .to(
-        ".left-palette",
-        {
-          translateX: "0px",
-          opacity: 1,
-          duration: 0.7,
-          delay: 0.4,
-          ease: "power3.out",
-        },
-        "<"
-      )
-      .to(
-        ".right-palette",
-        {
-          translateX: "0px",
-          opacity: 1,
-          duration: 0.7,
-          ease: "power3.out",
-        },
-        "<"
-      );
-  });
+onMounted(() => {
+  gsap.registerPlugin(ScrollTrigger);
+  gsap.fromTo(
+    ".svc-card",
+    { opacity: 0, y: 50 },
+    { opacity: 1, y: 0, duration: 0.8, stagger: 0.15, ease: "power3.out", scrollTrigger: { trigger: ".offer-section", start: "top 70%" } }
+  );
+});
 </script>
 
 <template>
-  <div
-    class="aspvi z-0 flex w-full flex-col items-center justify-center gap-7 bg-transparent p-4 text-black lg:min-h-300 lg:p-12 xl:p-14"
-  >
-    <div
-      class="titlet flex w-2/3 max-w-150 justify-center px-4 text-center font-[Switzer] text-[clamp(32px,5vw,78px)] leading-[1.15] font-bold 2xl:w-1/2"
-    >
-      What we offer to your business
-    </div>
-    <div
-      class="desct max-w-180 justify-center text-center text-[clamp(13px,2vw,19px)] leading-none text-black max-xl:max-w-130"
-    >
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-      Lorem Ipsum has been the industry's standard dummy text ever since the
-      1500s, when an unknown printer took a galley of type and scrambled it to
-      make a type specimen book.
-    </div>
-
-    <div class="flex h-full w-full max-w-425 items-center gap-6.25 pt-14">
-      <div
-        class="left-palette h-180 w-full -translate-x-5 rounded-4xl bg-black opacity-0"
-      ></div>
-      <div
-        class="center-palette h-180 w-full rounded-4xl bg-black opacity-0"
-      ></div>
-      <div
-        class="right-palette h-180 w-full translate-x-5 rounded-4xl bg-black opacity-0"
-      ></div>
+  <div class="offer-section w-full bg-[#f8f8f8] flex flex-col items-center justify-center p-5 py-30 text-black">
+    <div class="w-full max-w-7xl flex flex-col items-center gap-15">
+      <div class="flex flex-col items-center text-center gap-4 max-w-3xl">
+        <div class="text-brand-600 font-bold uppercase tracking-widest text-sm font-[Switzer]">What We Offer</div>
+        <div class="text-[clamp(40px,5vw,70px)] font-[Haas] font-bold leading-none tracking-tighter">Enterprise Solutions</div>
+        <div class="text-gray-600 font-[Switzer] text-xl mt-2 leading-relaxed">
+          From sourcing through to last-mile delivery, we manage complex supply chains with precision and reliability.
+        </div>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 w-full mt-10">
+        <NuxtLink v-for="(svc, i) in services" :key="i" to="/services" class="svc-card group relative h-[500px] rounded-3xl overflow-hidden cursor-pointer shadow-xl border border-gray-200 block">
+          <img :src="svc.img" class="absolute inset-0 size-full object-cover transition-transform duration-700 group-hover:scale-105" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent"></div>
+          <div class="absolute bottom-0 left-0 p-8 flex flex-col gap-2 translate-y-4 group-hover:translate-y-0 transition-transform duration-500 w-full">
+            <div class="text-2xl font-[Haas55] font-bold text-white leading-tight drop-shadow-md">{{ svc.title }}</div>
+            <div class="text-gray-300 font-[Switzer] text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500">{{ svc.desc }}</div>
+          </div>
+        </NuxtLink>
+      </div>
     </div>
   </div>
 </template>

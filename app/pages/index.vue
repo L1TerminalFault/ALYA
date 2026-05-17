@@ -80,7 +80,7 @@
         <span
           :class="
             animate
-              ? 'text-[#CF6210] text-shadow-black/30 text-shadow-lg'
+              ? 'text-brand-600 text-shadow-black/30 text-shadow-lg'
               : 'text-black'
           "
           class="transition-all delay-2700 duration-1000"

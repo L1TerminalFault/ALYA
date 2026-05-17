@@ -130,8 +130,8 @@ onUnmounted(() => {
           <defs>
             <linearGradient id="paint0_linear_614_189" x1="975.5" y1="354.106" x2="975.5" y2="1940"
               gradientUnits="userSpaceOnUse">
-              <stop stop-color="#3E5CE1" />
-              <stop offset="0.729563" stop-color="#22327B" />
+              <stop stop-color="#dc2626" />
+              <stop offset="0.729563" stop-color="#7f1d1d" />
             </linearGradient>
           </defs>
         </svg>
@@ -158,7 +158,7 @@ onUnmounted(() => {
             <div
               class="w-fit h-fit px-12 py-6 bg-white rounded-full flex mix-blend-difference transition-transform group-hover:scale-90">
 
-              <span class="text-xl font-bold text-[#3E5CE1] uppercase tracking-wider">
+              <span class="text-xl font-bold text-brand-600 uppercase tracking-wider">
                 Contact
               </span>
 
@@ -170,7 +170,7 @@ onUnmounted(() => {
 
     <div class="z-0 flex w-full items-center justify-center -mt-43 relative min-h-screen">
       <div class="absolute inset-0 w-full h-full overflow-hidden">
-        <img src="/back1.png" class="fade w-full h-full object-cover" />
+        <img src="https://aliyaconstructionplc.com/wp-content/uploads/2020/09/bosa-business2-about2.png" class="fade w-full h-full object-cover" />
       </div>
       <div
         class="focus2 relative z-10 flex w-full flex-col items-center justify-center gap-10 text-white text-center px-5">
