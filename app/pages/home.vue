@@ -20,7 +20,16 @@
       gsap.fromTo(
         ".cls-1, .cls-2, .cls-3",
         { drawSVG: "0%" },
-        { drawSVG: "100%", duration: 1.5, ease: "power2.inOut" }
+        { 
+          drawSVG: "100%", 
+          duration: 1.5, 
+          ease: "power2.inOut",
+          onComplete: () => {
+            gsap.to(".cls-1", { fill: "#eb2629", stroke: "transparent", duration: 0.4 });
+            gsap.to(".cls-2", { fill: "#000", stroke: "transparent", duration: 0.4 });
+            gsap.to(".cls-3", { fill: "#ed1c24", stroke: "transparent", duration: 0.4 });
+          }
+        }
       );
     }, 100);
 
@@ -136,19 +145,19 @@
 
 <style>
   .cls-1 {
-    fill: #eb2629;
+    fill: transparent;
     stroke: #eb2629;
     stroke-width: 2px;
   }
 
   .cls-2 {
-    fill: #000;
+    fill: transparent;
     stroke: #000;
     stroke-width: 2px;
   }
 
   .cls-3 {
-    fill: #ed1c24;
+    fill: transparent;
     stroke: #ed1c24;
     stroke-width: 2px;
   }

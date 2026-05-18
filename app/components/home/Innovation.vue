@@ -5,20 +5,20 @@
 
   const technologies = [
     {
-      name: "Building Information Modeling (BIM)",
-      desc: "Advanced 3D modeling for flawless execution and clash detection.",
+      name: "Heavy Transport Fleet",
+      desc: "Expansive logistics handled natively by 16m³ UD and 16.5m³ SINO dump trucks.",
     },
     {
-      name: "Automated Drones",
-      desc: "For real-time site surveying, safety compliance, and progress tracking.",
+      name: "High-Altitude Access",
+      desc: "Precision lifting systems supported by extensive 42-meter boom lifts.",
     },
     {
-      name: "Sustainable Logistics",
-      desc: "Proprietary green composites reducing carbon footprint by up to 40%.",
+      name: "Concrete Production Machineries",
+      desc: "Automated site mixing and massive capacity HCB production outputting 2000 blocks daily.",
     },
     {
-      name: "AI Resource Management",
-      desc: "Predictive logistics and intelligent resource allocation across all sites.",
+      name: "Comprehensive Formwork",
+      desc: "Over 5000m² of rigid professional scaffolding integrated seamlessly with safety protocols.",
     },
   ];
 

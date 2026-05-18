@@ -5,18 +5,18 @@
 
   const projects = [
     {
-      name: "The Zenith Tower",
-      location: "Downtown District",
+      name: "Ariyo Learning Institute",
+      location: "Bonga, Keffa",
       img: "/featuredp1.jpg",
     },
     {
-      name: "Aura Logistics Center",
-      location: "West Port",
+      name: "BGI Ethiopia Maintenance",
+      location: "Addis Ababa",
       img: "/featuredp2.jpg",
     },
     {
-      name: "Eco-Industrial Park",
-      location: "North Valley",
+      name: "Wro Martha Mixed-Use",
+      location: "Addis Ababa",
       img: "/featuredp3.jpg",
     },
   ];

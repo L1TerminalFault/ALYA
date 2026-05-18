@@ -5,18 +5,18 @@
 
   const services = [
     {
-      title: "Pre-Construction",
-      desc: "Design-build planning and risk management.",
+      title: "Residential Buildings",
+      desc: "Private homes to multi-story apartment developments with finishing works.",
       img: "https://aliyaconstructionplc.com/wp-content/uploads/2026/05/building-new-concrete-house_1398-2995.jpg",
     },
     {
-      title: "General Contracting",
-      desc: "Full-scale project execution with expert logistics.",
+      title: "Commercial Buildings",
+      desc: "Delivering dynamic commercial projects designed to support advanced business operations.",
       img: "/palette.jpg",
     },
     {
-      title: "Civil Infrastructure",
-      desc: "High-level civil engineering solutions.",
+      title: "Institutional & Industrial",
+      desc: "Providing construction services for public facilities, mixed-use infrastructure, and warehouses.",
       img: "/palettesecond.jpg",
     },
   ];

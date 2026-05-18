@@ -4,10 +4,10 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { onMounted } from "vue";
 
 const steps = [
-  { id: "01", title: "Strategic Planning", desc: "We begin with rigorous feasibility studies, cost analysis, and architectural alignments." },
-  { id: "02", title: "Procurement & Resources", desc: "Leveraging our industry network for high-grade materials and logistics management." },
-  { id: "03", title: "Execution & Construction", desc: "Executing complex blueprints into structural reality with our elite workforce." },
-  { id: "04", title: "Quality & Handover", desc: "Extensive inspections to ensure all safety frameworks and enterprise standards are met." },
+  { id: "01", title: "Project Scheduling", desc: "Detailed building scheduling paired with structured resource and manpower planning." },
+  { id: "02", title: "Quality Supervision", desc: "Persistent site supervision inextricably combined with absolute quality control frameworks." },
+  { id: "03", title: "Progress Coordination", desc: "Continuous execution monitoring and strict alignment with core client stakeholders." },
+  { id: "04", title: "Project Handover", desc: "Methodical execution leading directly to timely project delivery and rigorous handover." },
 ];
 
 onMounted(() => {

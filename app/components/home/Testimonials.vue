@@ -116,7 +116,7 @@
         y: 0,
         rotate: 0,
         opacity: (i) => (i === 0 ? 0.5 : 1),
-        scale: (i) => (i === 0 ? 1 : 0.93), // Keep back image slightly smaller
+        scale: (i) => (i === 0 ? 0.6 : 1), // Hide back image by shrinking to 60%
         duration: 0.6,
         stagger: 0.05,
         ease: "elastic.out(1, 0.8)",
