@@ -17,7 +17,7 @@
       [".nav-logo-draw", ".nav-red-draw"],
       { drawSVG: "0%", fill: "transparent", stroke: "white" },
       {
-        delay: 2.7,
+        delay: 8,
         drawSVG: "100%",
         duration: 1.2,
         ease: "power2.inOut",
@@ -38,6 +38,7 @@
 
     const navTl = gsap.timeline({
       defaults: { ease: "power4.out", duration: 1.6 },
+      delay: 5,
     });
 
     navTl
