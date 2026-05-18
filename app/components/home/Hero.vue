@@ -132,14 +132,16 @@
         </div>
 
         <div class="perspective-container hero-text-large">
-          <span class="spt text-nowrap drop-shadow-2xl">CREATING SPACES</span>
-          <span class="spt text-nowrap drop-shadow-2xl">WITH PURPOSE</span>
+          <span class="spt text-nowrap drop-shadow-2xl">
+            WE DO WHAT IS RIGHT,
+          </span>
+          <span class="spt text-nowrap drop-shadow-2xl">NOT WHAT IS EASY!</span>
         </div>
 
         <div
           class="cpt font-Geist fluid-subtext text-center text-white drop-shadow-xl"
         >
-          We do what is right, Not what is easy!
+          Creating spaces with purpose
         </div>
 
         <AnimatedCtaBtn text="Get Started" class="animated-cta" />
