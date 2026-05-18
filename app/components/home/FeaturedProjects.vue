@@ -1,62 +1,110 @@
 <script setup lang="ts">
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { onMounted } from "vue";
+  import gsap from "gsap";
+  import { ScrollTrigger } from "gsap/ScrollTrigger";
+  import { onMounted } from "vue";
 
-const projects = [
-  { name: "The Zenith Tower", location: "Downtown District", img: "https://aliyaconstructionplc.com/wp-content/uploads/2026/05/WhatsApp-Image-2026-05-17-at-10.16.04-AM-1024x576.jpeg" },
-  { name: "Aura Logistics Center", location: "West Port", img: "https://aliyaconstructionplc.com/wp-content/uploads/2026/05/Gemini_Generated_Image_b71en4b71en4b71e-777x1024.png" },
-  { name: "Eco-Industrial Park", location: "North Valley", img: "https://aliyaconstructionplc.com/wp-content/uploads/2026/05/building-new-concrete-house_1398-2995.jpg" },
-];
-
-onMounted(() => {
-  gsap.registerPlugin(ScrollTrigger);
-
-  gsap.fromTo(
-    ".project-card",
-    { opacity: 0, y: 100, scale: 0.95 },
+  const projects = [
     {
-      opacity: 1,
-      y: 0,
-      scale: 1,
-      duration: 1,
-      stagger: 0.15,
-      ease: "power3.out",
-      scrollTrigger: {
-        trigger: ".projects-section",
-        start: "top 70%",
-      },
-    }
-  );
-});
+      name: "The Zenith Tower",
+      location: "Downtown District",
+      img: "/featuredp1.jpg",
+    },
+    {
+      name: "Aura Logistics Center",
+      location: "West Port",
+      img: "/featuredp2.jpg",
+    },
+    {
+      name: "Eco-Industrial Park",
+      location: "North Valley",
+      img: "/featuredp3.jpg",
+    },
+  ];
+
+  onMounted(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.fromTo(
+      ".project-card",
+      { opacity: 0, y: 100, scale: 0.95 },
+      {
+        opacity: 1,
+        y: 0,
+        scale: 1,
+        duration: 1,
+        stagger: 0.15,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: ".projects-section",
+          start: "top 70%",
+        },
+      }
+    );
+  });
 </script>
 <template>
-  <div class="projects-section w-full bg-gray-950 py-30 text-white flex flex-col items-center justify-center gap-15 px-5">
-    <div class="flex flex-col md:flex-row w-full max-w-7xl justify-between items-end gap-10">
-      <div class="text-4xl lg:text-[70px] font-bold font-[Haas] tracking-tighter leading-[0.9]">Featured<br>Projects</div>
-      <NuxtLink to="/work" class="group flex cursor-pointer items-center gap-3 text-brand-500 hover:text-white px-6 py-3 border border-brand-500 hover:border-white rounded-full transition-colors font-bold overflow-hidden">
-        <span class="font-[Switzer] text-[15px] uppercase tracking-wider mt-1">Explore Portfolio</span>
-        <img src="/arrow.svg" class="w-4 transition-transform group-hover:translate-x-1" style="filter: invert(1);" />
+  <div
+    class="projects-section flex w-full flex-col items-center justify-center gap-15 bg-gray-950 px-5 py-30 text-white"
+  >
+    <div
+      class="flex w-full max-w-7xl flex-col items-end justify-between gap-10 md:flex-row"
+    >
+      <div
+        class="font-[Haas] text-4xl leading-[0.9] font-bold tracking-tighter lg:text-[70px]"
+      >
+        Featured<br />Projects
+      </div>
+      <NuxtLink
+        to="/work"
+        class="group text-brand-500 border-brand-500 flex cursor-pointer items-center gap-3 overflow-hidden rounded-full border px-6 py-3 font-bold transition-colors hover:border-white hover:text-white"
+      >
+        <span class="mt-1 font-[Switzer] text-[15px] tracking-wider uppercase"
+          >Explore Portfolio</span
+        >
+        <img
+          src="/arrow.svg"
+          class="w-4 transition-transform group-hover:translate-x-1"
+          style="filter: invert(1)"
+        />
       </NuxtLink>
     </div>
-    
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-7xl mt-12">
+
+    <div
+      class="mt-12 grid w-full max-w-7xl grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3"
+    >
       <NuxtLink
         v-for="(project, i) in projects"
         :key="i"
         :to="'/projects/' + project.name.toLowerCase().replace(/ /g, '-')"
-        class="project-card group relative h-[500px] w-full overflow-hidden rounded-2xl cursor-pointer block border border-white/5"
+        class="project-card group relative block h-[500px] w-full cursor-pointer overflow-hidden rounded-2xl border border-white/5"
       >
-        <img :src="project.img" class="absolute inset-0 size-full object-cover transition-transform duration-1000 group-hover:scale-110" />
-        <div class="absolute inset-0 bg-gradient-to-t from-gray-950 via-gray-950/20 to-transparent opacity-80 group-hover:opacity-100 transition-opacity duration-500"></div>
-        <div class="absolute bottom-0 left-0 p-8 flex flex-col gap-2 translate-y-4 group-hover:translate-y-0 transition-transform duration-500 w-full">
-          <div class="flex justify-between items-center w-full">
-            <div class="text-brand-500 text-sm font-[Switzer] font-bold tracking-widest uppercase">{{ project.location }}</div>
-            <div class="size-10 rounded-full border border-white/20 flex items-center justify-center overflow-hidden opacity-0 group-hover:opacity-100 transition-opacity delay-100 duration-500">
-               <img src="/arrow.svg" class="w-3 rotate-45 invert" />
+        <img
+          :src="project.img"
+          class="absolute inset-0 size-full object-cover transition-transform duration-1000 group-hover:scale-110"
+        />
+        <div
+          class="absolute inset-0 bg-gradient-to-t from-gray-950 via-gray-950/20 to-transparent opacity-80 transition-opacity duration-500 group-hover:opacity-100"
+        ></div>
+        <div
+          class="absolute bottom-0 left-0 flex w-full translate-y-4 flex-col gap-2 p-8 transition-transform duration-500 group-hover:translate-y-0"
+        >
+          <div class="flex w-full items-center justify-between">
+            <div
+              class="text-brand-500 font-[Switzer] text-sm font-bold tracking-widest uppercase"
+            >
+              {{ project.location }}
+            </div>
+            <div
+              class="flex size-10 items-center justify-center overflow-hidden rounded-full border border-white/20 opacity-0 transition-opacity delay-100 duration-500 group-hover:opacity-100"
+            >
+              <img src="/arrow.svg" class="w-3 rotate-45 invert" />
             </div>
           </div>
-          <div class="text-3xl font-[Haas55] font-bold text-white pr-4 -mt-1 leading-tight">{{ project.name }}</div>
+          <div
+            class="-mt-1 pr-4 font-[Haas55] text-3xl leading-tight font-bold text-white"
+          >
+            {{ project.name }}
+          </div>
         </div>
       </NuxtLink>
     </div>

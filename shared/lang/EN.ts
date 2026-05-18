@@ -1,5 +1,5 @@
 export default {
-  companyName: "ALYA",
+  companyName: "ALIYA",
   home: "Home",
   gallery: "Gallery",
   about: "About",

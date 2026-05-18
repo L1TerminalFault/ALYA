@@ -1,12 +1,12 @@
 <script setup lang="ts">
 useHead({ title: "Our Work" });
 const projects = [
-  { name: "The Zenith Tower", category: "Commercial", location: "Downtown District", img: "https://aliyaconstructionplc.com/wp-content/uploads/2026/05/WhatsApp-Image-2026-05-17-at-10.16.04-AM-1024x576.jpeg" },
-  { name: "Aura Logistics", category: "Industrial", location: "West Port", img: "https://aliyaconstructionplc.com/wp-content/uploads/2020/09/bosa-business2-about1.png" },
-  { name: "Eco-Industrial Park", category: "Sustainable", location: "North Valley", img: "https://aliyaconstructionplc.com/wp-content/uploads/2020/09/bosa-business2-about1.png" },
-  { name: "Harbor Freight Terminal", category: "Infrastructure", location: "South Bay", img: "https://aliyaconstructionplc.com/wp-content/uploads/2020/09/bosa-business2-about1.png" },
-  { name: "Skyline Residences", category: "Residential", location: "East End", img: "https://aliyaconstructionplc.com/wp-content/uploads/2020/09/bosa-business2-about1.png" },
-  { name: "Global Trade Center", category: "Commercial", location: "Financial District", img: "https://aliyaconstructionplc.com/wp-content/uploads/2020/09/bosa-business2-about2.png" },
+  { name: "Ariyo Catholic Learning Institute (Phase 3)", category: "Institutional", location: "Bonga, Keffa", img: "https://aliyaconstructionplc.com/wp-content/uploads/2026/05/WhatsApp-Image-2026-05-17-at-10.16.04-AM-1024x576.jpeg" },
+  { name: "Ariyo Catholic Learning Institute (Phase 2)", category: "Institutional", location: "Bonga, Keffa", img: "https://aliyaconstructionplc.com/wp-content/uploads/2020/09/bosa-business2-about1.png" },
+  { name: "Ariyo Catholic G+1 Residence", category: "Residential", location: "Bonga, Keffa", img: "https://aliyaconstructionplc.com/wp-content/uploads/2020/09/bosa-business2-about1.png" },
+  { name: "BGI Ethiopia PLC Stores & Maintenance", category: "Commercial", location: "Addis Ababa", img: "https://aliyaconstructionplc.com/wp-content/uploads/2020/09/bosa-business2-about1.png" },
+  { name: "Wro Martha Negash Mixed Use (B+G+6)", category: "Commercial", location: "Addis Ababa", img: "https://aliyaconstructionplc.com/wp-content/uploads/2020/09/bosa-business2-about1.png" },
+  { name: "Wro Etenesh Haile Mixed Use (B+G+5)", category: "Commercial", location: "Addis Ababa", img: "https://aliyaconstructionplc.com/wp-content/uploads/2020/09/bosa-business2-about2.png" },
 ];
 </script>
 <template>
