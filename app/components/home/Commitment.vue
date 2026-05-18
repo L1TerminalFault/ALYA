@@ -256,10 +256,12 @@
     <div
       class="relative z-0 -mt-43 flex min-h-screen w-full items-center justify-center"
     >
-      <div class="absolute inset-0 h-full w-full overflow-hidden">
+      <div
+        class="absolute inset-0 h-full w-full overflow-hidden bg-transparent"
+      >
         <img
           src="/commit.jpg"
-          class="fade h-full w-full bg-black object-cover"
+          class="fade h-full w-full bg-white object-cover"
         />
       </div>
       <div
@@ -296,7 +298,7 @@
 
   .fade {
     will-change: transform;
-    clip-path: polygon(0 0, 80% 0, 100% 20%, 100% 100%, 20% 100%, 0 80%);
+    clip-path: polygon(0 0, 80% 0, 100% 20%, 100% 100%, 0 100%);
   }
 
   .magnetic-wrap {

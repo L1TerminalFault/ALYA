@@ -14,18 +14,23 @@
 
   onMounted(() => {
     gsap.fromTo(
-      ".nav-logo-draw",
-      { drawSVG: "0%", fill: "transparent" },
+      [".nav-logo-draw", ".nav-red-draw"],
+      { drawSVG: "0%", fill: "transparent", stroke: "white" },
       {
+        delay: 2.7,
         drawSVG: "100%",
-        duration: 2,
+        duration: 1.2,
         ease: "power2.inOut",
-        delay: 0.5,
         onComplete: () => {
           gsap.to(".nav-logo-draw", {
-            fill: "white",
-            stroke: "transparent",
-            duration: 0.5,
+            fill: "black",
+            stroke: "black",
+            duration: 0.3,
+          });
+          gsap.to(".nav-red-draw", {
+            fill: "red",
+            stroke: "red",
+            duration: 0.3,
           });
         },
       }
@@ -89,24 +94,51 @@
 
     // Inject and trigger Google Translate via cookie & reload sequence
     document.cookie = `googtrans=/en/${tlCode}; path=/`;
+    document.cookie = `googtrans=/en/${tlCode}; domain=${window.location.hostname}; path=/`;
     window.location.reload();
   };
+
+  onMounted(() => {
+    if (document.cookie.includes("googtrans=/en/am") || document.cookie.includes("googtrans=/auto/am")) {
+      isAmharic.value = true;
+    }
+
+    if (!document.getElementById("google-translate-script")) {
+      const script = document.createElement("script");
+      script.id = "google-translate-script";
+      script.src = "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
+      document.body.appendChild(script);
+
+      (window as any).googleTranslateElementInit = function () {
+        new (window as any).google.translate.TranslateElement(
+          { pageLanguage: "en", includedLanguages: "en,am", autoDisplay: false },
+          "google_translate_element"
+        );
+      };
+    }
+  });
 
   const replaySVG = () => {
     gsap.killTweensOf(".nav-logo-draw");
     gsap.fromTo(
-      ".nav-logo-draw",
+      [".nav-logo-draw", ".nav-red-draw"],
       { drawSVG: "0%", fill: "transparent", stroke: "white" },
       {
         drawSVG: "100%",
         duration: 1.2,
         ease: "power2.inOut",
-        onComplete: () =>
+        onComplete: () => {
           gsap.to(".nav-logo-draw", {
-            fill: "white",
-            stroke: "transparent",
+            fill: "black",
+            stroke: "black",
             duration: 0.3,
-          }),
+          });
+          gsap.to(".nav-red-draw", {
+            fill: "red",
+            stroke: "red",
+            duration: 0.3,
+          });
+        },
       }
     );
   };
@@ -119,6 +151,7 @@
     <div
       class="nav-pill nav-left nav-container pointer-events-auto flex items-center gap-8 rounded-full border border-white/15 bg-black/20 p-2 px-6 shadow-2xl backdrop-blur-3xl transition-all duration-300"
     >
+      <div id="google_translate_element" class="hidden"></div>
       <NuxtLink
         to="/home"
         class="group flex items-center gap-4 no-underline"
@@ -130,7 +163,7 @@
           class="h-5.5 w-auto scale-180"
         >
           <polyline
-            class="nav-logo-draw"
+            class="nav-red-draw"
             fill="red"
             stroke="red"
             stroke-width="6"
@@ -174,7 +207,7 @@
             />
           </g>
           <path
-            class="nav-logo-draw"
+            class="nav-red-draw"
             fill="red"
             stroke="red"
             stroke-width="6"
@@ -262,5 +295,12 @@
     text-transform: uppercase;
     letter-spacing: 0.1em;
     transition: all 0.3s ease;
+  }
+
+  :deep(body) {
+    top: 0 !important;
+  }
+  :deep(.skiptranslate) {
+    display: none !important;
   }
 </style>
