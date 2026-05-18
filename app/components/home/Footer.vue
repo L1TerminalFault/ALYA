@@ -157,7 +157,7 @@
             :key="social.name"
             :to="social.link"
             target="_blank"
-            class="flex size-12 cursor-pointer items-center justify-center rounded-full border border-gray-600 text-xl text-white transition-all hover:border-white hover:bg-white hover:text-black"
+            class="hover:border-brand-500 hover:bg-brand-500 flex size-12 cursor-pointer items-center justify-center rounded-full border border-gray-600 text-xl text-white transition-all duration-500 hover:text-black"
           >
             <Icon :name="social.icon" />
           </NuxtLink>

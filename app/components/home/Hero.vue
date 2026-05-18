@@ -26,7 +26,7 @@
         ".hero-bg-img",
         { scale: 1, filter: "brightness(0.3)" },
         {
-          scale: 1,
+          scale: 1.3,
           filter: "brightness(0.55)",
           duration: 2.5,
           ease: "power2.out",

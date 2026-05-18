@@ -261,14 +261,15 @@
       >
         <img
           src="/commit.jpg"
-          class="fade h-full w-full bg-white object-cover"
+          class="fade h-full w-full bg-white object-cover opacity-50"
         />
+        <div class="fade absolute inset-0 -z-10 bg-black"></div>
       </div>
       <div
         class="focus2 relative z-10 flex w-full flex-col items-center justify-center gap-10 px-5 text-center text-white"
       >
         <div
-          class="sptext2 perspective-text w-full max-w-[90%] font-[Haas55] text-[clamp(45px,9vw,160px)] leading-[0.8] font-bold tracking-tighter"
+          class="sptext2 perspective-text w-full max-w-[90%] font-[Haas55] text-[clamp(45px,9vw,160px)] leading-[1.1] font-bold tracking-tighter"
         >
           Building Fast With <br />
           Quality And Speed
