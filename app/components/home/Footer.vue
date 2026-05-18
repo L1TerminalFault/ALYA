@@ -1,6 +1,7 @@
 <script setup lang="tsx">
   import gsap from "gsap";
   import { ScrollTrigger } from "gsap/ScrollTrigger";
+  import SplitText from "gsap/SplitText";
   import { onMounted } from "vue";
 
   const SOCIALS = [
@@ -28,7 +29,7 @@
   ];
 
   onMounted(() => {
-    gsap.registerPlugin(ScrollTrigger);
+    gsap.registerPlugin(ScrollTrigger, SplitText);
 
     const tl = gsap.timeline({
       scrollTrigger: {
@@ -43,14 +44,48 @@
       { opacity: 1, y: 0, duration: 0.8, ease: "power3.out" }
     );
 
-    gsap.fromTo(
-      ".mega-text",
-      { opacity: 0, scale: 0.95 },
+    const splitFooterTitle = new SplitText(".footer-build-text", {
+      type: "chars,words",
+    });
+    tl.fromTo(
+      splitFooterTitle.chars,
+      { opacity: 0, y: 30, rotationX: -90, transformOrigin: "0% 50% -50" },
+      {
+        opacity: 1,
+        y: 0,
+        rotationX: 0,
+        duration: 1,
+        stagger: 0.02,
+        ease: "power3.out",
+      },
+      "-=0.4"
+    );
+
+    const splitAlya = new SplitText(".footer-alya-text", { type: "chars" });
+    tl.fromTo(
+      splitAlya.chars,
+      { opacity: 0, scale: 2, filter: "blur(10px)" },
       {
         opacity: 1,
         scale: 1,
+        filter: "blur(0px)",
+        duration: 1.2,
+        stagger: 0.04,
+        ease: "power3.out",
+      },
+      "-=0.8"
+    );
+
+    const splitMega = new SplitText(".mega-text-inner", { type: "chars" });
+    gsap.fromTo(
+      splitMega.chars,
+      { opacity: 0, y: 150 },
+      {
+        opacity: 1,
+        y: 0,
         duration: 1.5,
-        ease: "power2.out",
+        stagger: 0.015,
+        ease: "power4.out",
         scrollTrigger: { trigger: ".mega-text", start: "top 95%" },
       }
     );
@@ -70,14 +105,16 @@
     >
       <div class="flex w-full flex-col gap-8">
         <div
-          class="flex w-full justify-center text-center font-[Switzer] text-[48px] font-bold tracking-tighter text-white"
+          class="footer-alya-text flex w-full justify-center text-center font-[Switzer] text-[48px] font-bold tracking-tighter text-white"
         >
           ALIYA.co
         </div>
 
         <div class="mt-10 flex flex-col justify-between gap-10 lg:flex-row">
           <div class="flex max-w-125 flex-col gap-6">
-            <div class="font-[Haas75] text-[38px] leading-tight text-white">
+            <div
+              class="footer-build-text font-[Haas75] text-[38px] leading-tight text-white perspective-[1000px]"
+            >
               BUILDING TOGETHER
             </div>
             <div class="max-w-115 font-[Switzer] text-[20px] text-gray-400">
@@ -95,12 +132,12 @@
                 @keydown.enter="handleSubmission"
               />
             </div>
-            <button
-              class="flex w-full items-center justify-center overflow-hidden rounded-full bg-white p-5 text-[18px] font-bold text-black shadow-lg transition-colors hover:bg-gray-200"
+            <AnimatedCtaBtn
+              text="Subscribe for Updates"
+              class="bg-brand-500 flex w-full items-center justify-center overflow-hidden rounded-full p-5 text-[18px] font-bold text-white shadow-lg transition-colors"
               :call-back="handleSubmission"
             >
-              Subscribe for Updates
-            </button>
+            </AnimatedCtaBtn>
           </div>
         </div>
       </div>
@@ -132,7 +169,7 @@
       class="mega-text pointer-events-none mt-30 flex w-full max-w-[1920px] flex-col gap-16 pb-20"
     >
       <div
-        class="my-10 overflow-hidden text-center font-[Haas] text-[clamp(60px,15vw,400px)] leading-[0.75] font-black tracking-tighter whitespace-nowrap text-[#f3f3f3] uppercase"
+        class="mega-text-inner my-10 overflow-hidden text-center font-[Haas] text-[clamp(60px,15vw,400px)] leading-[0.75] font-black tracking-tighter whitespace-nowrap text-[#f3f3f3] uppercase"
       >
         ALIYA Co. PLC
       </div>

@@ -9,6 +9,7 @@
 
   const animate = ref(false);
   const showIntro = ref(true);
+  const introDone = ref(false);
 
   onMounted(async () => {
     gsap.registerPlugin(DrawSVGPlugin);
@@ -47,6 +48,8 @@
 
     setTimeout(() => {
       showIntro.value = false;
+      // Allow slight crossover fade before components mount their initial states
+      setTimeout(() => { introDone.value = true; }, 600);
     }, 4000);
   });
 </script>
@@ -132,25 +135,27 @@
       </div>
     </div>
 
-    <HomeHero />
-    <div
-      class="/bg-black/5 /p-140 pointer-events-none aspect-8/7 h-auto w-full"
-    ></div>
-    <div
-      class="relative z-10 flex h-max w-full flex-col items-center justify-center shadow-[0_-20px_50px_rgba(0,0,0,0.5)]"
-    >
-      <!-- Alternating sections tightly stacked -->
-      <div class="w-full bg-gray-950"><HomeCommitment /></div>
-      <div class="w-full bg-white"><HomeProcessTimeline /></div>
-      <div class="w-full bg-gray-950"><HomeStats /></div>
-      <div class="w-full bg-[#f8f8f8]"><HomeServices /></div>
-      <div class="w-full bg-gray-950"><HomeInnovation /></div>
-      <div class="w-full bg-white"><HomeFaq /></div>
-      <div class="w-full bg-gray-950 py-20"><HomeTestimonials /></div>
-      <div class="w-full bg-gray-950"><HomeSafetyCertifications /></div>
-      <div class="w-full bg-gray-950"><HomePartners /></div>
-      <div class="w-full bg-gray-950"><HomeFeaturedProjects /></div>
-      <div class="w-full bg-white"><HomeFooter /></div>
+    <div v-if="introDone" class="flex h-max w-full flex-col w-full text-white">
+      <HomeHero />
+      <div
+        class="/bg-black/5 /p-140 pointer-events-none aspect-8/7 h-auto w-full"
+      ></div>
+      <div
+        class="relative z-10 flex h-max w-full flex-col items-center justify-center shadow-[0_-20px_50px_rgba(0,0,0,0.5)]"
+      >
+        <!-- Alternating sections tightly stacked -->
+        <div class="w-full bg-gray-950"><HomeCommitment /></div>
+        <div class="w-full bg-white"><HomeProcessTimeline /></div>
+        <div class="w-full bg-gray-950"><HomeStats /></div>
+        <div class="w-full bg-[#f8f8f8]"><HomeServices /></div>
+        <div class="w-full bg-gray-950"><HomeInnovation /></div>
+        <div class="w-full bg-white"><HomeFaq /></div>
+        <div class="w-full bg-gray-950 py-20"><HomeTestimonials /></div>
+        <div class="w-full bg-gray-950"><HomeSafetyCertifications /></div>
+        <div class="w-full bg-gray-950"><HomePartners /></div>
+        <div class="w-full bg-gray-950"><HomeFeaturedProjects /></div>
+        <div class="w-full bg-white"><HomeFooter /></div>
+      </div>
     </div>
   </div>
 </template>
