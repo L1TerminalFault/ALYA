@@ -299,7 +299,7 @@
 
   .fade {
     will-change: transform;
-    clip-path: polygon(0 0, 80% 0, 100% 20%, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 75% 0, 100% 20%, 100% 100%, 0 100%);
   }
 
   .magnetic-wrap {
