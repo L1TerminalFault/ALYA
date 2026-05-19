@@ -174,12 +174,12 @@
           >
             <div class="flex w-full items-center gap-0.5">
               <div
-                class="text-brand-500 font-[Switzer] text-xs font-bold tracking-widest uppercase"
+                class="text-brand-500 font-[Switzer] text-xs font-bold uppercase"
               >
                 {{ project.category }} &middot; {{ project.location }}
               </div>
               <div
-                class="px-2 py-1 font-[Switzer] text-[8px] tracking-wide text-nowrap uppercase italic opacity-90"
+                class="px-2 py-1 font-[Switzer] text-[8px] text-nowrap uppercase italic opacity-90"
                 :class="
                   project.status === 'Completed'
                     ? 'text-[#b0ffb090]'

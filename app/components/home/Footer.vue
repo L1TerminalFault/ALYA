@@ -105,7 +105,7 @@
     >
       <div class="flex w-full flex-col gap-8">
         <div
-          class="footer-alya-text flex w-full justify-center text-center font-[Switzer] text-[48px] font-bold tracking-tighter text-white"
+          class="footer-alya-text flex w-full justify-center text-center font-[Switzer] text-[48px] font-bold text-white"
         >
           ALIYA.co
         </div>
@@ -169,7 +169,7 @@
       class="mega-text pointer-events-none mt-30 flex w-full max-w-[1920px] flex-col gap-16 pb-20"
     >
       <div
-        class="mega-text-inner my-10 overflow-hidden text-center font-[Haas] text-[clamp(60px,15vw,400px)] leading-[0.75] font-black tracking-tighter whitespace-nowrap text-[#f3f3f3] uppercase"
+        class="mega-text-inner my-10 overflow-hidden text-center font-[Haas] text-[clamp(60px,15vw,400px)] leading-[0.75] font-black whitespace-nowrap text-[#f3f3f3] uppercase"
       >
         ALIYA Co. PLC
       </div>

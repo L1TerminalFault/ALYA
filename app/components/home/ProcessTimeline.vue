@@ -69,12 +69,12 @@
     <div class="flex w-full max-w-7xl flex-col gap-20 lg:flex-row">
       <div class="flex w-full flex-col gap-6 lg:w-1/3">
         <div
-          class="text-brand-600 font-[Switzer] text-lg font-bold tracking-widest uppercase"
+          class="text-brand-600 font-[Switzer] text-lg font-bold uppercase"
         >
           How We Work
         </div>
         <div
-          class="font-[Haas] text-[clamp(40px,5vw,70px)] leading-[0.9] font-bold tracking-tighter"
+          class="font-[Haas] text-[clamp(40px,5vw,70px)] leading-[1.1] font-bold"
         >
           Our Proven<br />Methodology
         </div>

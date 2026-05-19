@@ -36,7 +36,7 @@ onMounted(() => {
     <div class="w-full max-w-7xl flex flex-col lg:flex-row items-center justify-between gap-10">
       
       <div class="flex flex-col gap-4 max-w-2xl text-center lg:text-left">
-        <div class="text-brand-500 font-bold uppercase tracking-widest text-sm font-[Switzer]">Safety & Standards</div>
+        <div class="text-brand-500 font-bold uppercase text-sm font-[Switzer]">Safety & Standards</div>
         <div class="text-3xl md:text-5xl font-[Haas] font-bold leading-tight">Uncompromising on Safety & Industry Standards</div>
       </div>
 

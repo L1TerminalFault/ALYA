@@ -50,7 +50,7 @@
       class="flex w-full max-w-7xl flex-col items-end justify-between gap-10 md:flex-row"
     >
       <div
-        class="font-[Haas] text-4xl leading-[0.9] font-bold tracking-tighter lg:text-[70px]"
+        class="font-[Haas] text-4xl leading-[1.1] font-bold lg:text-[70px]"
       >
         Featured<br />Projects
       </div>
@@ -58,7 +58,7 @@
         to="/work"
         class="group text-brand-500 border-brand-500 flex cursor-pointer items-center gap-3 overflow-hidden rounded-full border px-6 py-3 font-bold transition-colors hover:border-white hover:text-white"
       >
-        <span class="mt-1 font-[Switzer] text-[15px] tracking-wider uppercase"
+        <span class="mt-1 font-[Switzer] text-[15px] uppercase"
           >Explore Portfolio</span
         >
         <img
@@ -90,7 +90,7 @@
         >
           <div class="flex w-full items-center justify-between">
             <div
-              class="text-brand-500 font-[Switzer] text-sm font-bold tracking-widest uppercase"
+              class="text-brand-500 font-[Switzer] text-sm font-bold uppercase"
             >
               {{ project.location }}
             </div>

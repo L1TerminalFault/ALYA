@@ -120,7 +120,7 @@
             class="group bg-brand-600 border-brand-500 hover:bg-brand-500 flex cursor-pointer items-center gap-2.75 rounded-full border px-4 py-1.5 shadow-xl transition-colors"
           >
             <div
-              class="light font-Giest text-[20px]! font-light tracking-tighter text-white md:text-[22px]"
+              class="light font-Giest text-[20px]! font-light text-white md:text-[22px]"
             >
               contact us to build with us
             </div>
@@ -154,11 +154,11 @@
   @reference "tailwindcss";
 
   .fluid-subtext {
-    @apply font-[Switzer] text-lg leading-6.5 tracking-tighter text-[#E7E7E7] lg:max-w-160 lg:text-3xl;
+    @apply font-[Switzer] text-lg leading-6.5 text-[#E7E7E7] lg:max-w-160 lg:text-3xl;
   }
 
   .hero-text-large {
-    @apply flex w-full min-w-75 flex-col items-center justify-center text-center leading-[85%] font-black;
+    @apply flex w-full min-w-75 flex-col items-center justify-center text-center leading-[1.1] font-black;
     font-family: "Haas", sans-serif;
     font-size: clamp(30px, 5.5vw, 160px);
     color: white;

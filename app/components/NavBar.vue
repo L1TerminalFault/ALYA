@@ -220,7 +220,7 @@
         </svg>
 
         <span
-          class="font-[FontSpring] text-2xl font-bold tracking-tighter text-white transition-transform group-hover:scale-105"
+          class="font-[FontSpring] text-2xl font-bold text-white transition-transform group-hover:scale-105"
         >
           ALIYA
         </span>
@@ -239,7 +239,7 @@
     >
       <button
         @click="toggleLanguage"
-        class="mr-2 hidden border-r border-white/10 pr-6 text-sm font-black tracking-[0.2em] text-white/80 uppercase transition-colors hover:text-white lg:block"
+        class="mr-2 hidden border-r border-white/10 pr-6 text-sm font-black text-white/80 uppercase transition-colors hover:text-white lg:block"
       >
         {{ isAmharic ? "AM" : "EN" }}
       </button>

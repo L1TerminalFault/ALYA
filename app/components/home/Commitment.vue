@@ -223,7 +223,7 @@
         class="focus relative flex flex-col items-center justify-center gap-12 font-[Haas75] text-2xl font-bold 2xl:text-8xl"
       >
         <div
-          class="sptext perspective-text max-w-[85%] text-center text-[clamp(2.5rem,8vw,8.5rem)] leading-[0.9] font-bold 2xl:max-w-[75%]"
+          class="sptext perspective-text max-w-[85%] text-center text-[clamp(2.5rem,8vw,8.5rem)] leading-[1.1] font-bold 2xl:max-w-[75%]"
         >
           OUR COMMITMENT TO QUALITY, SAFETY,
         </div>
@@ -242,9 +242,7 @@
             <div
               class="flex h-fit w-fit rounded-full bg-white px-12 py-6 mix-blend-difference transition-transform group-hover:scale-90"
             >
-              <span
-                class="text-brand-600 text-xl font-bold tracking-wider uppercase"
-              >
+              <span class="text-brand-600 text-xl font-bold uppercase">
                 Contact
               </span>
             </div>
@@ -269,7 +267,7 @@
         class="focus2 relative z-10 flex w-full flex-col items-center justify-center gap-10 px-5 text-center text-white"
       >
         <div
-          class="sptext2 perspective-text w-full max-w-[90%] font-[Haas55] text-[clamp(45px,9vw,160px)] leading-[1.1] font-bold tracking-tighter"
+          class="sptext2 perspective-text w-full max-w-[90%] font-[Haas55] text-[clamp(45px,9vw,160px)] leading-tight font-bold"
         >
           Building Fast With <br />
           Quality And Speed

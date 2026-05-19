@@ -15,19 +15,19 @@
       <!-- Form Section -->
       <div class="flex w-full flex-col gap-8 lg:w-1/2">
         <div
-          class="text-brand-500 font-[Switzer] text-sm font-bold tracking-widest uppercase"
+          class="text-brand-500 font-[Switzer] text-sm font-bold uppercase"
         >
           Get In Touch
         </div>
         <div
-          class="font-[Haas] text-[clamp(35px,4vw,50px)] leading-none font-bold tracking-tighter text-white shadow-sm"
+          class="font-[Haas] text-[clamp(35px,4vw,50px)] leading-none font-bold text-white shadow-sm"
         >
           Let's build the future together.
         </div>
 
         <form class="mt-4 flex w-full max-w-lg flex-col gap-6" @submit.prevent>
           <div class="flex flex-col gap-2">
-            <label class="font-[Switzer] text-sm tracking-wide text-gray-400"
+            <label class="font-[Switzer] text-sm text-gray-400"
               >Full Name</label
             >
             <input
@@ -37,7 +37,7 @@
             />
           </div>
           <div class="flex flex-col gap-2">
-            <label class="font-[Switzer] text-sm tracking-wide text-gray-400"
+            <label class="font-[Switzer] text-sm text-gray-400"
               >Email Address</label
             >
             <input
@@ -47,7 +47,7 @@
             />
           </div>
           <div class="flex flex-col gap-2">
-            <label class="font-[Switzer] text-sm tracking-wide text-gray-400"
+            <label class="font-[Switzer] text-sm text-gray-400"
               >Project Details</label
             >
             <textarea

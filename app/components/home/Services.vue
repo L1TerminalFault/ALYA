@@ -45,12 +45,12 @@
     <div class="flex w-full max-w-7xl flex-col items-center gap-15">
       <div class="flex max-w-3xl flex-col items-center gap-4 text-center">
         <div
-          class="text-brand-600 font-[Switzer] text-sm font-bold tracking-widest uppercase"
+          class="text-brand-600 font-[Switzer] text-sm font-bold uppercase"
         >
           What We Offer
         </div>
         <div
-          class="font-[Haas] text-[clamp(40px,5vw,70px)] leading-none font-bold tracking-tighter"
+          class="font-[Haas] text-[clamp(40px,5vw,70px)] leading-tight font-bold"
         >
           Enterprise Solutions
         </div>

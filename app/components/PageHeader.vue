@@ -29,7 +29,7 @@ onMounted(() => {
       <div class="absolute inset-0 bg-gradient-to-t from-gray-950 to-transparent"></div>
     </div>
     <div class="relative z-10 flex flex-col items-center text-center gap-4 px-5 pt-20">
-      <div class="page-title text-[clamp(45px,6vw,90px)] font-[Haas] font-bold text-white leading-[0.9] uppercase tracking-tight" style="perspective: 1000px">
+      <div class="page-title text-[clamp(45px,6vw,90px)] font-[Haas] font-bold text-white leading-[1.1] uppercase" style="perspective: 1000px">
         {{ title }}
       </div>
       <div class="page-subtitle text-gray-300 font-[Switzer] text-xl max-w-2xl mt-4">

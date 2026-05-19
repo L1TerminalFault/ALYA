@@ -1,120 +1,166 @@
 <script setup lang="ts">
-import { ref } from 'vue';
-import gsap from 'gsap';
+  import { ref } from "vue";
+  import gsap from "gsap";
 
-const faqs = ref([
-  {
-    id: 1,
-    title: 'Commodity Trading',
-    content: 'Auremin trades and delivers a focused portfolio of commodities across energy, construction, and industrial markets - including petroleum products, bitumen, LNG, cement, sulfuric acid, and critical metals.',
-    isOpen: false
-  },
-  {
-    id: 2,
-    title: 'Infrastructure Development',
-    content: 'We manage and invest in critical infrastructure projects, ensuring that the foundations of modern industry are built with resilience and long-term sustainability in mind.',
-    isOpen: false
-  },
-  {
-    id: 3,
-    title: 'Supply Chain Execution',
-    content: 'Reliable logistics, storage, and delivery across complex markets. From sourcing through to last-mile delivery, we manage complex supply chains with precision and reliability.',
-    isOpen: true
-  },
-  {
-    id: 4,
-    title: 'Sustainability & ESG',
-    content: 'We adhere to the highest global standards for sustainable development, ensuring our footprint is minimized while community impact is maximized.',
-    isOpen: false
-  }
-]);
+  const faqs = ref([
+    {
+      id: 1,
+      title: "Commodity Trading",
+      content:
+        "Auremin trades and delivers a focused portfolio of commodities across energy, construction, and industrial markets - including petroleum products, bitumen, LNG, cement, sulfuric acid, and critical metals.",
+      isOpen: false,
+    },
+    {
+      id: 2,
+      title: "Infrastructure Development",
+      content:
+        "We manage and invest in critical infrastructure projects, ensuring that the foundations of modern industry are built with resilience and long-term sustainability in mind.",
+      isOpen: false,
+    },
+    {
+      id: 3,
+      title: "Supply Chain Execution",
+      content:
+        "Reliable logistics, storage, and delivery across complex markets. From sourcing through to last-mile delivery, we manage complex supply chains with precision and reliability.",
+      isOpen: true,
+    },
+    {
+      id: 4,
+      title: "Sustainability & ESG",
+      content:
+        "We adhere to the highest global standards for sustainable development, ensuring our footprint is minimized while community impact is maximized.",
+      isOpen: false,
+    },
+  ]);
 
-// GSAP Animation Logic
-const beforeEnter = (el: any) => {
-  el.style.height = '0';
-  el.style.opacity = '0';
-};
+  // GSAP Animation Logic
+  const beforeEnter = (el: any) => {
+    el.style.height = "0";
+    el.style.opacity = "0";
+  };
 
-const enter = (el: any, done: () => void) => {
-  gsap.to(el, {
-    height: 'auto',
-    opacity: 1,
-    duration: 0.6,
-    ease: 'expo.out',
-    onComplete: done
-  });
-};
+  const enter = (el: any, done: () => void) => {
+    gsap.to(el, {
+      height: "auto",
+      opacity: 1,
+      duration: 0.6,
+      ease: "expo.out",
+      onComplete: done,
+    });
+  };
 
-const leave = (el: any, done: () => void) => {
-  gsap.to(el, {
-    height: 0,
-    opacity: 0,
-    duration: 0.5,
-    ease: 'expo.inOut',
-    onComplete: done
-  });
-};
+  const leave = (el: any, done: () => void) => {
+    gsap.to(el, {
+      height: 0,
+      opacity: 0,
+      duration: 0.5,
+      ease: "expo.inOut",
+      onComplete: done,
+    });
+  };
 
-const toggleFaq = (index: number) => {
-  faqs.value.forEach((faq, i) => {
-    if (i === index) faq.isOpen = !faq.isOpen;
-    else faq.isOpen = false;
-  });
-};
+  const toggleFaq = (index: number) => {
+    faqs.value.forEach((faq, i) => {
+      if (i === index) faq.isOpen = !faq.isOpen;
+      else faq.isOpen = false;
+    });
+  };
 </script>
 
 <template>
-  <div class="w-full min-h-[90vh] pb-30 text-black flex items-center justify-center p-5 lg:p-10 font-[Haas] bg-[#f8f8f8]">
-    <div class="w-full max-w-7xl flex flex-col lg:flex-row shadow-[0_20px_60px_rgba(0,0,0,0.05)] rounded-3xl overflow-hidden bg-white border border-gray-200">
-      
+  <div
+    class="flex min-h-[90vh] w-full items-center justify-center bg-[#ffffff] p-5 pb-30 font-[Haas] text-black lg:p-10"
+  >
+    <div
+      class="flex w-full max-w-7xl flex-col overflow-hidden rounded-3xl border border-gray-200 bg-white shadow-[0_20px_60px_rgba(0,0,0,0.05)] lg:flex-row"
+    >
       <!-- Left Section -->
-      <div class="lg:w-1/2 p-10 lg:p-15 flex flex-col justify-between border-b lg:border-b-0 lg:border-r border-gray-200 bg-gray-50/50">
+      <div
+        class="flex w-full flex-col justify-between border-b border-gray-200 bg-gray-50/50 p-10 lg:w-1/2 lg:border-r lg:border-b-0 lg:p-15"
+      >
         <div class="flex flex-col gap-6">
-          <div class="text-brand-600 font-bold uppercase tracking-widest text-sm font-[Switzer]">Inquiries</div>
-          <span class="text-[clamp(50px,7vw,85px)] leading-[0.9] font-black tracking-tighter">Frequently<br>Asked<br>Questions</span>
+          <div
+            class="text-brand-600 font-[Switzer] text-sm font-bold uppercase"
+          >
+            Inquiries
+          </div>
+          <span class="text-[clamp(50px,7vw,85px)] leading-[1.1] font-black"
+            >Frequently<br />Asked<br />Questions</span
+          >
         </div>
-        <span class="text-gray-600 font-[Switzer] text-lg mt-10 max-w-sm">Some questions our enterprise partners frequently ask us. Here are the core insights you need.</span>
+        <span class="mt-10 max-w-sm font-[Switzer] text-lg text-gray-600"
+          >Some questions our enterprise partners frequently ask us. Here are
+          the core insights you need.</span
+        >
       </div>
 
       <!-- Right Section -->
-      <div class="lg:w-1/2 p-10 lg:p-15 flex flex-col overflow-y-auto">
+      <div class="flex flex-col overflow-y-auto p-10 lg:w-1/2 lg:p-15">
         <div class="mb-12">
-          <span class="text-gray-600 font-[Switzer] text-lg leading-relaxed">
-            From sourcing through to last-mile delivery, we manage complex supply chains with precision and reliability.
+          <span class="font-[Switzer] text-lg leading-relaxed text-gray-600">
+            From sourcing through to last-mile delivery, we manage complex
+            supply chains with precision and reliability.
           </span>
         </div>
 
         <!-- FAQ Accordion Container -->
         <div class="w-full border-t border-gray-200">
-          <div v-for="(faq, index) in faqs" :key="faq.id" class="border-b border-gray-200">
-            <button @click="toggleFaq(index)"
-              class="w-full flex items-center justify-between py-6 text-left group transition-all"
-              :class="faq.isOpen ? 'opacity-100' : 'opacity-60 hover:opacity-100'">
+          <div
+            v-for="(faq, index) in faqs"
+            :key="faq.id"
+            class="border-b border-gray-200"
+          >
+            <button
+              @click="toggleFaq(index)"
+              class="group flex w-full items-center justify-between py-6 text-left transition-all"
+              :class="
+                faq.isOpen ? 'opacity-100' : 'opacity-60 hover:opacity-100'
+              "
+            >
               <div class="flex items-center gap-5">
                 <!-- Number Box -->
                 <div
-                  class="w-10 h-10 flex items-center justify-center border border-gray-200 rounded-full text-sm font-bold transition-colors duration-500 font-[Switzer]"
-                  :class="faq.isOpen ? 'bg-brand-600 border-brand-600 text-white shadow-lg' : 'bg-transparent text-gray-500'">
+                  class="flex h-10 w-10 items-center justify-center rounded-full border border-gray-200 font-[Switzer] text-sm font-bold transition-colors duration-500"
+                  :class="
+                    faq.isOpen
+                      ? 'bg-brand-600 border-brand-600 text-white shadow-lg'
+                      : 'bg-transparent text-gray-500'
+                  "
+                >
                   0{{ faq.id }}
                 </div>
 
-                <span class="text-2xl font-bold tracking-tight">
+                <span class="text-2xl font-bold">
                   {{ faq.title }}
                 </span>
               </div>
 
               <!-- Plus Icon Animation -->
-              <div class="relative w-5 h-5 shrink-0 opacity-50 group-hover:opacity-100 transition-opacity">
-                <div class="absolute top-1/2 w-full h-[2px] bg-black rounded-full" :class="faq.isOpen ? 'bg-brand-600' : ''"></div>
-                <div class="absolute left-1/2 h-full w-[2px] bg-black rounded-full transition-transform duration-500"
-                  :class="faq.isOpen ? 'rotate-90 bg-brand-600' : 'rotate-0'"></div>
+              <div
+                class="relative h-5 w-5 shrink-0 opacity-50 transition-opacity group-hover:opacity-100"
+              >
+                <div
+                  class="absolute top-1/2 h-[2px] w-full rounded-full bg-black"
+                  :class="faq.isOpen ? 'bg-brand-600' : ''"
+                ></div>
+                <div
+                  class="absolute left-1/2 h-full w-[2px] rounded-full bg-black transition-transform duration-500"
+                  :class="faq.isOpen ? 'bg-brand-600 rotate-90' : 'rotate-0'"
+                ></div>
               </div>
             </button>
 
             <!-- Collapsible Content -->
-            <transition @before-enter="beforeEnter" @enter="enter" @leave="leave" :css="false">
+            <transition
+              @before-enter="beforeEnter"
+              @enter="enter"
+              @leave="leave"
+              :css="false"
+            >
               <div v-if="faq.isOpen" class="overflow-hidden">
-                <div class="pl-[60px] pb-8 pr-5 text-[17px] text-gray-500 font-[Switzer] leading-relaxed">
+                <div
+                  class="pr-5 pb-8 pl-[60px] font-[Switzer] text-[17px] leading-relaxed text-gray-500"
+                >
                   {{ faq.content }}
                 </div>
               </div>
@@ -122,23 +168,22 @@ const toggleFaq = (index: number) => {
           </div>
         </div>
       </div>
-      
     </div>
   </div>
 </template>
 
 <style scoped>
-/* Ensure font-family matches the image aesthetics if available */
-.font-haas {
-  font-family: 'Haas Grot Text R Web', 'Inter', sans-serif;
-}
+  /* Ensure font-family matches the image aesthetics if available */
+  .font-haas {
+    font-family: "Haas Grot Text R Web", "Inter", sans-serif;
+  }
 
-/* Custom scrollbar for the right panel */
-.overflow-y-auto::-webkit-scrollbar {
-  width: 4px;
-}
+  /* Custom scrollbar for the right panel */
+  .overflow-y-auto::-webkit-scrollbar {
+    width: 4px;
+  }
 
-.overflow-y-auto::-webkit-scrollbar-thumb {
-  background: #e2e2e2;
-}
+  .overflow-y-auto::-webkit-scrollbar-thumb {
+    background: #e2e2e2;
+  }
 </style>

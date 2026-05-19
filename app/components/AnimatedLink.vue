@@ -1,7 +1,7 @@
 <template>
   <NuxtLink
     :to="to"
-    class="relative inline-block overflow-hidden px-1 leading-3.75 font-light tracking-tighter whitespace-nowrap uppercase"
+    class="relative inline-block overflow-hidden px-1 leading-3.75 font-light whitespace-nowrap uppercase"
     @mouseenter="onMouseEnter"
     @mouseleave="onMouseLeave"
   >

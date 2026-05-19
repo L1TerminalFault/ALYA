@@ -180,7 +180,7 @@
             <div class="flex h-full w-[60%] flex-col justify-between gap-10">
               <div class="flex flex-col gap-10.5">
                 <div
-                  class="review-title pr-10 font-[Haas] text-[clamp(20px,3vw,58px)] leading-[105.2%] font-thin uppercase italic"
+                  class="review-title pr-10 font-[Haas] text-[clamp(20px,3vw,58px)] leading-tight font-thin uppercase italic"
                 >
                   {{ review.title }}
                 </div>

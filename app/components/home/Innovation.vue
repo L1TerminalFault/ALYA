@@ -56,12 +56,12 @@
       <div class="flex w-full flex-col justify-center gap-10 lg:w-1/2">
         <div class="flex flex-col gap-4">
           <div
-            class="text-brand-500 font-[Switzer] text-lg font-bold tracking-widest uppercase"
+            class="text-brand-500 font-[Switzer] text-lg font-bold uppercase"
           >
             Innovation At Core
           </div>
           <div
-            class="font-[Haas] text-4xl leading-[0.9] font-bold tracking-tighter lg:text-[70px]"
+            class="font-[Haas] text-4xl leading-[1.1] font-bold lg:text-[70px]"
           >
             Engineering the Future
           </div>

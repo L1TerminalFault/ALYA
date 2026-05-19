@@ -14,8 +14,8 @@ const leaders = [
     <!-- Our Story Layout (Original) -->
     <div class="w-full max-w-7xl px-5 py-30 flex flex-col lg:flex-row gap-20">
       <div class="w-full lg:w-1/2 flex flex-col gap-8">
-        <div class="text-brand-500 font-bold tracking-widest uppercase text-sm font-[Switzer]">Our Story</div>
-        <div class="text-[clamp(35px,4vw,60px)] font-[Haas] font-bold leading-none tracking-tighter">Decades of Excellence in Construction</div>
+        <div class="text-brand-500 font-bold uppercase text-sm font-[Switzer]">Our Story</div>
+        <div class="text-[clamp(35px,4vw,60px)] font-[Haas] font-bold leading-none">Decades of Excellence in Construction</div>
         <div class="text-gray-400 text-lg leading-relaxed font-[Switzer]">
           Founded with a vision to redefine the construction landscape, Aliya has grown from a specialized contractor into a full-suite enterprise construction firm. Our journey is paved with milestones of structural innovation and engineering triumphs.
           <br><br>
@@ -33,7 +33,7 @@ const leaders = [
         
         <div class="flex flex-col lg:flex-row gap-15">
           <div class="lg:w-1/2 flex flex-col gap-6">
-            <div class="text-brand-500 font-bold tracking-widest uppercase text-sm font-[Switzer]">Building with Experience</div>
+            <div class="text-brand-500 font-bold uppercase text-sm font-[Switzer]">Building with Experience</div>
             <div class="text-[clamp(30px,3.3vw,50px)] font-[Haas] font-bold leading-tight">Reliability, and Professional Execution</div>
             <div class="text-gray-400 text-lg leading-relaxed font-[Switzer] flex flex-col gap-4">
               <p>Based in Addis Ababa, <strong>Aliya Construction PLC</strong> operates as a licensed contractor committed to delivering projects that meet required standards while maintaining efficiency, safety, and client satisfaction.</p>
@@ -42,7 +42,7 @@ const leaders = [
           </div>
           <div class="lg:w-1/2 flex flex-col gap-6 p-10 bg-gray-900 rounded-3xl border border-white/5 shadow-2xl">
             <div class="text-3xl font-[Haas] font-bold">Founded by Belay Taye</div>
-            <div class="text-brand-500 font-bold tracking-widest uppercase text-sm font-[Switzer] -mt-4">Who We Are</div>
+            <div class="text-brand-500 font-bold uppercase text-sm font-[Switzer] -mt-4">Who We Are</div>
             <div class="text-gray-400 text-lg leading-relaxed font-[Switzer] flex flex-col gap-4 mt-2">
               <p>Founded by <strong>Belay Taye</strong>, Aliya Construction PLC was established to participate in Ethiopia’s expanding construction industry and provide dependable building solutions for both public and private sector projects.</p>
               <p>The company is registered and licensed under Ethiopian regulations and continues to grow through experience, professional management, and practical execution. Today, our team includes engineers, project managers, financial professionals, and skilled construction personnel working together to ensure successful project delivery.</p>
@@ -104,14 +104,14 @@ const leaders = [
     <div class="w-full bg-gray-900 py-30 px-5 flex flex-col items-center">
       <div class="w-full max-w-7xl flex flex-col gap-15">
         <div class="flex flex-col gap-4 text-center items-center">
-          <div class="text-brand-500 font-[Switzer] text-sm font-bold tracking-widest uppercase">Scalable Logistics</div>
+          <div class="text-brand-500 font-[Switzer] text-sm font-bold uppercase">Scalable Logistics</div>
           <div class="text-[clamp(40px,5vw,70px)] font-[Haas] font-bold">Workforce & Equipment</div>
           <div class="text-gray-400 text-lg font-[Switzer] max-w-2xl">Backed by a systematically organized workforce and a comprehensive fleet of heavy-duty construction machinery ensuring full execution self-reliance.</div>
         </div>
         
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
           <div class="flex flex-col gap-6 p-10 bg-gray-950 rounded-3xl border border-white/5 shadow-2xl hover:border-brand-500/30 transition-colors">
-            <div class="text-3xl font-[Haas55] font-bold text-white tracking-tighter">Our Staff (34+ Core Team)</div>
+            <div class="text-3xl font-[Haas55] font-bold text-white">Our Staff (34+ Core Team)</div>
             <div class="text-gray-400 font-[Switzer] text-lg leading-relaxed flex flex-col gap-4">
               <p>We boast a foundational team of highly skilled <strong>Civil Engineers, Building Engineers, and Construction Managers</strong>. The engineering core includes <strong>Senait Fiseha</strong> and <strong>Feven Zewdie</strong> managing central office operations, supported natively by active site engineers including <strong>Sosina Mamo</strong>, <strong>Yoseph Fisseha</strong>, <strong>Anwar Mohammed</strong>, <strong>Natnael Markos</strong>, and <strong>Tekaligne Mengesha</strong>.</p>
               <p>Additionally, our administrative logistics are overseen gracefully by <strong>Hana Messele</strong> and <strong>Ashebir Taye</strong>.</p>
@@ -119,7 +119,7 @@ const leaders = [
           </div>
 
           <div class="flex flex-col gap-6 p-10 bg-gray-950 rounded-3xl border border-white/5 shadow-2xl hover:border-brand-500/30 transition-colors">
-            <div class="text-3xl font-[Haas55] font-bold text-white tracking-tighter">Heavy Machinery Fleet</div>
+            <div class="text-3xl font-[Haas55] font-bold text-white">Heavy Machinery Fleet</div>
             <div class="text-gray-400 font-[Switzer] text-lg leading-relaxed flex flex-col gap-4">
               <p>To assure uninterrupted velocity across operations, we maintain our own fleet:</p>
               <ul class="list-disc pl-5 flex flex-col gap-2 opacity-90">
@@ -148,7 +148,7 @@ const leaders = [
             </div>
             <div class="flex flex-col items-center text-center">
               <div class="text-2xl font-[Haas55] font-bold text-white group-hover:text-brand-500 transition-colors">{{ leader.name }}</div>
-              <div class="text-gray-400 font-[Switzer] font-bold text-sm tracking-widest uppercase mt-2">{{ leader.role }}</div>
+              <div class="text-gray-400 font-[Switzer] font-bold text-sm uppercase mt-2">{{ leader.role }}</div>
             </div>
           </div>
         </div>

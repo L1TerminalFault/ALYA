@@ -49,7 +49,9 @@
     setTimeout(() => {
       showIntro.value = false;
       // Allow slight crossover fade before components mount their initial states
-      setTimeout(() => { introDone.value = true; }, 600);
+      setTimeout(() => {
+        introDone.value = true;
+      }, 600);
     }, 4000);
   });
 </script>
@@ -135,7 +137,7 @@
       </div>
     </div>
 
-    <div v-if="introDone" class="flex h-max w-full flex-col w-full text-white">
+    <div v-if="introDone" class="flex h-max w-full flex-col text-white">
       <HomeHero />
       <div
         class="/bg-black/5 /p-140 pointer-events-none aspect-8/7 h-auto w-full"
@@ -143,17 +145,19 @@
       <div
         class="relative z-10 flex h-max w-full flex-col items-center justify-center shadow-[0_-20px_50px_rgba(0,0,0,0.5)]"
       >
-        <!-- Alternating sections tightly stacked -->
+        <!-- Alternating sections with generous spacing -->
         <div class="w-full bg-gray-950"><HomeCommitment /></div>
-        <div class="w-full bg-white"><HomeProcessTimeline /></div>
-        <div class="w-full bg-gray-950"><HomeStats /></div>
-        <div class="w-full bg-[#f8f8f8]"><HomeServices /></div>
-        <div class="w-full bg-gray-950"><HomeInnovation /></div>
-        <div class="w-full bg-white"><HomeFaq /></div>
-        <div class="w-full bg-gray-950 py-20"><HomeTestimonials /></div>
-        <div class="w-full bg-gray-950"><HomeSafetyCertifications /></div>
-        <div class="w-full bg-gray-950"><HomePartners /></div>
-        <div class="w-full bg-gray-950"><HomeFeaturedProjects /></div>
+        <div class="w-full bg-white py-20"><HomeProcessTimeline /></div>
+        <div class="w-full bg-gray-950 py-20"><HomeStats /></div>
+        <div class="w-full bg-[#f8f8f8] py-20"><HomeServices /></div>
+        <div class="w-full bg-gray-950 py-20"><HomeInnovation /></div>
+        <div class="w-full bg-[#ffffff] py-20"><HomeFaq /></div>
+        <div class="w-full bg-gray-950 py-40"><HomeTestimonials /></div>
+        <div class="w-full bg-gray-950 pt-20 pb-10">
+          <HomeSafetyCertifications />
+        </div>
+        <div class="w-full bg-gray-950 py-20"><HomeFeaturedProjects /></div>
+        <div class="w-full bg-gray-950 py-10 pb-20"><HomePartners /></div>
         <div class="w-full bg-white"><HomeFooter /></div>
       </div>
     </div>
