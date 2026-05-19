@@ -1,6 +1,6 @@
 <script setup lang="ts">
   import { useRoute } from "vue-router";
-  import { PROJECTS } from "../../../shared/utils/constants";
+  import { PROJECTS } from "@/components/../../shared/utils/constants";
 
   const route = useRoute();
   const projectId = route.params.id as string;
