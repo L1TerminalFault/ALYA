@@ -1,5 +1,5 @@
 <script setup lang="ts">
-  import { PROJECTS } from "../../shared/utils/constants";
+  import { PROJECTS } from "@/components/../../shared/utils/constants";
   useHead({ title: "Our Work" });
 
   const projects = PROJECTS;

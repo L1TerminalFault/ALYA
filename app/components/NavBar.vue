@@ -91,11 +91,17 @@
   const isAmharic = ref(false);
   const toggleLanguage = () => {
     isAmharic.value = !isAmharic.value;
-    const tlCode = isAmharic.value ? "am" : "en";
 
-    // Inject and trigger Google Translate via cookie & reload sequence
-    document.cookie = `googtrans=/en/${tlCode}; path=/`;
-    document.cookie = `googtrans=/en/${tlCode}; domain=${window.location.hostname}; path=/`;
+    if (isAmharic.value) {
+      // Translate to Amharic
+      document.cookie = `googtrans=/en/am; path=/`;
+      document.cookie = `googtrans=/en/am; domain=${window.location.hostname}; path=/`;
+    } else {
+      // Revert to English by deleting the translate cookies
+      document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+      document.cookie = `googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; domain=${window.location.hostname}; path=/;`;
+    }
+
     window.location.reload();
   };
 
