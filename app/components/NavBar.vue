@@ -98,7 +98,8 @@
       document.cookie = `googtrans=/en/am; domain=${window.location.hostname}; path=/`;
     } else {
       // Revert to English by deleting the translate cookies
-      document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+      document.cookie =
+        "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
       document.cookie = `googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; domain=${window.location.hostname}; path=/;`;
     }
 
@@ -245,7 +246,7 @@
     >
       <button
         @click="toggleLanguage"
-        class="mr-2 hidden border-r border-white/10 pr-6 text-sm font-black text-white/80 uppercase transition-colors hover:text-white lg:block"
+        class="mr-2 border-r border-white/10 pr-6 text-sm font-black text-white/80 uppercase transition-colors hover:text-white lg:block"
       >
         {{ isAmharic ? "AM" : "EN" }}
       </button>
