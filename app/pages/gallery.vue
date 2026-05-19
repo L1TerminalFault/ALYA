@@ -10,7 +10,6 @@
     // "https://aliyaconstructionplc.com/wp-content/uploads/2026/05/WhatsApp-Image-2026-05-17-at-10.16.04-AM-1024x576.jpeg",
     // "https://aliyaconstructionplc.com/wp-content/uploads/2020/09/bosa-business2-about1.png"
     "/pal2.jpeg",
-    "/pal3.jpeg",
     "/pal4.jpeg",
     "/pal5.jpeg",
     "/pal6.jpeg",

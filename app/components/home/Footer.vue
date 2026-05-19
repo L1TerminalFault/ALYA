@@ -166,10 +166,10 @@
     </div>
 
     <div
-      class="mega-text pointer-events-none mt-30 flex w-full max-w-[1920px] flex-col gap-16 pb-20"
+      class="mega-text pointer-events-none mt-30 flex w-full flex-col gap-16 pb-20"
     >
       <div
-        class="mega-text-inner my-10 overflow-hidden text-center font-[Haas] text-[clamp(60px,15vw,400px)] leading-[0.75] font-black whitespace-nowrap text-[#f3f3f3] uppercase"
+        class="mega-text-inner my-10 w-full overflow-hidden text-center font-[Haas] text-[clamp(60px,13vw,400px)] font-black whitespace-nowrap text-[#f3f3f3] uppercase"
       >
         ALIYA Co. PLC
       </div>

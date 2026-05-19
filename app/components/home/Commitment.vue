@@ -258,16 +258,19 @@
         class="absolute inset-0 h-full w-full overflow-hidden bg-transparent"
       >
         <img
-          src="/commit.jpg"
+          src="/hero55.jpg"
           class="fade h-full w-full bg-white object-cover opacity-50"
         />
-        <div class="fade absolute inset-0 -z-10 bg-black"></div>
+        <div class="fade absolute inset-0 -z-10 h-full bg-black"></div>
+        <div
+          class="fade-back absolute inset-0 -z-20 mt-1 mr-1 h-full bg-white"
+        ></div>
       </div>
       <div
         class="focus2 relative z-10 flex w-full flex-col items-center justify-center gap-10 px-5 text-center text-white"
       >
         <div
-          class="sptext2 perspective-text w-full max-w-[90%] font-[Haas55] text-[clamp(45px,9vw,160px)] leading-tight font-bold"
+          class="sptext2 perspective-text w-full max-w-[90%] font-[Haas55] text-[clamp(45px,8vw,150px)] leading-tight font-bold"
         >
           Building Fast With <br />
           Quality And Speed
@@ -297,7 +300,11 @@
 
   .fade {
     will-change: transform;
-    clip-path: polygon(0 0, 75% 0, 100% 20%, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 65% 0, 100% 30%, 100% 100%, 35% 100%, 0% 70%);
+  }
+
+  .fade-back {
+    clip-path: polygon(0 0, 65% 0, 100% 30%, 100% 100%, 0% 100%);
   }
 
   .magnetic-wrap {

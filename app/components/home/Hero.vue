@@ -26,7 +26,7 @@
         ".hero-bg-img",
         { scale: 1, filter: "brightness(0.3)" },
         {
-          scale: 1.3,
+          scale: 1.03,
           filter: "brightness(0.55)",
           duration: 2.5,
           ease: "power2.out",
@@ -74,8 +74,8 @@
       // Mouse Parallax effect
       if (root.value && heroBg.value) {
         root.value.addEventListener("mousemove", (e) => {
-          const x = (e.clientX / window.innerWidth + 0.5) * 50;
-          const y = (e.clientY / window.innerHeight + 0.5) * 50;
+          const x = (e.clientX / window.innerWidth - 0.5) * 50;
+          const y = (e.clientY / window.innerHeight - 0.5) * 50;
           gsap.to(".hero-bg-img", {
             x: -x,
             y: -y,
@@ -102,7 +102,7 @@
     >
       <img
         ref="heroBg"
-        src="/hero.jpg"
+        src="/hero.png"
         class="hero-bg-img h-full w-full origin-top rounded-xl border border-gray-800 object-cover shadow-[inset_0_0_100px_rgba(0,0,0,0.8)]"
       />
     </div>
