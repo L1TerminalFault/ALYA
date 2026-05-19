@@ -1,14 +1,7 @@
 <script setup lang="ts">
+  import { ref } from 'vue';
   useHead({ title: "Site Gallery" });
   const images = [
-    // "https://aliyaconstructionplc.com/wp-content/uploads/2026/05/building-new-concrete-house_1398-2995.jpg",
-    // "https://aliyaconstructionplc.com/wp-content/uploads/2026/05/building-new-concrete-house_1398-2995.jpg",
-    // "https://aliyaconstructionplc.com/wp-content/uploads/2026/05/WhatsApp-Image-2026-05-17-at-10.16.10-AM-2-1024x724.jpeg",
-    // "https://aliyaconstructionplc.com/wp-content/uploads/2026/05/WhatsApp-Image-2026-05-17-at-10.16.04-AM-1024x576.jpeg",
-    // "https://aliyaconstructionplc.com/wp-content/uploads/2026/05/unnamed-4-1.jpg",
-    // "https://aliyaconstructionplc.com/wp-content/uploads/2026/05/WhatsApp-Image-2026-05-17-at-10.16.10-AM-2-1024x724.jpeg",
-    // "https://aliyaconstructionplc.com/wp-content/uploads/2026/05/WhatsApp-Image-2026-05-17-at-10.16.04-AM-1024x576.jpeg",
-    // "https://aliyaconstructionplc.com/wp-content/uploads/2020/09/bosa-business2-about1.png"
     "/pal2.jpeg",
     "/pal4.jpeg",
     "/pal5.jpeg",
@@ -46,6 +39,16 @@
     "/pal38.jpeg",
     "/pal39.jpeg",
   ];
+
+  const selectedImage = ref<string | null>(null);
+  const openModal = (img: string) => {
+    selectedImage.value = img;
+    document.body.style.overflow = 'hidden';
+  };
+  const closeModal = () => {
+    selectedImage.value = null;
+    document.body.style.overflow = '';
+  };
 </script>
 <template>
   <div
@@ -62,6 +65,7 @@
         <div
           v-for="(img, i) in images"
           :key="i"
+          @click="openModal(img)"
           class="group relative cursor-zoom-in break-inside-avoid overflow-hidden rounded-2xl border border-white/5"
         >
           <img
@@ -75,5 +79,23 @@
       </div>
     </div>
     <HomeFooter />
+
+    <!-- Image Modal -->
+    <div 
+      v-if="selectedImage" 
+      class="fixed inset-0 z-[100] flex items-center justify-center bg-gray-950/90 backdrop-blur-sm p-5 cursor-zoom-out"
+      @click="closeModal"
+    >
+      <img :src="selectedImage" class="max-h-[90vh] max-w-[90vw] object-contain rounded-lg shadow-2xl" @click.stop />
+      
+      <button 
+        @click="closeModal"
+        class="absolute top-10 right-10 text-white hover:text-red-500 transition-colors p-2"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
   </div>
 </template>

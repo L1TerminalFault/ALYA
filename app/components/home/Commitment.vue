@@ -78,7 +78,7 @@
     gsap.to("#curve path", {
       scrollTrigger: {
         trigger: ".parent",
-        start: "-98% top",
+        start: "-78% top",
         end: "+=2000",
         scrub: 1,
       },

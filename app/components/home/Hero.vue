@@ -82,6 +82,12 @@
             duration: 1.5,
             ease: "power2.out",
           });
+          gsap.to("heroheader", {
+            x: -x,
+            y: -y,
+            duration: 1.5,
+            ease: "power2.out",
+          });
         });
       }
     }, root.value);
