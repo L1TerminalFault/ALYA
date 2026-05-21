@@ -30,7 +30,7 @@ onMounted(async () => {
 </script>
 
 <template>
-  <div class="relative text-sm flex gap-10 items-center justify-center max-md:hidden">
+  <div class="relative text-xs flex gap-10 items-center justify-center max-md:hidden">
     <AnimatedLink v-for="r in NAV_ROUTES" id="main" :key="r.name" :to="r.path" :text="r.name">
     </AnimatedLink>
   </div>

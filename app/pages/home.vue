@@ -10,6 +10,7 @@
   const animate = ref(false);
   const showIntro = ref(true);
   const introDone = ref(false);
+  const introShown = ref(false);
 
   onMounted(async () => {
     gsap.registerPlugin(DrawSVGPlugin);
@@ -47,12 +48,12 @@
     }, 100);
 
     setTimeout(() => {
-      showIntro.value = false;
-      // Allow slight crossover fade before components mount their initial states
-      setTimeout(() => {
-        introDone.value = true;
-      }, 600);
-    }, 4000);
+        showIntro.value = false;
+        // Allow slight crossover fade before components mount their initial states
+        setTimeout(() => {
+          introDone.value = true;
+        }, 600);
+      }, 4000);
   });
 </script>
 
@@ -181,5 +182,9 @@
     fill: transparent;
     stroke: #ed1c24;
     stroke-width: 2px;
+  }
+
+  body {
+	  font: "Century" !important;
   }
 </style>

@@ -101,7 +101,7 @@
 <template>
   <div
     ref="root"
-    class="fixed top-0 z-0 flex aspect-8/7 h-screen w-full justify-center overflow-visible lg:p-5"
+    class="fixed top-0 z-0 flex aspect-8/7 font-[Century]! h-screen w-full justify-center overflow-visible lg:p-5"
   >
     <div
       class="pointer-events-none absolute inset-0 -top-[7.5%] -left-[7.5%] z-0 h-[115%] w-[115%]"
@@ -126,7 +126,7 @@
             class="group bg-brand-600 border-brand-500 hover:bg-brand-500 flex cursor-pointer items-center gap-2.75 rounded-full border px-4 py-1.5 shadow-xl transition-colors"
           >
             <div
-              class="light font-Giest text-[20px]! font-light text-white md:text-[22px]"
+              class="light text-[18px]! font-light text-white md:text-[20px]"
             >
               contact us to build with us
             </div>
@@ -138,14 +138,14 @@
         </div>
 
         <div class="perspective-container hero-text-large">
-          <span class="spt text-nowrap drop-shadow-2xl">
+          <span class="spt text-nowrap italic drop-shadow-2xl">
             WE DO WHAT IS RIGHT,
           </span>
           <span class="spt text-nowrap drop-shadow-2xl">NOT WHAT IS EASY!</span>
         </div>
 
         <div
-          class="cpt font-Geist fluid-subtext text-center text-white drop-shadow-xl"
+          class="cpt fluid-subtext text-center italic text-white drop-shadow-xl"
         >
           Creating spaces with purpose
         </div>
@@ -160,13 +160,12 @@
   @reference "tailwindcss";
 
   .fluid-subtext {
-    @apply font-[Switzer] text-lg leading-6.5 text-[#E7E7E7] lg:max-w-160 lg:text-3xl;
+    @apply text-lg leading-6.5 text-[#E7E7E7] lg:max-w-160 lg:text-3xl;
   }
 
   .hero-text-large {
     @apply flex w-full min-w-75 flex-col items-center justify-center text-center leading-[1.1] font-black;
-    font-family: "Haas", sans-serif;
-    font-size: clamp(30px, 5.5vw, 160px);
+    font-size: clamp(30px, 5vw, 160px);
     color: white;
   }
 

@@ -1,10 +1,10 @@
 <script lang="ts" setup>
-import { onMounted } from 'vue';
-const router = useRouter();
+  import { onMounted } from "vue";
+  const router = useRouter();
 
-onMounted(() => {
-  router.replace("/home");
-});
+  onMounted(() => {
+    router.replace("/home");
+  });
 </script>
 
 <template>
