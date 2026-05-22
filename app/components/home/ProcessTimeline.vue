@@ -69,16 +69,16 @@
     <div class="flex w-full max-w-7xl flex-col gap-20 lg:flex-row">
       <div class="flex w-full flex-col gap-6 lg:w-1/3">
         <div
-          class="text-brand-600 font-[Switzer] text-lg font-bold uppercase"
+          class="text-brand-600 /font-[Switzer] text-lg font-bold uppercase"
         >
           How We Work
         </div>
         <div
-          class="font-[Haas] text-[clamp(40px,5vw,70px)] leading-[1.1] font-bold"
+          class="/font-[Haas] text-[clamp(40px,5vw,70px)] leading-[1.1] font-bold"
         >
           Our Proven<br />Methodology
         </div>
-        <div class="mt-4 font-[Switzer] text-xl leading-relaxed text-gray-600">
+        <div class="mt-4 /font-[Switzer] text-xl leading-relaxed text-gray-600">
           A systematic, phased approach ensures that every project is delivered
           on time, within budget, and to our strict quality protocols.
         </div>
@@ -103,15 +103,15 @@
           ></div>
 
           <div
-            class="shrink-0 font-[Haas] text-3xl font-bold text-gray-300 md:w-20"
+            class="shrink-0 /font-[Haas] text-3xl font-bold text-gray-300 md:w-20"
           >
             {{ step.id }}
           </div>
           <div class="flex flex-col gap-3">
-            <div class="font-[Haas75] text-2xl font-bold text-gray-950">
+            <div class="/font-[Haas75] text-2xl font-bold text-gray-950">
               {{ step.title }}
             </div>
-            <div class="font-[Switzer] text-lg leading-snug text-gray-600">
+            <div class="/font-[Switzer] text-lg leading-snug text-gray-600">
               {{ step.desc }}
             </div>
           </div>

@@ -101,7 +101,7 @@
 <template>
   <div
     ref="root"
-    class="fixed top-0 z-0 flex aspect-8/7 font-[Century]! h-screen w-full justify-center overflow-visible lg:p-5"
+    class="fixed top-0 z-0 flex aspect-8/7 h-screen w-full justify-center overflow-visible lg:p-5"
   >
     <div
       class="pointer-events-none absolute inset-0 -top-[7.5%] -left-[7.5%] z-0 h-[115%] w-[115%]"
@@ -126,7 +126,7 @@
             class="group bg-brand-600 border-brand-500 hover:bg-brand-500 flex cursor-pointer items-center gap-2.75 rounded-full border px-4 py-1.5 shadow-xl transition-colors"
           >
             <div
-              class="light text-[18px]! font-light text-white md:text-[20px]"
+              class="light text-xs font-light text-white md:text-sm"
             >
               contact us to build with us
             </div>
@@ -141,7 +141,7 @@
           <span class="spt text-nowrap italic drop-shadow-2xl">
             WE DO WHAT IS RIGHT,
           </span>
-          <span class="spt text-nowrap drop-shadow-2xl">NOT WHAT IS EASY!</span>
+          <span class="spt text-nowrap italic drop-shadow-2xl">NOT WHAT IS EASY!</span>
         </div>
 
         <div

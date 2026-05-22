@@ -36,12 +36,12 @@ onMounted(() => {
     <div class="w-full max-w-7xl flex flex-col lg:flex-row items-center justify-between gap-10">
       
       <div class="flex flex-col gap-4 max-w-2xl text-center lg:text-left">
-        <div class="text-brand-500 font-bold uppercase text-sm font-[Switzer]">Safety & Standards</div>
-        <div class="text-3xl md:text-5xl font-[Haas] font-bold leading-tight">Uncompromising on Safety & Industry Standards</div>
+        <div class="text-brand-500 font-bold uppercase text-sm /font-[Switzer]">Safety & Standards</div>
+        <div class="text-3xl md:text-5xl /font-[Haas] font-bold leading-tight">Uncompromising on Safety & Industry Standards</div>
       </div>
 
       <div class="flex flex-wrap lg:flex-nowrap gap-4 justify-center">
-        <div v-for="(cert, i) in certs" :key="i" class="cert-item bg-gray-900 border border-gray-800 px-6 py-4 rounded-xl flex items-center justify-center text-center font-[Switzer] font-medium text-gray-300 hover:text-white hover:border-brand-500/50 transition-colors cursor-default">
+        <div v-for="(cert, i) in certs" :key="i" class="cert-item bg-gray-900 border border-gray-800 px-6 py-4 rounded-xl flex items-center justify-center text-center /font-[Switzer] font-medium text-gray-300 hover:text-white hover:border-brand-500/50 transition-colors cursor-default">
           {{ cert }}
         </div>
       </div>

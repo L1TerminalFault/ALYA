@@ -95,6 +95,16 @@
 }
 
 @font-face {
+  font-family: "Futura";
+  src: url("/fonts/futura/Futura.ttf");
+}
+
+@font-face {
+  font-family: "FuturaExtraBold";
+  src: url("/fonts/futura/FuturaExtraBold.ttf");
+}
+
+@font-face {
   font-family: "InterVar";
   src: url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap");
   font-weight: 900;

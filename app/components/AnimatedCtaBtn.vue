@@ -12,7 +12,7 @@
         <span
           v-for="(char, i) in text"
           :key="`top-${i}`"
-          class="inline-block"
+          class="inlin block"
           v-html="char === ' ' ? '&nbsp;' : char"
         />
       </div>

@@ -37,7 +37,8 @@
     "three": "^0.184.0",
     "vaul-vue": "^0.4.1",
     "vue": "latest",
-    "vue-router": "latest"
+    "vue-router": "latest",
+    "zustand": "^5.0.13"
   },
   "devDependencies": {
     "@nuxt/devtools": "^3.2.1",

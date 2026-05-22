@@ -42,7 +42,7 @@ onMounted(() => {
       <div class="absolute right-0 -bottom-20 z-30 h-full w-1/9 bg-linear-to-r from-transparent via-gray-950 to-gray-950">
       </div>
       <div
-        class="antext flex max-w-70 flex-col text-center font-[Switzer] text-[clamp(30px,5vw,76px)] leading-none font-bold lg:max-w-100">
+        class="antext flex max-w-70 flex-col text-center /font-[Switzer] text-[clamp(30px,5vw,76px)] leading-none font-bold lg:max-w-100">
         <span class="antext text-nowrap">Our Trusted</span>
         <span class="antext text-nowrap">Partners</span>
       </div>

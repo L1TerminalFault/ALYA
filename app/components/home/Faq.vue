@@ -69,7 +69,7 @@
 
 <template>
   <div
-    class="flex min-h-[90vh] w-full items-center justify-center bg-[#ffffff] p-5 pb-30 font-[Haas] text-black lg:p-10"
+    class="flex min-h-[90vh] w-full items-center justify-center bg-[#ffffff] p-5 pb-30 /font-[Haas] text-black lg:p-10"
   >
     <div
       class="flex w-full max-w-7xl flex-col overflow-hidden rounded-3xl border border-gray-200 bg-white shadow-[0_20px_60px_rgba(0,0,0,0.05)] lg:flex-row"
@@ -80,7 +80,7 @@
       >
         <div class="flex flex-col gap-6">
           <div
-            class="text-brand-600 font-[Switzer] text-sm font-bold uppercase"
+            class="text-brand-600 /font-[Switzer] text-sm font-bold uppercase"
           >
             Inquiries
           </div>
@@ -88,7 +88,7 @@
             >Frequently<br />Asked<br />Questions</span
           >
         </div>
-        <span class="mt-10 max-w-sm font-[Switzer] text-lg text-gray-600"
+        <span class="mt-10 max-w-sm /font-[Switzer] text-lg text-gray-600"
           >Some questions our enterprise partners frequently ask us. Here are
           the core insights you need.</span
         >
@@ -97,7 +97,7 @@
       <!-- Right Section -->
       <div class="flex flex-col overflow-y-auto p-10 lg:w-1/2 lg:p-15">
         <div class="mb-12">
-          <span class="font-[Switzer] text-lg leading-relaxed text-gray-600">
+          <span class="/font-[Switzer] text-lg leading-relaxed text-gray-600">
             From sourcing through to last-mile delivery, we manage complex
             supply chains with precision and reliability.
           </span>
@@ -120,7 +120,7 @@
               <div class="flex items-center gap-5">
                 <!-- Number Box -->
                 <div
-                  class="flex h-10 w-10 items-center justify-center rounded-full border border-gray-200 font-[Switzer] text-sm font-bold transition-colors duration-500"
+                  class="flex h-10 w-10 items-center justify-center rounded-full border border-gray-200 /font-[Switzer] text-sm font-bold transition-colors duration-500"
                   :class="
                     faq.isOpen
                       ? 'bg-brand-600 border-brand-600 text-white shadow-lg'
@@ -159,7 +159,7 @@
             >
               <div v-if="faq.isOpen" class="overflow-hidden">
                 <div
-                  class="pr-5 pb-8 pl-[60px] font-[Switzer] text-[17px] leading-relaxed text-gray-500"
+                  class="pr-5 pb-8 pl-[60px] /font-[Switzer] text-[17px] leading-relaxed text-gray-500"
                 >
                   {{ faq.content }}
                 </div>
@@ -174,9 +174,9 @@
 
 <style scoped>
   /* Ensure font-family matches the image aesthetics if available */
-  .font-haas {
-    font-family: "Haas Grot Text R Web", "Inter", sans-serif;
-  }
+  /* .font-haas { */
+  /*   font-family: "Haas Grot Text R Web", "Inter", sans-serif; */
+  /* } */
 
   /* Custom scrollbar for the right panel */
   .overflow-y-auto::-webkit-scrollbar {

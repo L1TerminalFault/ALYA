@@ -166,7 +166,7 @@
 
 <template>
   <nav
-    class="perspective-1000 font-[Century]! pointer-events-none fixed top-0 left-0 z-50 flex w-full items-start justify-between p-0 lg:p-5"
+    class="perspective-1000 pointer-events-none fixed top-0 left-0 z-50 flex w-full items-start justify-between p-0 lg:p-5"
   >
     <div
       class="nav-pill nav-left nav-container pointer-events-auto flex items-center gap-8 rounded-full border border-white/15 bg-black/20 p-2 px-6 shadow-2xl backdrop-blur-3xl transition-all duration-300"
@@ -174,7 +174,7 @@
       <div id="google_translate_element" class="hidden"></div>
       <NuxtLink
         to="/home"
-        class="group flex items-center gap-4 no-underline"
+        class="group flex items-center gap-4 pt-1 no-underline"
         @mouseenter="replaySVG"
       >
         <svg
@@ -231,17 +231,17 @@
         </svg>
 
         <span
-          class="text-xl font-black text-white transition-transform group-hover:scale-101"
+          class="text-xl font-black font-[FuturaExtraBold]! text-white transition-transform group-hover:scale-101"
         >
           ALIYA
-          <span class="font-thin text-lg">CONSTRUCTION PLC</span>
+          <span class="font-thin font-[Futura]! text-lg">CONSTRUCTION</span>
         </span>
         <div
           v-if="false"
           class="ml-1 size-1.5 rounded-full bg-blue-500 shadow-[0_0_15px_#3b82f6]"
         />
       </NuxtLink>
-      <div class="hidden items-center gap-10 md:flex">
+      <div class="hidden items-center gap-6 md:flex">
         <NavLinks />
       </div>
     </div>

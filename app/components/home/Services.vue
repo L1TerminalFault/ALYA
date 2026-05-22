@@ -45,16 +45,16 @@
     <div class="flex w-full max-w-7xl flex-col items-center gap-15">
       <div class="flex max-w-3xl flex-col items-center gap-4 text-center">
         <div
-          class="text-brand-600 font-[Switzer] text-sm font-bold uppercase"
+          class="text-brand-600 /font-[Switzer] text-sm font-bold uppercase"
         >
           What We Offer
         </div>
         <div
-          class="font-[Haas] text-[clamp(40px,5vw,70px)] leading-tight font-bold"
+          class="/font-[Haas] text-[clamp(40px,5vw,70px)] leading-tight font-bold"
         >
           Enterprise Solutions
         </div>
-        <div class="mt-2 font-[Switzer] text-xl leading-relaxed text-gray-600">
+        <div class="mt-2 /font-[Switzer] text-xl leading-relaxed text-gray-600">
           From sourcing through to last-mile delivery, we manage complex supply
           chains with precision and reliability.
         </div>
@@ -78,12 +78,12 @@
             class="absolute bottom-0 left-0 flex w-full translate-y-4 flex-col gap-2 p-8 transition-transform duration-500 group-hover:translate-y-0"
           >
             <div
-              class="font-[Haas55] text-2xl leading-tight font-bold text-white drop-shadow-md"
+              class="/font-[Haas55] text-2xl leading-tight font-bold text-white drop-shadow-md"
             >
               {{ svc.title }}
             </div>
             <div
-              class="font-[Switzer] text-sm text-gray-300 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+              class="/font-[Switzer] text-sm text-gray-300 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
             >
               {{ svc.desc }}
             </div>

@@ -40,7 +40,7 @@
     ></div>
 
     <div
-      class="px-5 text-center font-[Haas] text-4xl font-bold lg:text-7xl"
+      class="px-5 text-center /font-[Haas] text-4xl font-bold lg:text-7xl"
     >
       The Foundation of Trust
     </div>
@@ -59,7 +59,7 @@
           <AnimatedCounter :target="stat.value" :suffix="stat.suffix" />
         </div>
         <div
-          class="mt-2 max-w-xs text-center font-[Switzer] text-xl text-gray-400 uppercase"
+          class="mt-2 max-w-xs text-center /font-[Switzer] text-xl text-gray-400 uppercase"
         >
           {{ stat.label }}
         </div>

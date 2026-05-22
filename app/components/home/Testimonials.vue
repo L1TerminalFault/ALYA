@@ -153,7 +153,7 @@
     <div class="max-467.5 mx-auto w-full">
       <div class="flex flex-col items-center gap-25">
         <div
-          class="revhead flex w-full justify-center px-10 text-center font-[Haas] text-[clamp(30px,4vw,48px)]"
+          class="revhead flex w-full justify-center px-10 text-center /font-[Haas] text-[clamp(30px,4vw,48px)]"
         >
           what others think about us
         </div>
@@ -180,12 +180,12 @@
             <div class="flex h-full w-[60%] flex-col justify-between gap-10">
               <div class="flex flex-col gap-10.5">
                 <div
-                  class="review-title pr-10 font-[Haas] text-[clamp(20px,3vw,58px)] leading-tight font-thin uppercase italic"
+                  class="review-title pr-10 /font-[Haas] text-[clamp(20px,3vw,58px)] leading-tight font-thin uppercase italic"
                 >
                   {{ review.title }}
                 </div>
                 <div
-                  class="review-description font-[Switzer] text-[clamp(13px,2vw,22px)] leading-[1.4] text-gray-400"
+                  class="review-description /font-[Switzer] text-[clamp(13px,2vw,22px)] leading-[1.4] text-gray-400"
                 >
                   " {{ review.desc }} "
                 </div>

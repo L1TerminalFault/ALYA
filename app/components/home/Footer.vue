@@ -105,7 +105,7 @@
     >
       <div class="flex w-full flex-col gap-8">
         <div
-          class="footer-alya-text flex w-full justify-center text-center font-[Switzer] text-[48px] font-bold text-white"
+          class="footer-alya-text flex w-full justify-center text-center /font-[Switzer] text-[48px] font-bold text-white"
         >
           ALIYA.co
         </div>
@@ -113,18 +113,18 @@
         <div class="mt-10 flex flex-col justify-between gap-10 lg:flex-row">
           <div class="flex max-w-125 flex-col gap-6">
             <div
-              class="footer-build-text font-[Haas75] text-[38px] leading-tight text-white perspective-[1000px]"
+              class="footer-build-text /font-[Haas75] text-[38px] leading-tight text-white perspective-[1000px]"
             >
               BUILDING TOGETHER
             </div>
-            <div class="max-w-115 font-[Switzer] text-[20px] text-gray-400">
+            <div class="max-w-115 /font-[Switzer] text-[20px] text-gray-400">
               Transforming visions into structural reality with precision
               engineering and sustainable design.
             </div>
           </div>
 
           <div class="flex w-full max-w-125 flex-col gap-5">
-            <div class="w-full font-[Switzer] text-[20px]">
+            <div class="w-full /font-[Switzer] text-[20px]">
               <input
                 placeholder="ENTER YOUR EMAIL"
                 type="text"
@@ -146,7 +146,7 @@
         class="mt-12 flex flex-col items-center justify-between border-t border-gray-800 pt-8 lg:flex-row"
       >
         <div
-          class="order-2 mt-6 font-[Switzer] text-[15px] font-medium text-gray-500 lg:order-1 lg:mt-0"
+          class="order-2 mt-6 /font-[Switzer] text-[15px] font-medium text-gray-500 lg:order-1 lg:mt-0"
         >
           © 2026 ALIYA Construction Group. All rights reserved.
         </div>
@@ -169,12 +169,12 @@
       class="mega-text pointer-events-none mt-30 flex w-full flex-col gap-16 pb-20"
     >
       <div
-        class="mega-text-inner my-10 w-full overflow-hidden text-center font-[Haas] text-[clamp(60px,13vw,400px)] font-black whitespace-nowrap text-[#f3f3f3] uppercase"
+        class="mega-text-inner /my-10 w-full overflow-hidden text-center /font-[Haas] text-[clamp(60px,13vw,400px)] font-black whitespace-nowrap text-[#f3f3f3] uppercase"
       >
         ALIYA Co. PLC
       </div>
       <div
-        class="mx-auto w-full columns-1 gap-12 border-t border-gray-100 px-10 pt-10 text-justify font-[Switzer] text-[12px] leading-relaxed text-gray-400 md:columns-2 lg:columns-4"
+        class="mx-auto w-full columns-1 gap-12 border-t border-gray-100 px-10 pt-10 text-justify /font-[Switzer] text-[12px] leading-relaxed text-gray-400 md:columns-2 lg:columns-4"
       >
         <p>
           Terms of Service: By accessing this website, you agree to be bound by
