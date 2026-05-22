@@ -2,8 +2,8 @@
 useHead({ title: "About Us" });
 
 const leaders = [
-  { name: "Belay Taye Gurmu", role: "General Manager (20 Yrs Exp)", img: "https://aliyaconstructionplc.com/wp-content/uploads/2026/05/building-new-concrete-house_1398-2995.jpg" },
-  { name: "Tesfaye Abiebie", role: "Project Manager (9 Yrs Exp)", img: "https://aliyaconstructionplc.com/wp-content/uploads/2026/05/building-new-concrete-house_1398-2995.jpg" },
+  { name: "Belay Taye Gurmu", role: "General Manager (20 Yrs Exp)", img: "https://aliyaconstructionplc.com/wp-content/uploads/2026/05/WhatsApp-Image-2026-05-17-at-10.16.10-AM-2-1024x724.jpeg" },
+  { name: "Tesfaye Abiebie", role: "Project Manager (9 Yrs Exp)", img: "https://aliyaconstructionplc.com/wp-content/uploads/2026/05/WhatsApp-Image-2026-05-17-at-10.16.10-AM-2-1024x724.jpeg" },
   { name: "Solomon Gizachew", role: "Finance Manager", img: "https://aliyaconstructionplc.com/wp-content/uploads/2026/05/WhatsApp-Image-2026-05-17-at-10.16.10-AM-2-1024x724.jpeg" }
 ];
 </script>

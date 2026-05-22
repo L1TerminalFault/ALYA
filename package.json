@@ -38,6 +38,7 @@
     "vaul-vue": "^0.4.1",
     "vue": "latest",
     "vue-router": "latest",
+    "vue-zustand": "^1.1.0",
     "zustand": "^5.0.13"
   },
   "devDependencies": {

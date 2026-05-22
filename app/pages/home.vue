@@ -10,50 +10,53 @@
   const animate = ref(false);
   const showIntro = ref(true);
   const introDone = ref(false);
-  const introShown = ref(false);
+  //const { introShown, setIntroShown } = useIntroStore();
 
   onMounted(async () => {
     gsap.registerPlugin(DrawSVGPlugin);
-
     await nextTick();
     // Delay a bit so transition applies
-    setTimeout(() => {
-      animate.value = true;
-      gsap.fromTo(
-        ".cls-1, .cls-2, .cls-3",
-        { drawSVG: "0%" },
-        {
-          drawSVG: "100%",
-          duration: 3.2,
-          ease: "power2.inOut",
-          onComplete: () => {
-            gsap.to(".cls-1", {
-              fill: "#eb2629",
-              stroke: "transparent",
-              duration: 0.4,
-            });
-            gsap.to(".cls-2", {
-              fill: "#000",
-              stroke: "transparent",
-              duration: 0.4,
-            });
-            gsap.to(".cls-3", {
-              fill: "#ed1c24",
-              stroke: "transparent",
-              duration: 0.4,
-            });
-          },
-        }
-      );
-    }, 100);
+    //if (!introShown) {
+      //setIntroShown(true);
+
+      setTimeout(() => {
+        animate.value = true;
+        gsap.fromTo(
+          ".cls-1, .cls-2, .cls-3",
+          { drawSVG: "0%" },
+          {
+            drawSVG: "100%",
+            duration: 3.2,
+            ease: "power2.inOut",
+            onComplete: () => {
+              gsap.to(".cls-1", {
+                fill: "#eb2629",
+                stroke: "transparent",
+                duration: 0.4,
+              });
+              gsap.to(".cls-2", {
+                fill: "#000",
+                stroke: "transparent",
+                duration: 0.4,
+              });
+              gsap.to(".cls-3", {
+                fill: "#ed1c24",
+                stroke: "transparent",
+                duration: 0.4,
+              });
+            },
+          }
+        );
+      }, 100);
+    //}
 
     setTimeout(() => {
-        showIntro.value = false;
-        // Allow slight crossover fade before components mount their initial states
-        setTimeout(() => {
-          introDone.value = true;
-        }, 600);
-      }, 4000);
+      showIntro.value = false;
+      // Allow slight crossover fade before components mount their initial states
+      setTimeout(() => {
+        introDone.value = true;
+      }, 600);
+    }, 4000);
   });
 </script>
 
@@ -68,7 +71,7 @@
           ? 'pointer-events-auto opacity-100'
           : 'pointer-events-none opacity-0'
       "
-      class="fixed inset-0 z-[9999] flex h-svh w-svw items-center justify-center gap-6 bg-white transition-opacity duration-1000 ease-in-out"
+      class="fixed inset-0 z-9999 flex h-svh w-svw items-center justify-center gap-6 bg-white transition-opacity duration-1000 ease-in-out"
     >
       <div
         :class="animate ? 'scale-100 opacity-100' : 'scale-200 opacity-0'"
@@ -125,15 +128,17 @@
           <span
             :class="animate ? 'text-brand-600 text-shadow-lg' : 'text-black'"
             class="transition-all delay-2700 duration-1000"
-            >ALIYA</span
           >
+            ALIYA
+          </span>
           <span
             :class="
               animate ? 'text-4xl text-black/75' : 'text-[80px] text-black'
             "
             class="span-text pt-3 transition-all delay-2700 duration-700"
-            >Co.</span
           >
+            Co.
+          </span>
         </div>
       </div>
     </div>
@@ -185,6 +190,6 @@
   }
 
   body {
-	  font: "Century" !important;
+    font: "Century" !important;
   }
 </style>
