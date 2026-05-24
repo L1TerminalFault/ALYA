@@ -19,8 +19,8 @@
         <NuxtLink
           v-for="(project, i) in projects"
           :key="i"
-          :to="'/projects/' + project.id"
-          class="group relative block h-[500px] w-full cursor-pointer overflow-hidden rounded-2xl"
+          :to="'/projects_/' + project.id"
+          class="group relative block h-125 w-full cursor-pointer overflow-hidden rounded-2xl"
         >
           <img
             :src="project.img"
@@ -34,12 +34,12 @@
           >
             <div class="flex w-full items-center gap-0.5">
               <div
-                class="text-brand-500 font-[Switzer] text-xs font-bold uppercase"
+                class="text-brand-500 /font-[Switzer] text-xs font-bold uppercase"
               >
                 {{ project.category }} &middot; {{ project.location }}
               </div>
               <div
-                class="px-2 py-1 font-[Switzer] text-[8px] text-nowrap uppercase italic opacity-90"
+                class="px-2 py-1 /font-[Switzer] text-[8px] text-nowrap uppercase italic opacity-90"
                 :class="
                   project.status === 'Completed'
                     ? 'text-[#b0ffb090]'
@@ -50,7 +50,7 @@
               </div>
             </div>
             <div
-              class="pr-4 font-[Haas55] text-2xl leading-tight font-bold text-white"
+              class="pr-4 /font-[Haas55] text-2xl leading-tight font-bold text-white"
             >
               {{ project.name }}
             </div>
@@ -58,17 +58,11 @@
               class="mt-1 flex flex-col gap-1 text-sm text-white/70 opacity-0 transition-opacity delay-100 duration-500 group-hover:opacity-100"
             >
               <div class="flex items-start gap-2">
-                <div class="min-w-[70px] text-white/40">Client:</div>
+                <div class="min-w-17.5 text-white/40">Client:</div>
                 <div class="font-medium text-white/90">
                   {{ project.client }}
                 </div>
               </div>
-              <!-- <div class="flex items-start gap-2"> -->
-              <!--   <div class="min-w-[70px] text-white/40">Value:</div> -->
-              <!--   <div class="text-brand-400 font-medium"> -->
-              <!--     {{ project.value }} ETB -->
-              <!--   </div> -->
-              <!-- </div> -->
             </div>
           </div>
         </NuxtLink>

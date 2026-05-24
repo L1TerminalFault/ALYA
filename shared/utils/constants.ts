@@ -6,7 +6,7 @@ export const MONTH_IN_SECONDS = 30 * DAY_IN_SECONDS;
 export const YEAR_IN_SECONDS = 365 * DAY_IN_SECONDS;
 
 export const NAV_ROUTES = [
-  { name: "Work", path: "/work" },
+  { name: "Projects", path: "/projects" },
   { name: "Gallery", path: "/gallery" },
   { name: "Services", path: "/services" },
   { name: "About", path: "/about" },
@@ -16,8 +16,8 @@ export const NAV_ROUTES = [
 
 export const PROJECTS = [
   {
-    id: "mixed-use-bg6-finishing-1",
-    name: "Mixed-Use Building (B+G+6) Finishing Work",
+    id: "7c99a343-33ad-4e1d-b0ea-61899b75c0b8",
+    name: "Mixed Use Building (B+G+6) Finishing Work",
     category: "Commercial",
     status: "Under Construction",
     client: "Ato Girma Amare & W/ro Martha Negash",
@@ -26,7 +26,7 @@ export const PROJECTS = [
     img: "/work2.png",
   },
   {
-    id: "residence-2bg3-senait",
+    id: "dbadcbc7-da1c-4905-8d3c-7fa24779d937",
     name: "Residence Building (2+B+G+3)",
     category: "Residential",
     status: "Completed",
@@ -36,7 +36,7 @@ export const PROJECTS = [
     img: "/work3.png",
   },
   {
-    id: "mixed-use-bg6-structural-1",
+    id: "f0eed892-3e28-4f8e-bb3d-b1fae023358a",
     name: "Mixed-Use Building (B+G+6) Structural Work",
     category: "Commercial",
     status: "Completed",
@@ -46,7 +46,7 @@ export const PROJECTS = [
     img: "/work4.png",
   },
   {
-    id: "residence-2bg3-ephrem",
+    id: "fb1d7c81-0601-4070-9b3c-0806ac4109ad",
     name: "Residence Building (2+B+G+3)",
     category: "Residential",
     status: "Completed",
@@ -56,7 +56,7 @@ export const PROJECTS = [
     img: "/work5.png",
   },
   {
-    id: "mixed-use-bg5-etenesh",
+    id: "591938dc-354a-4276-beba-ccd4ea42a4ae",
     name: "Mixed-Use Building (B+G+5)",
     category: "Commercial",
     status: "Completed",
@@ -66,7 +66,7 @@ export const PROJECTS = [
     img: "/work6.png",
   },
   {
-    id: "mixed-use-bg6-structural-2",
+    id: "3fcd4652-3653-46a3-b772-68016abf256a",
     name: "Mixed-Use Building (B+G+6) Structural Work",
     category: "Commercial",
     status: "Completed",
@@ -76,7 +76,7 @@ export const PROJECTS = [
     img: "/work7.png",
   },
   {
-    id: "mixed-use-bg6-finishing-2",
+    id: "08479ce4-c33f-4458-a9c5-ded50e129c7c",
     name: "Mixed-Use Building (B+G+6) Finishing Work",
     category: "Commercial",
     status: "Completed",
@@ -86,7 +86,7 @@ export const PROJECTS = [
     img: "/work8.png",
   },
   {
-    id: "residence-bg2-atnafu",
+    id: "48f6d1a1-6eb5-455e-8daa-9c57d3f4e060",
     name: "Residence Building (B+G+2)",
     category: "Residential",
     status: "Completed",
@@ -96,7 +96,7 @@ export const PROJECTS = [
     img: "/work9.png",
   },
   {
-    id: "mixed-use-bg5-misrak",
+    id: "e3cc4faf-ff69-408a-a91e-9303a52d15b8",
     name: "Mixed-Use Building (B+G+5)",
     category: "Commercial",
     status: "Completed",
@@ -106,7 +106,7 @@ export const PROJECTS = [
     img: "/work10.png",
   },
   {
-    id: "apartment-g5-tigist",
+    id: "aa121116-aafe-4a23-8351-207e7d72ca83",
     name: "Apartment Building Construction (G+5)",
     category: "Residential",
     status: "Completed",
@@ -116,7 +116,7 @@ export const PROJECTS = [
     img: "/work11.png",
   },
   {
-    id: "kera-store-maintenance",
+    id: "ee6fe3d4-4e76-485d-b7b7-d4c87c00591c",
     name: "Kera Store Maintenance Work",
     category: "Commercial",
     status: "Completed",
@@ -126,8 +126,8 @@ export const PROJECTS = [
     img: "/work12.png",
   },
   {
-    id: "ariyo-catholic-g1-residence",
-    name: "Ariyo Catholic Learning Institute (G+1 Residence)",
+    id: "ab1bc2cc-078a-4bd4-887d-8c283c79dfb3",
+    name: "Ariyo Catholic School (Learning Institute) (G+1 Residence)",
     category: "Institutional",
     status: "Completed",
     client: "Ethiopia Catholic Church Society of Jesus",

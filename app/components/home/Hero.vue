@@ -24,9 +24,9 @@
 
       tl.fromTo(
         ".hero-bg-img",
-        { scale: 1, filter: "brightness(0.3)" },
+        { scale: 1.05, filter: "brightness(0.3)" },
         {
-          scale: 1.03,
+          scale: 1,
           filter: "brightness(0.55)",
           duration: 2.5,
           ease: "power2.out",
@@ -79,13 +79,13 @@
           gsap.to(".hero-bg-img", {
             x: -x,
             y: -y,
-            duration: 1.5,
+            duration: 2.5,
             ease: "power2.out",
           });
           gsap.to("heroheader", {
             x: -x,
             y: -y,
-            duration: 1.5,
+            duration: 2.5,
             ease: "power2.out",
           });
         });
@@ -106,10 +106,11 @@
     <div
       class="pointer-events-none absolute inset-0 -top-[7.5%] -left-[7.5%] z-0 h-[115%] w-[115%]"
     >
+      <!-- src="/hero.png" -->
       <img
         ref="heroBg"
         src="/hero.png"
-        class="hero-bg-img h-full w-full origin-top rounded-xl border border-gray-800 object-cover shadow-[inset_0_0_100px_rgba(0,0,0,0.8)]"
+        class="hero-bg-img saturate-200 h-full w-full rounded-xl border border-gray-800 object-cover shadow-[inset_0_0_100px_rgba(0,0,0,0.8)]"
       />
     </div>
 
@@ -125,9 +126,7 @@
             to="/contact"
             class="group bg-brand-600 border-brand-500 hover:bg-brand-500 flex cursor-pointer items-center gap-2.75 rounded-full border px-4 py-1.5 shadow-xl transition-colors"
           >
-            <div
-              class="light text-xs font-light text-white md:text-sm"
-            >
+            <div class="light text-xs font-light text-white md:text-sm">
               contact us to build with us
             </div>
             <img
@@ -141,11 +140,13 @@
           <span class="spt text-nowrap italic drop-shadow-2xl">
             WE DO WHAT IS RIGHT,
           </span>
-          <span class="spt text-nowrap italic drop-shadow-2xl">NOT WHAT IS EASY!</span>
+          <span class="spt text-nowrap italic drop-shadow-2xl"
+            >NOT WHAT IS EASY!</span
+          >
         </div>
 
         <div
-          class="cpt fluid-subtext text-center italic text-white drop-shadow-xl"
+          class="cpt fluid-subtext text-center text-white italic drop-shadow-xl"
         >
           Creating spaces with purpose
         </div>

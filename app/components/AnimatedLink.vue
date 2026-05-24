@@ -1,9 +1,12 @@
 <template>
   <NuxtLink
     :to="to"
-    class="relative inline-block overflow-hidden px-1 leading-3.75 font-light whitespace-nowrap uppercase"
+    :class="props.class"
     @mouseenter="onMouseEnter"
     @mouseleave="onMouseLeave"
+  >
+  <div
+    class="relative inline-block overflow-hidden px-1 leading-3.75 whitespace-nowrap uppercase"
   >
     <!-- Top Layer -->
     <div ref="topLayer" class="flex py-1">
@@ -24,7 +27,8 @@
         v-html="char === ' ' ? '&nbsp;' : char"
       />
     </div>
-  </NuxtLink>
+  </div>
+	</NuxtLink>
 </template>
 
 <script setup>
@@ -34,6 +38,7 @@
   const props = defineProps({
     text: { type: String, required: true },
     to: { type: String, default: "#" },
+    class: { type: String, default: "" },
   });
 
   const topLayer = ref(null);

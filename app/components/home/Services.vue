@@ -7,7 +7,7 @@
     {
       title: "Residential Buildings",
       desc: "Private homes to multi-story apartment developments with finishing works.",
-      img: "https://aliyaconstructionplc.com/wp-content/uploads/2026/05/building-new-concrete-house_1398-2995.jpg",
+      img: "/hero55.jpg",
     },
     {
       title: "Commercial Buildings",

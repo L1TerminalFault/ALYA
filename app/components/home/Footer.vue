@@ -91,23 +91,23 @@
     );
   });
 
-  const handleSubmission = async (e: Event) => {
+  const handleSubmission = async (/* e: React.Event */) => {
     return alert("Thank you for subscribing!");
   };
 </script>
 
 <template>
   <div
-    class="relative z-0 flex w-full flex-col items-center justify-center overflow-hidden bg-white px-5 pt-50 pb-10"
+    class="relative z-0 flex h-full w-full flex-col items-center justify-center overflow-hidden bg-white px-5 pt-50 pb-10"
   >
     <div
-      class="animfooter relative z-10 flex aspect-[2.11/1] size-full h-auto min-h-[500px] max-w-467.5 flex-col justify-between rounded-[31px] border border-gray-800 bg-[#0F0F0F] px-10 py-12 text-white shadow-[0_30px_60px_rgba(0,0,0,0.4)] lg:px-15.5"
+      class="animfooter relative z-10 flex aspect-[2.11/1] size-full h-max min-h-125 max-w-467.5 flex-col justify-between rounded-[31px] border border-gray-800 bg-[#0F0F0F] px-10 py-12 text-white shadow-[0_30px_60px_rgba(0,0,0,0.4)] lg:px-15.5"
     >
       <div class="flex w-full flex-col gap-8">
         <div
-          class="footer-alya-text flex w-full justify-center text-center /font-[Switzer] text-[48px] font-bold text-white"
+          class="/font-[Switzer] flex w-full justify-center text-center text-[48px] font-bold text-white"
         >
-          ALIYA.co
+          <span class="footer-alya-text">ALIYA CONSTRUCTION PLC</span>
         </div>
 
         <div class="mt-10 flex flex-col justify-between gap-10 lg:flex-row">
@@ -117,14 +117,14 @@
             >
               BUILDING TOGETHER
             </div>
-            <div class="max-w-115 /font-[Switzer] text-[20px] text-gray-400">
+            <div class="/font-[Switzer] max-w-115 text-[20px] text-gray-400">
               Transforming visions into structural reality with precision
               engineering and sustainable design.
             </div>
           </div>
 
           <div class="flex w-full max-w-125 flex-col gap-5">
-            <div class="w-full /font-[Switzer] text-[20px]">
+            <div class="/font-[Switzer] w-full text-[20px]">
               <input
                 placeholder="ENTER YOUR EMAIL"
                 type="text"
@@ -146,9 +146,9 @@
         class="mt-12 flex flex-col items-center justify-between border-t border-gray-800 pt-8 lg:flex-row"
       >
         <div
-          class="order-2 mt-6 /font-[Switzer] text-[15px] font-medium text-gray-500 lg:order-1 lg:mt-0"
+          class="/font-[Switzer] order-2 mt-6 text-[15px] font-medium text-gray-500 lg:order-1 lg:mt-0"
         >
-          © 2026 ALIYA Construction Group. All rights reserved.
+          © 2026 ALIYA CONSTRUCTION PLC. All rights reserved.
         </div>
 
         <div class="order-1 flex items-center gap-4 lg:order-2">
@@ -166,15 +166,15 @@
     </div>
 
     <div
-      class="mega-text pointer-events-none mt-30 flex w-full flex-col gap-16 pb-20"
+      class="mega-text pointer-events-none mt-30 flex h-full w-full flex-col gap-16 pb-20"
     >
       <div
-        class="mega-text-inner /my-10 w-full overflow-hidden text-center /font-[Haas] text-[clamp(60px,13vw,400px)] font-black whitespace-nowrap text-[#f3f3f3] uppercase"
+        class="mega-text-inner /font-[Haas] my-10 w-full overflow-visible text-center text-[clamp(60px,8vw,125px)] font-black whitespace-nowrap text-[#f3f3f3] uppercase"
       >
-        ALIYA Co. PLC
+        ALIYA CONSTRUCTION PLC
       </div>
       <div
-        class="mx-auto w-full columns-1 gap-12 border-t border-gray-100 px-10 pt-10 text-justify /font-[Switzer] text-[12px] leading-relaxed text-gray-400 md:columns-2 lg:columns-4"
+        class="/font-[Switzer] mx-auto w-full columns-1 gap-12 border-t border-gray-100 px-10 pt-10 text-justify text-[12px] leading-relaxed text-gray-400 md:columns-2 lg:columns-4"
       >
         <p>
           Terms of Service: By accessing this website, you agree to be bound by
@@ -193,12 +193,12 @@
           actions against computer systems and data.
         </p>
         <p>
-          Disclaimer: The materials on ALIYA Group's website are provided on an
-          'as is' basis. ALIYA Group makes no warranties, expressed or implied,
-          and hereby disclaims and negates all other warranties including,
-          without limitation, implied warranties or conditions of
-          merchantability, fitness for a particular purpose, or non-infringement
-          of intellectual property or other violation of rights.
+          Disclaimer: The materials on ALIYA website are provided on an 'as is'
+          basis. ALIYA makes no warranties, expressed or implied, and hereby
+          disclaims and negates all other warranties including, without
+          limitation, implied warranties or conditions of merchantability,
+          fitness for a particular purpose, or non-infringement of intellectual
+          property or other violation of rights.
         </p>
         <p>
           Corporate Governance: We adhere to the highest standards of corporate

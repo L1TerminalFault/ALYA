@@ -17,37 +17,37 @@
     await nextTick();
     // Delay a bit so transition applies
     //if (!introShown) {
-      //setIntroShown(true);
+    //setIntroShown(true);
 
-      setTimeout(() => {
-        animate.value = true;
-        gsap.fromTo(
-          ".cls-1, .cls-2, .cls-3",
-          { drawSVG: "0%" },
-          {
-            drawSVG: "100%",
-            duration: 3.2,
-            ease: "power2.inOut",
-            onComplete: () => {
-              gsap.to(".cls-1", {
-                fill: "#eb2629",
-                stroke: "transparent",
-                duration: 0.4,
-              });
-              gsap.to(".cls-2", {
-                fill: "#000",
-                stroke: "transparent",
-                duration: 0.4,
-              });
-              gsap.to(".cls-3", {
-                fill: "#ed1c24",
-                stroke: "transparent",
-                duration: 0.4,
-              });
-            },
-          }
-        );
-      }, 100);
+    setTimeout(() => {
+      animate.value = true;
+      gsap.fromTo(
+        ".cls-1, .cls-2, .cls-3",
+        { drawSVG: "0%" },
+        {
+          drawSVG: "100%",
+          duration: 3.2,
+          ease: "power2.inOut",
+          onComplete: () => {
+            gsap.to(".cls-1", {
+              fill: "#eb2629",
+              stroke: "transparent",
+              duration: 1,
+            });
+            gsap.to(".cls-2", {
+              fill: "#000",
+              stroke: "transparent",
+              duration: 1,
+            });
+            gsap.to(".cls-3", {
+              fill: "#ed1c24",
+              stroke: "transparent",
+              duration: 1,
+            });
+          },
+        }
+      );
+    }, 100);
     //}
 
     setTimeout(() => {
@@ -56,7 +56,7 @@
       setTimeout(() => {
         introDone.value = true;
       }, 600);
-    }, 4000);
+    }, 5000);
   });
 </script>
 
@@ -74,8 +74,8 @@
       class="fixed inset-0 z-9999 flex h-svh w-svw items-center justify-center gap-6 bg-white transition-opacity duration-1000 ease-in-out"
     >
       <div
-        :class="animate ? 'scale-100 opacity-100' : 'scale-200 opacity-0'"
-        class="flex items-center justify-center gap-6 transition-all duration-1500"
+        :class="animate ? 'scale-100 opacity-100' : 'scale-450 opacity-0'"
+        class="flex items-center justify-center gap-4 transition-all duration-1800 ease-out"
       >
         <svg
           id="Layer_6"
@@ -120,24 +120,24 @@
         <div
           :class="
             animate
-              ? 'blur-0 max-w-100 opacity-100'
-              : 'max-w-0 opacity-0 blur-xl'
+              ? 'blur-0 max-w-240 opacity-100'
+              : 'max-w-0 opacity-0 blur-lg'
           "
-          class="whole-text overflow-hidden font-[Inter] text-8xl font-bold text-nowrap text-black transition-all delay-1300 duration-1000"
+          class="block items-baseline gap-2 pl-1 pt-5 justify-center overflow-hidden /font-[Inter] text-8xl font-bold text-nowrap text-black transition-all delay-1200 duration-3200 ease-in-out"
         >
           <span
             :class="animate ? 'text-brand-600 text-shadow-lg' : 'text-black'"
-            class="transition-all delay-2700 duration-1000"
+            class="transition-all delay-3500 duration-1000 ease-out"
           >
             ALIYA
           </span>
           <span
             :class="
-              animate ? 'text-4xl text-black/75' : 'text-[80px] text-black'
+              animate ? 'text-2xl text-black/75' : 'text-[50px] text-black'
             "
-            class="span-text pt-3 transition-all delay-2700 duration-700"
+            class="span-text pt-3 transition-all delay-3500 duration-800 ease-out"
           >
-            Co.
+            CONSTRUCTION PLC
           </span>
         </div>
       </div>

@@ -180,7 +180,7 @@
   ></div>
 
   <div
-    class="parent relative z-0 flex h-auto w-full flex-col gap-54 overflow-visible bg-white /font-[Haas55] max-2xl:aspect-16/19 2xl:h-full"
+    class="parent /font-[Haas55] relative z-0 flex h-auto w-full flex-col gap-54 overflow-visible bg-white max-2xl:aspect-16/19 2xl:h-full"
   >
     <!-- SVG Section -->
     <div
@@ -220,7 +220,7 @@
       class="relative z-10 flex min-h-screen items-center justify-center text-white"
     >
       <div
-        class="focus relative flex flex-col items-center justify-center gap-12 /font-[Haas75] text-2xl font-bold 2xl:text-8xl"
+        class="focus /font-[Haas75] relative flex flex-col items-center justify-center gap-12 text-2xl font-bold 2xl:text-8xl"
       >
         <div
           class="sptext perspective-text max-w-[85%] text-center text-[clamp(2.5rem,6vw,8.5rem)] leading-[1.1] font-bold 2xl:max-w-[75%]"
@@ -228,7 +228,7 @@
           OUR COMMITMENT TO QUALITY, SAFETY,
         </div>
         <div
-          class="cptext max-w-[75%] text-center /font-[Haas55] text-[clamp(16px,2.2vw,32px)] leading-[1.4] font-thin 2xl:max-w-[45%]"
+          class="cptext /font-[Haas55] max-w-[75%] text-center text-[clamp(16px,2.2vw,32px)] leading-[1.4] font-thin 2xl:max-w-[45%]"
         >
           At the heart of every project we take on is a dedication to delivering
           reliability. We build results that stand the test of time.
@@ -252,13 +252,14 @@
     </div>
 
     <div
-      class="relative z-0 -mt-43 bg-[#7f1d1d] flex min-h-screen w-full items-center justify-center"
+      class="relative z-0 -mt-43 flex min-h-screen w-full items-center justify-center bg-[#7f1d1d]"
     >
       <div
         class="absolute inset-0 h-full w-full overflow-hidden bg-transparent"
       >
+        <!-- src="/hero55.jpg" -->
         <img
-          src="/hero55.jpg"
+          src="/heroimg.png"
           class="fade h-full w-full bg-white object-cover opacity-50"
         />
         <div class="fade absolute inset-0 -z-10 h-full bg-black"></div>
@@ -270,13 +271,13 @@
         class="focus2 relative z-10 flex w-full flex-col items-center justify-center gap-10 px-5 text-center text-white"
       >
         <div
-          class="sptext2 perspective-text w-full max-w-[90%] /font-[Haas55] text-[clamp(45px,6vw,150px)] leading-tight font-bold"
+          class="sptext2 perspective-text /font-[Haas55] w-full max-w-[90%] text-[clamp(45px,6vw,150px)] leading-tight font-bold"
         >
           Building Fast With <br />
           Quality And Speed
         </div>
         <div
-          class="cptext2 w-full max-w-[700px] /font-[Switzer] text-[clamp(16px,1.8vw,28px)] leading-[1.4] font-normal opacity-90"
+          class="cptext2 /font-[Switzer] w-full max-w-[700px] text-[clamp(16px,1.8vw,28px)] leading-[1.4] font-normal opacity-90"
         >
           We don't just build; we accelerate. By combining cutting-edge material
           logistics with a veteran workforce.

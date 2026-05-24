@@ -31,11 +31,11 @@
       <div class="flex flex-col gap-15 lg:flex-row">
         <div class="flex w-full flex-col gap-8 lg:w-2/3">
           <div
-            class="font-[Haas] text-[clamp(35px,4vw,50px)] leading-tight font-bold"
+            class="/font-[Haas] text-[clamp(35px,4vw,50px)] leading-tight font-bold"
           >
             Project Overview
           </div>
-          <div class="font-[Switzer] text-lg leading-relaxed text-gray-400">
+          <div class="/font-[Switzer] text-lg leading-relaxed text-gray-400">
             The {{ projectName }} represents the pinnacle of modern construction
             methodology. Blending sustainable practices with extreme structural
             integrity, this project was successfully delivered on time and
@@ -51,31 +51,31 @@
           class="flex w-full flex-col gap-6 rounded-3xl border border-gray-800 bg-gray-900 p-8 lg:w-1/3"
         >
           <div
-            class="border-b border-gray-800 pb-4 font-[Haas] text-xl font-bold"
+            class="border-b border-gray-800 pb-4 /font-[Haas] text-xl font-bold"
           >
             Key Metrics
           </div>
           <div class="flex flex-col gap-4">
             <div class="flex justify-between">
-              <span class="font-[Switzer] text-gray-400">Sector</span>
+              <span class="/font-[Switzer] text-gray-400">Sector</span>
               <span class="font-bold">{{
                 project ? project.category : "Commercial"
               }}</span>
             </div>
             <div class="flex justify-between">
-              <span class="font-[Switzer] text-gray-400">Location</span>
+              <span class="/font-[Switzer] text-gray-400">Location</span>
               <span class="font-bold">{{
                 project ? project.location : "Addis Ababa"
               }}</span>
             </div>
             <div class="flex justify-between">
-              <span class="font-[Switzer] text-gray-400">Status</span>
+              <span class="/font-[Switzer] text-gray-400">Status</span>
               <span class="font-bold">{{
                 project ? project.status : "Completed"
               }}</span>
             </div>
             <div class="flex justify-between">
-              <span class="font-[Switzer] text-gray-400">Client</span>
+              <span class="/font-[Switzer] text-gray-400">Client</span>
               <span class="font-bold">{{
                 project ? project.client : "Confidential"
               }}</span>
@@ -85,11 +85,11 @@
       </div>
 
       <div
-        class="relative h-[600px] w-full overflow-hidden rounded-3xl border border-white/5 shadow-2xl"
+        class="relative h-max w-full overflow-hidden rounded-3xl border border-white/5 shadow-2xl"
       >
         <img
           :src="projectImage"
-          class="//grayscale //hover:grayscale-0 h-full w-full object-cover transition-all duration-1000"
+          class="h-full w-full object-cover transition-all duration-1000"
         />
       </div>
     </div>

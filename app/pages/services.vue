@@ -47,10 +47,10 @@ const services = [
     <div class="w-full max-w-7xl px-5 py-30 flex flex-col gap-15">
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <div v-for="(svc, i) in services" :key="i" class="flex flex-col gap-6 p-10 bg-gray-900 rounded-3xl border border-white/5 shadow-xl hover:border-brand-500/50 transition-colors">
-          <div class="text-2xl font-[Haas] font-bold text-white">{{ svc.title }}</div>
-          <div class="text-gray-400 font-[Switzer] text-base leading-relaxed">{{ svc.desc }}</div>
+          <div class="text-2xl /font-[Haas] font-bold text-white">{{ svc.title }}</div>
+          <div class="text-gray-400 /font-[Switzer] text-base leading-relaxed">{{ svc.desc }}</div>
           <ul class="flex flex-col gap-2 mt-2">
-            <li v-for="(item, j) in svc.list" :key="j" class="flex items-center gap-3 text-sm font-[Switzer] text-white/80">
+            <li v-for="(item, j) in svc.list" :key="j" class="flex items-center gap-3 text-sm /font-[Switzer] text-white/80">
               <div class="w-1.5 h-1.5 rounded-full bg-brand-500 shrink-0"></div>
               {{ item }}
             </li>
@@ -62,10 +62,10 @@ const services = [
       <div class="w-full bg-brand-600 rounded-3xl p-12 flex flex-col xl:flex-row items-center justify-between gap-10 shadow-2xl relative overflow-hidden mt-10">
         <div class="absolute inset-0 opacity-10 bg-[url('/noise.png')] mix-blend-overlay"></div>
         <div class="flex flex-col gap-4 relative z-10 max-w-3xl text-center xl:text-left">
-          <div class="text-[clamp(1.8rem,3vw,2.5rem)] font-[Haas] font-bold text-white leading-tight">Our Commitment to your Project is Exceptional</div>
-          <div class="text-white/90 font-[Switzer] text-lg leading-relaxed">We are committed to delivering construction services with quality workmanship, professional management, and reliable project execution from planning through completion.</div>
+          <div class="text-[clamp(1.8rem,3vw,2.5rem)] /font-[Haas] font-bold text-white leading-tight">Our Commitment to your Project is Exceptional</div>
+          <div class="text-white/90 /font-[Switzer] text-lg leading-relaxed">We are committed to delivering construction services with quality workmanship, professional management, and reliable project execution from planning through completion.</div>
         </div>
-        <NuxtLink to="/contact" class="shrink-0 relative z-10 bg-white text-brand-900 font-[Switzer] font-bold text-lg px-8 py-4 rounded-full shadow-xl hover:scale-105 transition-transform">Contact Us</NuxtLink>
+        <NuxtLink to="/contact" class="shrink-0 relative z-10 bg-white text-brand-900 /font-[Switzer] font-bold text-lg px-8 py-4 rounded-full shadow-xl hover:scale-105 transition-transform">Contact Us</NuxtLink>
       </div>
     </div>
     

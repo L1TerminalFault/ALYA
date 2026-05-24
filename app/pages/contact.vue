@@ -15,39 +15,39 @@
       <!-- Form Section -->
       <div class="flex w-full flex-col gap-8 lg:w-1/2">
         <div
-          class="text-brand-500 font-[Switzer] text-sm font-bold uppercase"
+          class="text-brand-500 /font-[Switzer] text-sm font-bold uppercase"
         >
           Get In Touch
         </div>
         <div
-          class="font-[Haas] text-[clamp(35px,4vw,50px)] leading-none font-bold text-white shadow-sm"
+          class="/font-[Haas] text-[clamp(35px,4vw,50px)] leading-none font-bold text-white shadow-sm"
         >
           Let's build the future together.
         </div>
 
         <form class="mt-4 flex w-full max-w-lg flex-col gap-6" @submit.prevent>
           <div class="flex flex-col gap-2">
-            <label class="font-[Switzer] text-sm text-gray-400"
+            <label class="/font-[Switzer] text-sm text-gray-400"
               >Full Name</label
             >
             <input
               type="text"
               class="focus:border-brand-500 w-full border-b border-gray-700 bg-transparent py-3 text-white transition-colors outline-none"
-              placeholder="John Doe"
+              placeholder="Belay Taye"
             />
           </div>
           <div class="flex flex-col gap-2">
-            <label class="font-[Switzer] text-sm text-gray-400"
+            <label class="/font-[Switzer] text-sm text-gray-400"
               >Email Address</label
             >
             <input
               type="email"
               class="focus:border-brand-500 w-full border-b border-gray-700 bg-transparent py-3 text-white transition-colors outline-none"
-              placeholder="john@example.com"
+              placeholder="belaytaye@example.com"
             />
           </div>
           <div class="flex flex-col gap-2">
-            <label class="font-[Switzer] text-sm text-gray-400"
+            <label class="/font-[Switzer] text-sm text-gray-400"
               >Project Details</label
             >
             <textarea
@@ -57,7 +57,7 @@
             ></textarea>
           </div>
           <button
-            class="hover:bg-brand-50 hover:text-brand-900 mt-4 self-start rounded-full bg-white px-12 py-4 font-[Switzer] font-bold text-black transition-colors"
+            class="hover:bg-brand-50 hover:text-brand-900 mt-4 self-start rounded-full bg-white px-12 py-4 /font-[Switzer] font-bold text-black transition-colors"
           >
             Submit Request
           </button>
@@ -69,8 +69,8 @@
         <div
           class="flex flex-col gap-6 rounded-3xl border border-white/5 bg-gray-900 p-10"
         >
-          <div class="font-[Haas] text-2xl font-bold">Global Headquarters</div>
-          <div class="font-[Switzer] text-lg leading-relaxed text-gray-400">
+          <div class="/font-[Haas] text-2xl font-bold">Global Headquarters</div>
+          <div class="/font-[Switzer] text-lg leading-relaxed text-gray-400">
             Bole, Near Atlas Traffic Light,
             <br />
             KT Apartment Building @ 7th floor
@@ -80,24 +80,24 @@
             <span class="text-sm opacity-70">P.O. Box: 8566</span>
           </div>
           <div class="flex flex-col gap-1">
-            <div class="text-brand-500 font-[Switzer] text-lg font-bold">
+            <div class="text-brand-500 /font-[Switzer] text-lg font-bold">
               +251 - 949 00 77 77
             </div>
-            <div class="text-brand-500 font-[Switzer] text-lg font-bold">
+            <div class="text-brand-500 /font-[Switzer] text-lg font-bold">
               +251 - 986 00 77 77
             </div>
-            <div class="text-brand-500 font-[Switzer] text-lg font-bold">
+            <div class="text-brand-500 /font-[Switzer] text-lg font-bold">
               +251 - 116 67 07 77
             </div>
           </div>
           <div class="mt-2 flex flex-col gap-2">
             <div
-              class="hover:text-brand-500 w-fit cursor-pointer border-b border-dashed border-gray-500 pb-1 font-[Switzer] text-base text-white transition-colors"
+              class="hover:text-brand-500 w-fit cursor-pointer border-b border-dashed border-gray-500 pb-1 /font-[Switzer] text-base text-white transition-colors"
             >
               aliyaconstructionplc@gmail.com
             </div>
             <div
-              class="hover:text-brand-500 w-fit cursor-pointer border-b border-dashed border-gray-500 pb-1 font-[Switzer] text-base text-white transition-colors"
+              class="hover:text-brand-500 w-fit cursor-pointer border-b border-dashed border-gray-500 pb-1 /font-[Switzer] text-base text-white transition-colors"
             >
               enterprise@aliya.co
             </div>

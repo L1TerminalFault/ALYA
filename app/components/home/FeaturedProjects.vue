@@ -5,16 +5,19 @@
 
   const projects = [
     {
+      id: "ab1bc2cc-078a-4bd4-887d-8c283c79dfb3",
       name: "Ariyo Learning Institute",
       location: "Bonga, Keffa",
       img: "/featuredp1.jpg",
     },
     {
+      id: "ee6fe3d4-4e76-485d-b7b7-d4c87c00591c",
       name: "BGI Ethiopia Maintenance",
       location: "Addis Ababa",
       img: "/featuredp2.jpg",
     },
     {
+      id: "7c99a343-33ad-4e1d-b0ea-61899b75c0b8",
       name: "Wro Martha Mixed-Use",
       location: "Addis Ababa",
       img: "/featuredp3.jpg",
@@ -49,16 +52,14 @@
     <div
       class="flex w-full max-w-7xl flex-col items-end justify-between gap-10 md:flex-row"
     >
-      <div
-        class="/font-[Haas] text-4xl leading-[1.1] font-bold lg:text-[70px]"
-      >
+      <div class="/font-[Haas] text-4xl leading-[1.1] font-bold lg:text-[70px]">
         Featured<br />Projects
       </div>
       <NuxtLink
         to="/work"
         class="group text-brand-500 border-brand-500 flex cursor-pointer items-center gap-3 overflow-hidden rounded-full border px-6 py-3 font-bold transition-colors hover:border-white hover:text-white"
       >
-        <span class="mt-1 /font-[Switzer] text-[15px] uppercase"
+        <span class="/font-[Switzer] mt-1 text-[15px] uppercase"
           >Explore Portfolio</span
         >
         <img
@@ -75,7 +76,7 @@
       <NuxtLink
         v-for="(project, i) in projects"
         :key="i"
-        :to="'/projects/' + project.name.toLowerCase().replace(/ /g, '-')"
+        :to="'/projects_/' + project.id"
         class="project-card group relative block h-[500px] w-full cursor-pointer overflow-hidden rounded-2xl border border-white/5"
       >
         <img
@@ -101,7 +102,7 @@
             </div>
           </div>
           <div
-            class="-mt-1 pr-4 /font-[Haas55] text-3xl leading-tight font-bold text-white"
+            class="/font-[Haas55] -mt-1 pr-4 text-3xl leading-tight font-bold text-white"
           >
             {{ project.name }}
           </div>

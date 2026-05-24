@@ -30,8 +30,8 @@ onMounted(async () => {
 </script>
 
 <template>
-  <div class="relative text-xs flex gap-10 items-center justify-center max-md:hidden">
-    <AnimatedLink v-for="r in NAV_ROUTES" id="main" :key="r.name" :to="r.path" :text="r.name">
+  <div class="relative text-xs flex items-center justify-center max-md:hidden">
+    <AnimatedLink v-for="r in NAV_ROUTES" id="main" :key="r.name" :to="r.path" :text="r.name" class="p-3" :class="route.path.includes(r.path.toLowerCase()) ? 'font-black text-white scale-120' : 'text-gray-300'">
     </AnimatedLink>
   </div>
 </template>
