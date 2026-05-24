@@ -205,7 +205,7 @@
           class="bg-white/ relative flex h-5.5 w-6 -translate-y-0.5 scale-150 items-center justify-center p-0.5"
         >
           <div
-            class="backsvg h-full w-full scale-114 bg-white/90 opacity-0 [clip-path:polygon(50%_0%,0%_100%,100%_100%)]"
+            class="backsvg absolute inset-0 h-[95%] /w-full /-translate-y-[0.5px] scale-108 origin-center bg-white/90 opacity-0 [clip-path:polygon(50%_0%,0%_100%,100%_100%)]"
           ></div>
           <svg
             xmlns="http://www.w3.org/2000/svg"

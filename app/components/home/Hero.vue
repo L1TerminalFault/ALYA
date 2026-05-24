@@ -151,7 +151,7 @@
           Creating spaces with purpose
         </div>
 
-        <AnimatedCtaBtn text="Get Started" class="animated-cta bg-white" />
+        <AnimatedCtaBtn to="/contact" text="Get Started" class="animated-cta bg-white" />
       </div>
     </div>
   </div>

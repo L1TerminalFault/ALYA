@@ -1,6 +1,7 @@
 <template>
-  <button
+  <NuxtLink
     :class="class"
+    :to="props.to"
     class="group relative inline-flex items-center justify-center rounded-full px-8 py-4 font-bold uppercase transition-colors duration-300"
     @mouseenter="onMouseEnter"
     @mouseleave="onMouseLeave"
@@ -27,7 +28,7 @@
         />
       </div>
     </div>
-  </button>
+  </NuxtLink>
 </template>
 
 <script setup>
@@ -37,6 +38,7 @@
   const props = defineProps({
     text: { type: String, default: "Get Started" },
     class: { type: String, default: "" },
+    to: {type: String, default: "#"},
   });
 
   const topLayer = ref(null);
