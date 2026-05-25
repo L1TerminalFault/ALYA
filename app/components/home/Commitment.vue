@@ -179,6 +179,10 @@
     style="width: 6px; height: 6px; margin-left: -3px; margin-top: -3px"
   ></div>
 
+  <div class="h-screen w-svw bg-[#0003] hidden">
+	  
+  </div>
+
   <div
     class="parent /font-[Haas55] relative z-0  flex h-auto w-full flex-col gap-54 overflow-visible bg-white max-2xl:aspect-16/19 2xl:h-full"
   >
