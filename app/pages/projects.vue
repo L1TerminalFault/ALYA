@@ -1,6 +1,6 @@
 <script setup lang="ts">
   import { PROJECTS } from "@/components/../../shared/utils/constants";
-  useHead({ title: "Our Work" });
+  useHead({ title: "Our Projects" });
 
   const projects = PROJECTS;
 </script>

@@ -1,21 +1,22 @@
 <template>
   <NuxtLink
-    :class="class"
     :to="props.to"
-    class="group relative inline-flex items-center justify-center rounded-full px-8 py-4 font-bold uppercase transition-colors duration-300"
+    :class="
+      'group relative inline-flex items-center justify-center rounded-full px-8 py-4 font-bold uppercase transition-colors duration-300' +
+      props.class
+    "
     @mouseenter="onMouseEnter"
     @mouseleave="onMouseLeave"
   >
     <!-- The Mask Container: This handles the tight cropping -->
-    <div class="relative flex h-[1.2em] items-center overflow-hidden">
+    <div
+      class="relative flex h-[1.2em] translate-y-0.5 items-center overflow-hidden"
+    >
       <!-- Top Layer -->
       <div ref="topLayer" class="flex">
-        <span
-          v-for="(char, i) in text"
-          :key="`top-${i}`"
-          class="inlin block"
-          v-html="char === ' ' ? '&nbsp;' : char"
-        />
+        <span v-for="(char, i) in text" :key="`top-${i}`" class="inline-block">
+          {{ char === " " ? "&nbsp;" : char }}
+        </span>
       </div>
 
       <!-- Bottom Layer -->
@@ -24,8 +25,9 @@
           v-for="(char, i) in text"
           :key="`bottom-${i}`"
           class="inline-block"
-          v-html="char === ' ' ? '&nbsp;' : char"
-        />
+        >
+          {{ char === " " ? "&nbsp;" : char }}
+        </span>
       </div>
     </div>
   </NuxtLink>
@@ -38,7 +40,7 @@
   const props = defineProps({
     text: { type: String, default: "Get Started" },
     class: { type: String, default: "" },
-    to: {type: String, default: "#"},
+    to: { type: String, default: "#" },
   });
 
   const topLayer = ref(null);
@@ -51,7 +53,7 @@
     const bottomChars = bottomLayer.value.children;
 
     // Set bottom chars exactly 100% down relative to the text mask
-    gsap.set(bottomChars, { yPercent: 100 });
+    gsap.set(bottomChars, { yPercent: 110 });
 
     tl = gsap.timeline({
       paused: true,
@@ -64,7 +66,7 @@
     }).to(
       bottomChars,
       {
-        yPercent: 0,
+        yPercent: 2,
         stagger: 0.015,
       },
       0

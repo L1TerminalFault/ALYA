@@ -51,7 +51,7 @@
     const bottomChars = bottomLayer.value.children;
 
     // Set initial state of bottom characters immediately
-    gsap.set(bottomChars, { yPercent: 125 });
+    gsap.set(bottomChars, { yPercent: 135 });
 
     tl = gsap.timeline({
       paused: true,

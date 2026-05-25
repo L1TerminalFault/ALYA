@@ -43,7 +43,7 @@
             // },
             {
               opacity: 1,
-              delay: 1,
+              delay: 0,
               duration: 1,
             }
           );
@@ -190,7 +190,7 @@
 
 <template>
   <nav
-    class="perspective-1000 pointer-events-none fixed top-0 left-0 z-50 flex w-full items-start justify-between p-0 lg:p-5"
+    class="perspective-1000 pointer-events-none fixed top-0 left-0 z-45 flex w-full items-start justify-between p-0 lg:p-5"
   >
     <div
       class="nav-pill nav-left nav-container pointer-events-auto flex items-center gap-8 rounded-full border border-white/15 bg-black/35 p-2 px-6 shadow-2xl backdrop-blur-xl transition-all duration-300"
@@ -205,7 +205,7 @@
           class="bg-white/ relative flex h-5.5 w-6 -translate-y-0.5 scale-150 items-center justify-center p-0.5"
         >
           <div
-            class="backsvg absolute inset-0 h-[95%] /w-full /-translate-y-[0.5px] scale-108 origin-center bg-white/90 opacity-0 [clip-path:polygon(50%_0%,0%_100%,100%_100%)]"
+            class="backsvg /w-full /-translate-y-[0.5px] absolute inset-0 h-[95%] origin-center scale-108 bg-white/90 opacity-0 [clip-path:polygon(50%_0%,0%_100%,100%_100%)]"
           ></div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -262,10 +262,12 @@
         </div>
 
         <span
-          class="font-[FuturaExtraBold]! text-xl font-black text-white transition-transform group-hover:scale-101"
+          class="/font-[FuturaExtraBold]! text-xl font-black text-white transition-transform group-hover:scale-101"
         >
           ALIYA
-          <span class="font-[Futura]! text-lg font-thin">CONSTRUCTION PLC</span>
+          <span class="/font-[Futura]! text-lg font-thin"
+            >CONSTRUCTION PLC</span
+          >
         </span>
         <div
           v-if="false"
@@ -283,10 +285,14 @@
       >
         {{ isAmharic ? "AM" : "EN" }}
       </button -->
-      <div class="hidden items-center gap-0 md:flex">
+      <div class="flex py-2 min-[1300px]:hidden">
+        <TopSliderSheet />
+      </div>
+
+      <div class="hidden items-center gap-0 min-[1300px]:flex">
         <NavLinks />
       </div>
-      <div class="h-5 w-px bg-gray-900" />
+      <div class="h-5 w-px bg-gray-900/60" />
       <div class="relative flex items-center">
         <span
           class="cursor-pointer rounded-full text-xs font-semibold text-white transition-colors hover:font-extrabold"

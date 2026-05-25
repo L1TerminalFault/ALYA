@@ -14,7 +14,7 @@
     {
       title:
         "Fast And Reliable Incredible Build Quality Their Quality Is Always Worth The Money",
-      desc: "I've had the pleasure of collaborating with Dumeme on multiple projects, and his ability to turn ideas into stunning, functional designs is unmatched.",
+      desc: "I've had the pleasure of collaborating with Belay on multiple projects, and his ability to turn ideas into stunning, functional designs is unmatched.",
       image1: "/test1.jpg",
       image2: "/test2.jpg",
     },
@@ -132,6 +132,8 @@
           filter: "blur(0px)",
         });
 
+        // counter.value =
+        //   counter.value === reviews.length - 1 ? 0 : counter.value + 1;
         gsap.fromTo(
           titleSplit.lines,
           { opacity: 0, y: 40 },
@@ -149,11 +151,11 @@
 </script>
 
 <template>
-  <div class="my-40 w-svw overflow-hidden bg-transparent text-white">
+  <div class="my-40 w-svw overflow-hidden bg-transparent py-40 text-white">
     <div class="max-467.5 mx-auto w-full">
       <div class="flex flex-col items-center gap-25">
         <div
-          class="revhead flex w-full justify-center px-10 text-center /font-[Haas] text-[clamp(30px,4vw,48px)]"
+          class="revhead /font-[Haas] flex w-full justify-center px-10 text-center text-[clamp(30px,4vw,48px)]"
         >
           what others think about us
         </div>
@@ -166,28 +168,28 @@
               class="test relative flex h-auto flex-1 items-center justify-center overflow-visible lg:h-full"
             >
               <img
-                src="/test1.jpg"
+                src="/test4.png"
                 class="image1 absolute h-130 w-120 rounded-[100px] object-cover"
                 style="z-index: 10"
               />
               <img
                 src="/test2.jpg"
                 class="image2 absolute mt-10 h-130 w-120 rounded-[100px] object-cover"
-                style="z-index: 0; opacity: 0.5;"
+                style="z-index: 0; opacity: 0.5"
               />
             </div>
 
             <div class="flex h-full w-[60%] flex-col justify-between gap-10">
               <div class="flex flex-col gap-10.5">
                 <div
-                  class="review-title pr-10 /font-[Haas] text-[clamp(20px,3vw,58px)] leading-tight font-thin uppercase italic"
+                  class="review-title /font-[Haas] pr-10 text-[clamp(20px,3vw,58px)] leading-tight font-thin uppercase italic"
                 >
-                  {{ review.title }}
+                  {{ reviews[counter].title }}
                 </div>
                 <div
                   class="review-description /font-[Switzer] text-[clamp(13px,2vw,22px)] leading-[1.4] text-gray-400"
                 >
-                  " {{ review.desc }} "
+                  " {{ reviews[counter].desc }} "
                 </div>
               </div>
 

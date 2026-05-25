@@ -134,7 +134,7 @@
             </div>
             <AnimatedCtaBtn
               text="Subscribe for Updates"
-              class="bg-brand-500 flex w-full items-center justify-center overflow-hidden rounded-full p-5 text-[18px] font-bold text-white shadow-lg transition-colors"
+              class="flex w-full items-center justify-center overflow-hidden rounded-full bg-[oklch(60.6%_0.25_22.75deg)] p-5 text-[18px] font-bold text-white shadow-lg transition-colors"
               :call-back="handleSubmission"
             >
             </AnimatedCtaBtn>

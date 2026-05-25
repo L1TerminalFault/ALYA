@@ -120,10 +120,10 @@
         <div
           :class="
             animate
-              ? 'blur-0 max-w-240 opacity-100'
+              ? 'blur-0 max-w-180 opacity-100'
               : 'max-w-0 opacity-0 blur-lg'
           "
-          class="block items-baseline gap-2 pl-1 pt-5 justify-center overflow-hidden /font-[Inter] text-8xl font-bold text-nowrap text-black transition-all delay-1200 duration-3200 ease-in-out"
+          class="/font-[Inter] block items-baseline justify-center gap-2 overflow-hidden pt-5 pl-1 text-8xl font-bold text-nowrap text-black transition-all delay-1200 duration-2500 ease-in-out"
         >
           <span
             :class="animate ? 'text-brand-600 text-shadow-lg' : 'text-black'"
@@ -135,7 +135,7 @@
             :class="
               animate ? 'text-2xl text-black/75' : 'text-[50px] text-black'
             "
-            class="span-text pt-3 transition-all delay-3500 duration-800 ease-out"
+            class="span-text pt-3 transition-all delay-3500 duration-800 ease-in-out"
           >
             CONSTRUCTION PLC
           </span>
@@ -154,11 +154,11 @@
         <!-- Alternating sections with generous spacing -->
         <div class="w-full bg-gray-950"><HomeCommitment /></div>
         <div class="w-full bg-white py-20"><HomeProcessTimeline /></div>
-        <div class="w-full bg-gray-950 py-20"><HomeStats /></div>
+        <div class="/py-20 w-full bg-gray-950"><HomeStats /></div>
         <div class="w-full bg-[#f8f8f8] py-20"><HomeServices /></div>
         <div class="w-full bg-gray-950 py-20"><HomeInnovation /></div>
         <div class="w-full bg-[#ffffff] py-20"><HomeFaq /></div>
-        <div class="w-full bg-gray-950 py-40"><HomeTestimonials /></div>
+        <div class="/py-40 w-full bg-gray-950"><HomeTestimonials /></div>
         <div class="w-full bg-gray-950 pt-20 pb-10">
           <HomeSafetyCertifications />
         </div>

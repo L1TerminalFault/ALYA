@@ -180,7 +180,7 @@
   ></div>
 
   <div
-    class="parent /font-[Haas55] relative z-0 flex h-auto w-full flex-col gap-54 overflow-visible bg-white max-2xl:aspect-16/19 2xl:h-full"
+    class="parent /font-[Haas55] relative z-0  flex h-auto w-full flex-col gap-54 overflow-visible bg-white max-2xl:aspect-16/19 2xl:h-full"
   >
     <!-- SVG Section -->
     <div
@@ -234,7 +234,7 @@
           reliability. We build results that stand the test of time.
         </div>
 
-        <div class="magnetic-wrap z-20">
+        <NuxtLink to="/contact" class="magnetic-wrap z-20">
           <div
             ref="btnRef"
             class="group cursor-pointer rounded-full border border-white/20 p-2"
@@ -247,7 +247,7 @@
               </span>
             </div>
           </div>
-        </div>
+        </NuxtLink>
       </div>
     </div>
 
@@ -277,7 +277,7 @@
           Quality And Speed
         </div>
         <div
-          class="cptext2 /font-[Switzer] w-full max-w-[700px] text-[clamp(16px,1.8vw,28px)] leading-[1.4] font-normal opacity-90"
+          class="cptext2 /font-[Switzer] w-full max-w-175 text-[clamp(16px,1.8vw,28px)] leading-[1.4] font-normal opacity-90"
         >
           We don't just build; we accelerate. By combining cutting-edge material
           logistics with a veteran workforce.

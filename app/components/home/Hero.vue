@@ -101,10 +101,10 @@
 <template>
   <div
     ref="root"
-    class="fixed top-0 z-0 flex aspect-8/7 h-screen w-full justify-center overflow-visible lg:p-5"
+    class="fixed top-0 z-0 flex aspect-8/7 h-screen w-full max-w-svw justify-center overflow-visible lg:p-5"
   >
     <div
-      class="pointer-events-none absolute inset-0 -top-[7.5%] -left-[7.5%] z-0 h-[115%] w-[115%]"
+      class="pointer-events-none absolute inset-0 -top-[12.5%] -left-[7.5%] z-0 h-[115%] w-[115%]"
     >
       <!-- src="/hero.png" -->
       <img
@@ -119,7 +119,7 @@
       class="pointer-events-none relative z-20 flex aspect-video h-full w-full justify-center pt-20"
     >
       <div
-        class="heroheader flex-col-center pointer-events-auto gap-3 p-6 text-black opacity-0 lg:gap-8"
+        class="heroheader w-full flex flex-col-center pointer-events-auto gap-3 p-6 text-black opacity-0 lg:gap-8"
       >
         <div class="cutbwu">
           <NuxtLink
@@ -136,7 +136,7 @@
           </NuxtLink>
         </div>
 
-        <div class="perspective-container hero-text-large">
+        <div class="/perspective-container hero-text-large">
           <span class="spt text-nowrap italic drop-shadow-2xl">
             WE DO WHAT IS RIGHT,
           </span>
@@ -165,7 +165,7 @@
   }
 
   .hero-text-large {
-    @apply flex w-full min-w-75 flex-col items-center justify-center text-center leading-[1.1] font-black;
+    @apply flex w-full flex-col items-center justify-center text-center leading-[1.1] font-black;
     font-size: clamp(30px, 5vw, 160px);
     color: white;
   }
