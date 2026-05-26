@@ -173,7 +173,7 @@
                 style="z-index: 10"
               />
               <img
-                src="/test2.jpg"
+                src="/test1.jpg"
                 class="image2 absolute mt-10 h-130 w-120 rounded-[100px] object-cover"
                 style="z-index: 0; opacity: 0.5"
               />

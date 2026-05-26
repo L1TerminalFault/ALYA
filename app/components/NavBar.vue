@@ -262,7 +262,7 @@
         </div>
 
         <span
-          class="/font-[FuturaExtraBold]! text-xl font-black text-white transition-transform group-hover:scale-101"
+          class="/font-[FuturaExtraBold]! text-xl font-black text-white translate-y-0.5 transition-transform group-hover:scale-101"
         >
           ALIYA
           <span class="/font-[Futura]! text-lg font-thin"

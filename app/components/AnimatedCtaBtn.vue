@@ -10,7 +10,7 @@
   >
     <!-- The Mask Container: This handles the tight cropping -->
     <div
-      class="relative flex h-[1.2em] translate-y-0.5 items-center overflow-hidden"
+      class="relative flex h-[1.2em] /translate-y-0.5 items-center overflow-hidden"
     >
       <!-- Top Layer -->
       <div ref="topLayer" class="flex">
@@ -66,7 +66,7 @@
     }).to(
       bottomChars,
       {
-        yPercent: 2,
+        yPercent: 5,
         stagger: 0.015,
       },
       0
