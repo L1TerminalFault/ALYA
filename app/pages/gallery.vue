@@ -87,7 +87,7 @@
       class="fixed inset-0 z-[100] flex items-center justify-center bg-gray-950/90 backdrop-blur-sm p-5 cursor-zoom-out"
       @click="closeModal"
     >
-      <img :src="selectedImage" class="max-h-[90vh] max-w-[90vw] object-contain rounded-lg shadow-2xl" @click.stop />
+      <NuxtImg :src="selectedImage" :placeholder="1" class="max-h-[90vh] max-w-[90vw] object-contain rounded-lg shadow-2xl" @click.stop />
       
       <button 
         @click="closeModal"

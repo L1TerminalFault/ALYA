@@ -262,8 +262,9 @@
         class="absolute inset-0 h-full w-full overflow-hidden bg-transparent"
       >
         <!-- src="/hero55.jpg" -->
-        <img
+        <NuxtImg
           src="/heroimg.png"
+	  :placeholder="1"
           class="fade h-full w-full bg-white object-cover opacity-50"
         />
         <div class="fade absolute inset-0 -z-10 h-full bg-black"></div>

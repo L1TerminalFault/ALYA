@@ -131,8 +131,9 @@
             <div class="light text-xs font-light text-white md:text-sm">
               contact us to build with us
             </div>
-            <img
+            <NuxtImg
               src="/arrow.svg"
+	      :placeholder="1"
               class="bounce-back w-4 shrink-0 invert transition-all group-hover:ml-3.5"
             />
           </NuxtLink>

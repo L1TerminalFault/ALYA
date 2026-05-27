@@ -22,8 +22,9 @@
           :to="'/projects_/' + project.id"
           class="group relative block h-125 w-full cursor-pointer overflow-hidden rounded-2xl"
         >
-          <img
+          <NuxtImg
             :src="project.img"
+			  :placeholder="1"
             class="absolute inset-0 size-full object-cover transition-transform duration-1000 group-hover:scale-110"
           />
           <div

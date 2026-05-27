@@ -87,8 +87,9 @@
       <div
         class="relative h-max w-full overflow-hidden rounded-3xl border border-white/5 shadow-2xl"
       >
-        <img
+        <NuxtImg
           :src="projectImage"
+			:placeholder="1"
           class="h-full w-full object-cover transition-all duration-1000"
         />
       </div>
