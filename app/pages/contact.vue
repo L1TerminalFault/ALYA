@@ -1,5 +1,63 @@
 <script setup lang="ts">
+  import { fAddUser } from "~~/shared/utils/database";
+  import gsap from "gsap";
+
   useHead({ title: "Contact Us" });
+
+  const fullName = ref("");
+  const email = ref("");
+  const details = ref("");
+  const submitting = ref(false);
+  const subTxt = ref("");
+
+  onMounted(() => {
+    animTl = gsap.timeline({ paused: true });
+    animTl.fromTo(
+      ".notify",
+      { scale: 0.8, y: 10, opacity: 0 },
+      { scale: 1, y: 65, opacity: 1, duration: 0.4, ease: "back.out(2)" }
+    );
+  });
+  
+  let animTl: any;
+
+  const animate = () => {
+    animTl.play(0);
+    setTimeout(() => animTl.reverse(), 1800);
+  };
+
+  const handleSubmission = async () => {
+    if (!email?.value.length || !fullName?.value.length || !details?.value.length) {
+      subTxt.value = "Fill all fields first";
+      animate();
+      submitting.value = false;
+      return;
+    }
+
+    submitting.value = true;
+
+    const subed = localStorage.getItem("__alya_user_subscribed__");
+
+    if (subed) {
+      subTxt.value = "Already submitted";
+      animate();
+      submitting.value = false;
+      return;
+    }
+
+    try {
+      await fAddUser({ fullName: fullName.value, email: email.value, details: details.value });
+      subTxt.value = "Submitted";
+      localStorage.setItem("__alya_user_subscribed__", "true");
+      animate();
+    } catch (err) {
+      subTxt.value = "Something went wrong";
+      animate();
+      console.log(err);
+    } finally {
+      submitting.value = false;
+    }
+  };
 </script>
 <template>
   <div
@@ -25,13 +83,14 @@
           Let's build the future together.
         </div>
 
-        <form class="mt-4 flex w-full max-w-lg flex-col gap-6" @submit.prevent>
+        <form class="mt-4 flex w-full max-w-lg flex-col gap-6" @submit.prevent="handleSubmission">
           <div class="flex flex-col gap-2">
             <label class="/font-[Switzer] text-sm text-gray-400"
               >Full Name</label
             >
             <input
               type="text"
+	      v-model="fullName"
               class="focus:border-brand-500 w-full border-b border-gray-700 bg-transparent py-3 text-white transition-colors outline-none"
               placeholder="Belay Taye"
             />
@@ -41,6 +100,7 @@
               >Email Address</label
             >
             <input
+			    v-model="email"
               type="email"
               class="focus:border-brand-500 w-full border-b border-gray-700 bg-transparent py-3 text-white transition-colors outline-none"
               placeholder="belaytaye@example.com"
@@ -51,15 +111,23 @@
               >Project Details</label
             >
             <textarea
+			    v-model="details"
               rows="4"
               class="focus:border-brand-500 mt-2 w-full resize-none rounded-lg border border-gray-700 bg-gray-900 p-4 text-white transition-colors outline-none"
               placeholder="Tell us about your requirements..."
             ></textarea>
           </div>
           <button
-            class="hover:bg-brand-50 hover:text-brand-900 mt-4 self-start rounded-full bg-white px-12 py-4 /font-[Switzer] font-bold text-black transition-colors"
+			  type="submit"
+			  :disabled="submitting"
+            class="relative z-0 hover:bg-brand-50 hover:text-brand-900 mt-4 self-start rounded-full bg-white px-12 py-4 /font-[Switzer] font-bold text-black transition-colors"
           >
-            Submit Request
+              <div
+                class="notify z-40 text-nowrap pointer-events-none absolute left-1/2 -translate-x-1/2 rounded-full bg-white px-4 py-1.5 text-sm font-black text-black opacity-0 shadow-xl"
+              >
+                {{ subTxt }}
+              </div>
+	  {{submitting ? 'Please wait' : 'Submit Request'}}
           </button>
         </form>
       </div>

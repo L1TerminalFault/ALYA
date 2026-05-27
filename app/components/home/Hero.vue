@@ -2,8 +2,10 @@
   import gsap from "gsap";
   import { SplitText } from "gsap/all";
   import { ref, onMounted, onUnmounted } from "vue";
+
   import AnimatedCtaBtn from "../AnimatedCtaBtn.vue";
 
+  const router = useRouter();
   const root = ref<HTMLElement | null>(null);
   const heroBg = ref<HTMLElement | null>(null);
   let ctx: gsap.Context;
@@ -140,18 +142,21 @@
           <span class="spt text-nowrap italic drop-shadow-2xl">
             WE DO WHAT IS RIGHT,
           </span>
-          <span class="spt text-nowrap italic drop-shadow-2xl"
-            >NOT WHAT IS EASY!</span
-          >
-        </div>
-
+          <span class="spt text-nowrap italic drop-shadow-2xl">NOT WHAT IS EASY!</span></div>
         <div
           class="cpt fluid-subtext text-center text-white italic drop-shadow-xl"
         >
           Creating spaces with purpose
         </div>
 
-        <AnimatedCtaBtn to="/contact" text="Get Started" class="animated-cta bg-white" />
+		<NuxtLink
+				to="/contact"
+			class="animated-cta">
+        <AnimatedCtaBtn
+          text="Get Started"
+          class="z-0 bg-white"
+        />
+		</NuxtLink>
       </div>
     </div>
   </div>

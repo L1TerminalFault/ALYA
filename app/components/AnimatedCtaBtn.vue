@@ -1,10 +1,10 @@
 <template>
-  <NuxtLink
-    :to="props.to"
+  <div
     :class="
       'group relative inline-flex items-center justify-center rounded-full px-8 py-4 font-bold uppercase transition-colors duration-300' +
       props.class
     "
+    @click="props.callBack"
     @mouseenter="onMouseEnter"
     @mouseleave="onMouseLeave"
   >
@@ -30,7 +30,7 @@
         </span>
       </div>
     </div>
-  </NuxtLink>
+  </div>
 </template>
 
 <script setup>
@@ -40,7 +40,7 @@
   const props = defineProps({
     text: { type: String, default: "Get Started" },
     class: { type: String, default: "" },
-    to: { type: String, default: "#" },
+    callBack: { type: Function, default: () => {} },
   });
 
   const topLayer = ref(null);
@@ -54,6 +54,7 @@
 
     // Set bottom chars exactly 100% down relative to the text mask
     gsap.set(bottomChars, { yPercent: 110 });
+    gsap.set(topChars, { yPercent: 8 });
 
     tl = gsap.timeline({
       paused: true,
@@ -66,7 +67,7 @@
     }).to(
       bottomChars,
       {
-        yPercent: 5,
+        yPercent: 10,
         stagger: 0.015,
       },
       0

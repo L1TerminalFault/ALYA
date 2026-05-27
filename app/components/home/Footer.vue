@@ -4,6 +4,13 @@
   import SplitText from "gsap/SplitText";
   import { onMounted } from "vue";
 
+  import { fAddUser } from "~~/shared/utils/database";
+
+  const subTxt = ref("Subscribed");
+  const subscribing = ref(false);
+  const email = ref("");
+  const notifyRef = ref<HTMLElement | null>(null);
+
   const SOCIALS = [
     {
       name: "Instagram",
@@ -28,8 +35,54 @@
     },
   ];
 
+  let animTl: any;
+
+  const animate = () => {
+    animTl.play(0);
+    setTimeout(() => animTl.reverse(), 1800);
+  };
+
+  const handleSubmission = async () => {
+    if (!email?.value.length) {
+      subTxt.value = "Enter your Email First";
+      animate();
+      subscribing.value = false;
+      return;
+    }
+
+    subscribing.value = true;
+
+    const subed = localStorage.getItem("__alya_user_subscribed__");
+
+    if (subed) {
+      subTxt.value = "Already subscribed";
+      animate();
+      subscribing.value = false;
+      return;
+    }
+
+    try {
+      await fAddUser({ fullName: "", email: email.value, details: "" });
+      subTxt.value = "Subscribed";
+      localStorage.setItem("__alya_user_subscribed__", "true");
+      animate();
+    } catch (err) {
+      subTxt.value = "Something went wrong";
+      animate();
+      console.log(err);
+    } finally {
+      subscribing.value = false;
+    }
+  };
+
   onMounted(() => {
     gsap.registerPlugin(ScrollTrigger, SplitText);
+    animTl = gsap.timeline({ paused: true });
+    animTl.fromTo(
+      ".notify-footer",
+      { scale: 0.8, y: 10, opacity: 0 },
+      { scale: 1, y: 65, opacity: 1, duration: 0.4, ease: "back.out(2)" }
+    );
 
     const tl = gsap.timeline({
       scrollTrigger: {
@@ -90,10 +143,6 @@
       }
     );
   });
-
-  const handleSubmission = async (/* e: React.Event */) => {
-    return alert("Thank you for subscribing!");
-  };
 </script>
 
 <template>
@@ -123,22 +172,34 @@
             </div>
           </div>
 
-          <div class="flex w-full max-w-125 flex-col gap-5">
+          <form
+            class="flex w-full max-w-125 flex-col gap-5"
+            @submit.prevent="handleSubmission"
+          >
             <div class="/font-[Switzer] w-full text-[20px]">
               <input
+			      v-model="email"
                 placeholder="ENTER YOUR EMAIL"
-                type="text"
+                type="email"
                 class="focus:border-brand-500 w-full border-b border-gray-600 bg-transparent py-4 text-white transition-colors outline-none"
-                @keydown.enter="handleSubmission"
               />
             </div>
+		  <button
+				  :disabled="subscribing"
+				  class="relative z-0"
+			  type="submit">
+              <div
+                class="notify-footer top-0 z-50 pointer-events-none absolute left-1/2 -translate-x-1/2 rounded-full bg-white px-4 py-1.5 text-sm font-black text-black opacity-0 shadow-xl"
+              >
+                {{ subTxt }}
+              </div>
             <AnimatedCtaBtn
-              text="Subscribe for Updates"
-              class="flex w-full items-center justify-center overflow-hidden rounded-full bg-[oklch(60.6%_0.25_22.75deg)] p-5 text-[18px] font-bold text-white shadow-lg transition-colors"
-              :call-back="handleSubmission"
+              :text="subscribing ? 'Please wait' : 'Subscribe for Updates'"
+              class="relative z-0 bg-brand-500 flex w-full items-center justify-center overflow-hidden rounded-full p-5 text-[18px] font-bold text-white shadow-lg transition-colors"
             >
             </AnimatedCtaBtn>
-          </div>
+		  </button>
+          </form>
         </div>
       </div>
 
