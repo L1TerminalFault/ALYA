@@ -3,7 +3,7 @@
   useHead({ title: "Site Gallery" });
   const images = [
     "/pal2.jpeg",
-    "/test3.png",
+    "/test3.jpg",
     "/pal4.jpeg",
     "/pal5.jpeg",
     "/pal6.jpeg",
