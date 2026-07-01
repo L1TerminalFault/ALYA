@@ -95,7 +95,7 @@ onMounted(() => {
 }
 
 .marquee-track {
-  animation: scrollMarquee 10s linear infinite;
+  animation: scrollMarquee 25s linear infinite;
 }
 
 /* Pause animation on hover so users can look closer */
