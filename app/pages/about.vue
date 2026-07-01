@@ -5,17 +5,62 @@
     {
       name: "Belay Taye Gurmu",
       role: "General Manager (20 Yrs Exp)",
-      img: "https://aliyaconstructionplc.com/wp-content/uploads/2026/05/WhatsApp-Image-2026-05-17-at-10.16.10-AM-2-1024x724.jpeg",
+      img: "/person1.jpg",
     },
     {
       name: "Tesfaye Abiebie",
       role: "Project Manager (9 Yrs Exp)",
-      img: "https://aliyaconstructionplc.com/wp-content/uploads/2026/05/WhatsApp-Image-2026-05-17-at-10.16.10-AM-2-1024x724.jpeg",
+      img: "/person2.jpg",
+    },
+    {
+      name: "Senait Fiseha Getnet",
+      role: "Office Engineer (8 Yrs Exp)",
+      img: "/place.webp",
+    },
+    {
+      name: "Feven Zewdie",
+      role: "Office Engineer (3 Yrs Exp)",
+      img: "/place.webp",
+    },
+    {
+      name: "Sosina Mamo",
+      role: "Site Engineer (7 Yrs Exp)",
+      img: "/place.webp",
+    },
+    {
+      name: "Yoseph Fisseha",
+      role: "Site Engineer (3 Yrs Exp)",
+      img: "/place.webp",
+    },
+    {
+      name: "Anwar Mohammed",
+      role: "Site Engineer (3 Yrs Exp)",
+      img: "/place.webp",
+    },
+    {
+      name: "Natnael Markos",
+      role: "Site Engineer (2 Yrs Exp)",
+      img: "/place.webp",
+    },
+    {
+      name: "Tekaligne Mengesha",
+      role: "Site Engineer (2 Yrs Exp)",
+      img: "/place.webp",
     },
     {
       name: "Solomon Gizachew",
-      role: "Finance Manager",
-      img: "https://aliyaconstructionplc.com/wp-content/uploads/2026/05/WhatsApp-Image-2026-05-17-at-10.16.10-AM-2-1024x724.jpeg",
+      role: "Finance Manager (23 Yrs Exp)",
+      img: "/place.webp",
+    },
+    {
+      name: "Hana Messele",
+      role: "Accountant (9 Yrs Exp)",
+      img: "/place.webp",
+    },
+    {
+      name: "Ashebir Taye",
+      role: "Administrator (10 Yrs Exp)",
+      img: "/place.webp",
     },
   ];
 </script>
@@ -141,9 +186,9 @@
           class="group relative flex flex-col gap-4 overflow-hidden rounded-3xl border border-white/10 bg-black p-8"
         >
           <div
-          class="mb-2 flex h-12 w-12 shrink-0 transform items-center justify-center rounded-full bg-white/5 transition-transform group-hover:scale-110"
+            class="mb-2 flex h-12 w-12 shrink-0 transform items-center justify-center rounded-full bg-white/5 transition-transform group-hover:scale-110"
           >
-          <div class="bg-brand-500 h-4 w-4 rotate-45 rounded-md"></div>
+            <div class="bg-brand-500 h-4 w-4 rotate-45 rounded-md"></div>
           </div>
           <div class="/font-[Haas] text-2xl font-bold text-white">
             Our Background
@@ -163,7 +208,7 @@
           </div>
         </div>
         <div
-          class="mb-2 flex hidden h-12 w-12 shrink-0 transform items-center justify-center rounded-full bg-white/5 transition-transform group-hover:scale-110"
+          class="/hidden mb-2 flex h-12 w-12 shrink-0 transform items-center justify-center rounded-full bg-white/5 transition-transform group-hover:scale-110"
         >
           <div class="/font-[Haas] mb-2 text-2xl font-bold text-white">
             Our Commitment
@@ -207,7 +252,9 @@
             <div class="/font-[Haas] text-2xl font-bold text-white">
               Our Mission
             </div>
-            <div class="/font-[Switzer] text-base leading-relaxed text-gray-400">
+            <div
+              class="/font-[Switzer] text-base leading-relaxed text-gray-400"
+            >
               To provide quality construction services through competitive
               pricing, safe working environments, efficient project management,
               and timely project completion.
@@ -216,10 +263,12 @@
           <div
             class="bg-brand-900 border-brand-500/30 relative flex flex-col gap-4 overflow-hidden rounded-3xl border p-8"
           >
-            <div class="mb-2 /font-[Haas] text-2xl font-bold text-white">
+            <div class="/font-[Haas] mb-2 text-2xl font-bold text-white">
               Our Commitment
             </div>
-            <div class="/font-[Switzer] text-base leading-relaxed text-white/80">
+            <div
+              class="/font-[Switzer] text-base leading-relaxed text-white/80"
+            >
               At Aliya Construction PLC, we believe construction is more than
               completing structures. Every project represents responsibility,
               planning, and long-term value. We remain committed to delivering
@@ -240,7 +289,7 @@
               Aliya Construction PLC delivers construction services across
               multiple sectors:
             </div>
-            <ul class="mt-2 flex flex-col gap-3 /font-[Switzer] text-white/90">
+            <ul class="/font-[Switzer] mt-2 flex flex-col gap-3 text-white/90">
               <li class="flex items-center gap-3">
                 <span class="bg-brand-500 h-2 w-2 rounded-full"></span>
                 Residential Buildings & Apartments
@@ -275,32 +324,32 @@
             </div>
             <div class="mt-2 grid grid-cols-1 gap-4 sm:grid-cols-2">
               <div
-                class="rounded-xl border border-white/5 bg-black p-4 /font-[Switzer] text-sm text-white/80"
+                class="/font-[Switzer] rounded-xl border border-white/5 bg-black p-4 text-sm text-white/80"
               >
                 Detailed project scheduling
               </div>
               <div
-                class="rounded-xl border border-white/5 bg-black p-4 /font-[Switzer] text-sm text-white/80"
+                class="/font-[Switzer] rounded-xl border border-white/5 bg-black p-4 text-sm text-white/80"
               >
                 Resource & manpower planning
               </div>
               <div
-                class="rounded-xl border border-white/5 bg-black p-4 /font-[Switzer] text-sm text-white/80"
+                class="/font-[Switzer] rounded-xl border border-white/5 bg-black p-4 text-sm text-white/80"
               >
                 Site supervision & control
               </div>
               <div
-                class="rounded-xl border border-white/5 bg-black p-4 /font-[Switzer] text-sm text-white/80"
+                class="/font-[Switzer] rounded-xl border border-white/5 bg-black p-4 text-sm text-white/80"
               >
                 Continuous monitoring
               </div>
               <div
-                class="rounded-xl border border-white/5 bg-black p-4 /font-[Switzer] text-sm text-white/80"
+                class="/font-[Switzer] rounded-xl border border-white/5 bg-black p-4 text-sm text-white/80"
               >
                 Coordination with stakeholders
               </div>
               <div
-                class="bg-brand-600 rounded-xl p-4 /font-[Switzer] text-sm font-bold text-white shadow-lg"
+                class="bg-brand-600 /font-[Switzer] rounded-xl p-4 text-sm font-bold text-white shadow-lg"
               >
                 Timely delivery & handover
               </div>
@@ -322,7 +371,7 @@
           <div class="/font-[Haas] text-[clamp(40px,5vw,70px)] font-bold">
             Workforce & Equipment
           </div>
-          <div class="max-w-2xl /font-[Switzer] text-lg text-gray-400">
+          <div class="/font-[Switzer] max-w-2xl text-lg text-gray-400">
             Backed by a systematically organized workforce and a comprehensive
             fleet of heavy-duty construction machinery ensuring full execution
             self-reliance.
@@ -337,7 +386,7 @@
               Our Staff (34+ Core Team)
             </div>
             <div
-              class="flex flex-col gap-4 /font-[Switzer] text-lg leading-relaxed text-gray-400"
+              class="/font-[Switzer] flex flex-col gap-4 text-lg leading-relaxed text-gray-400"
             >
               <p>
                 We boast a foundational team of highly skilled
@@ -379,7 +428,7 @@
               Heavy Machinery Fleet
             </div>
             <div
-              class="flex flex-col gap-4 /font-[Switzer] text-lg leading-relaxed text-gray-400"
+              class="/font-[Switzer] flex flex-col gap-4 text-lg leading-relaxed text-gray-400"
             >
               <p>
                 To assure uninterrupted velocity across operations, we maintain
@@ -427,7 +476,7 @@
           <div class="/font-[Haas] text-[clamp(40px,5vw,70px)] font-bold">
             Leadership Team
           </div>
-          <div class="max-w-2xl /font-[Switzer] text-lg text-gray-400">
+          <div class="/font-[Switzer] max-w-2xl text-lg text-gray-400">
             The visionaries guiding our projects to perfection, bringing decades
             of combined industry experience and strategic oversight.
           </div>
@@ -453,7 +502,7 @@
                 {{ leader.name }}
               </div>
               <div
-                class="mt-2 /font-[Switzer] text-sm font-bold text-gray-400 uppercase"
+                class="/font-[Switzer] mt-2 text-sm font-bold text-gray-400 uppercase"
               >
                 {{ leader.role }}
               </div>
