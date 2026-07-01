@@ -46,14 +46,14 @@ onMounted(() => {
         <span class="antext text-nowrap">Our Trusted</span>
         <span class="antext text-nowrap">Partners</span>
       </div>
-      <!-- <div class="w-full flex items-center justify-center overflow-scroll/"> -->
-      <div class="anim flex w-max -translate-x-935 items-center justify-center overflow-hidden max-lg:h-10 invert">
-        <img src="/partners.png" class="" />
-        <img src="/partners.png" class="" />
-        <img src="/partners.png" class="" />
-        <img src="/partners.png" class="" />
+      <div class="w-max flex gap-50 items-center justify-center overflow-scroll/">
+      <div v-for="id in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]" :key="id" class="anim flex flex-row gap-50 -translate-x-935 items-center justify-evenly overflow-hidden max-lg:h-10">
+        <img src="/part1.png" class="" />
+        <img src="/part2.png" class="" />
+        <img src="/part3.png" class="" />
+        <img src="/part4.png" class="" />
       </div>
-      <!-- </div> -->
+      </div>
     </div>
   </div>
 </template>
