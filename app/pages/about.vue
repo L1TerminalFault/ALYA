@@ -8,9 +8,17 @@
       img: "/person1.jpg",
     },
     {
+      name: "Ashebir Taye Gurmu",
+      role: "Administrator (10 Yrs Exp)",
+      img: "/person2.jpg",
+    },
+  ];
+
+  const members = [
+    {
       name: "Tesfaye Abiebie",
       role: "Project Manager (9 Yrs Exp)",
-      img: "/person2.jpg",
+      img: "/place.webp",
     },
     {
       name: "Senait Fiseha Getnet",
@@ -55,11 +63,6 @@
     {
       name: "Hana Messele",
       role: "Accountant (9 Yrs Exp)",
-      img: "/place.webp",
-    },
-    {
-      name: "Ashebir Taye",
-      role: "Administrator (10 Yrs Exp)",
       img: "/place.webp",
     },
   ];
@@ -481,7 +484,7 @@
             of combined industry experience and strategic oversight.
           </div>
         </div>
-        <div class="grid grid-cols-1 gap-10 md:grid-cols-3">
+        <div class="grid grid-cols-1 gap-10 md:grid-cols-2">
           <div
             v-for="(leader, i) in leaders"
             :key="i"
@@ -505,6 +508,35 @@
                 class="/font-[Switzer] mt-2 text-sm font-bold text-gray-400 uppercase"
               >
                 {{ leader.role }}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 gap-10 md:grid-cols-3">
+          <div
+            v-for="(member, i) in members"
+            :key="i"
+            class="group flex cursor-pointer flex-col gap-5"
+          >
+            <div
+              class="relative aspect-3/4 w-full overflow-hidden rounded-2xl bg-gray-800 shadow-lg"
+            >
+              <img
+                :src="member.img"
+                class="size-full object-cover opacity-80 transition-all duration-700"
+              />
+            </div>
+            <div class="flex flex-col items-center text-center">
+              <div
+                class="group-hover:text-brand-500 /font-[Haas55] text-2xl font-bold text-white transition-colors"
+              >
+                {{ member.name }}
+              </div>
+              <div
+                class="/font-[Switzer] mt-2 text-sm font-bold text-gray-400 uppercase"
+              >
+                {{ member.role }}
               </div>
             </div>
           </div>
