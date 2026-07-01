@@ -34,11 +34,11 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="relative z-0 flex w-full flex-col items-center justify-center gap-7 bg-transparent pt-32 pb-20 text-white">
+  <div class="relative z-0 flex w-full flex-col items-center justify-center gap-7 bg-transparent pt-32 pb-20 text-black">
     <div class="flex w-full flex-col items-center gap-4 lg:gap-20">
       
-      <div class="absolute top-0 bottom-0 left-0 z-30 w-1/12 bg-linear-to-l from-transparent to-gray-950 pointer-events-none"></div>
-      <div class="absolute top-0 bottom-0 right-0 z-30 w-1/12 bg-linear-to-r from-transparent to-gray-950 pointer-events-none"></div>
+      <div class="absolute top-0 bottom-0 left-0 z-30 w-1/6 bg-linear-to-l from-transparent to-white pointer-events-none"></div>
+      <div class="absolute top-0 bottom-0 right-0 z-30 w-1/6 bg-linear-to-r from-transparent to-white pointer-events-none"></div>
 
       <div class="antext flex max-w-70 flex-col text-center text-[clamp(30px,5vw,76px)] leading-none font-bold lg:max-w-100">
         <span class="text-nowrap">Our Trusted</span>

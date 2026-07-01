@@ -163,7 +163,7 @@
           <HomeSafetyCertifications />
         </div>
         <div class="w-full bg-gray-950 py-20"><HomeFeaturedProjects /></div>
-        <div class="w-full bg-gray-950 py-10 pb-20"><HomePartners /></div>
+        <div class="w-full bg-white py-10 pb-20"><HomePartners /></div>
         <div class="w-full bg-white"><HomeFooter /></div>
       </div>
     </div>
