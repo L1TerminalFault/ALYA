@@ -46,7 +46,7 @@
   >
     <div class="flex w-full max-w-7xl flex-col gap-15 lg:flex-row">
       <div
-        class="relative min-h-[500px] w-full overflow-hidden rounded-3xl border border-white/5 shadow-2xl lg:w-1/2"
+        class="relative min-h-125 w-full overflow-hidden rounded-3xl border border-white/5 shadow-2xl lg:w-1/2"
       >
         <img
           src="/innovation.jpg"
@@ -66,7 +66,7 @@
             Engineering the Future
           </div>
           <div
-            class="mt-4 max-w-lg /font-[Switzer] text-xl leading-relaxed text-gray-400"
+            class="/font-[Switzer] mt-4 max-w-lg text-xl leading-relaxed text-gray-400"
           >
             We push the boundaries of modern construction using proprietary
             technology and state-of-the-art management systems.
@@ -78,7 +78,9 @@
             :key="i"
             class="innov-card hover:border-brand-500/50 flex flex-col gap-3 rounded-2xl border border-gray-800 bg-gray-900 p-6 shadow-lg transition-colors"
           >
-            <div class="/font-[Haas] text-xl leading-tight font-bold text-white">
+            <div
+              class="/font-[Haas] text-xl leading-tight font-bold text-white"
+            >
               {{ tech.name }}
             </div>
             <div class="/font-[Switzer] text-sm leading-relaxed text-gray-400">

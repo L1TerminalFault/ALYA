@@ -68,17 +68,17 @@
   >
     <div class="flex w-full max-w-7xl flex-col gap-20 lg:flex-row">
       <div class="flex w-full flex-col gap-6 lg:w-1/3">
-        <div
-          class="text-brand-600 /font-[Switzer] text-lg font-bold uppercase"
-        >
+        <div class="text-brand-600 /font-[Switzer] text-lg font-bold uppercase">
           How We Work
         </div>
         <div
           class="/font-[Haas] text-[clamp(40px,5vw,70px)] leading-[1.1] font-bold"
         >
-          Our Proven<br />Methodology
+          Our Proven
+          <br />
+          Methodology
         </div>
-        <div class="mt-4 /font-[Switzer] text-xl leading-relaxed text-gray-600">
+        <div class="/font-[Switzer] mt-4 text-xl leading-relaxed text-gray-600">
           A systematic, phased approach ensures that every project is delivered
           on time, within budget, and to our strict quality protocols.
         </div>
@@ -99,11 +99,11 @@
           class="process-step relative flex flex-col gap-6 md:flex-row md:gap-14 lg:pl-16"
         >
           <div
-            class="bg-brand-600 absolute top-1 -left-[5px] z-10 hidden size-3.5 rounded-full border-2 border-white md:block lg:left-[35px]"
+            class="bg-brand-600 absolute top-1 -left-1.25 z-10 hidden size-3.5 rounded-full border-2 border-white md:block lg:left-8.75"
           ></div>
 
           <div
-            class="shrink-0 /font-[Haas] text-3xl font-bold text-gray-300 md:w-20"
+            class="/font-[Haas] shrink-0 text-3xl font-bold text-gray-300 md:w-20"
           >
             {{ step.id }}
           </div>
