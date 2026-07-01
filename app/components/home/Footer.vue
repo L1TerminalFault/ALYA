@@ -31,7 +31,7 @@
     {
       name: "Email",
       icon: "i-ph-envelope-simple",
-      link: "mailto:hello@aliya.co",
+      link: "mailto:aliyaconstructionplc@gmail.com",
     },
   ];
 

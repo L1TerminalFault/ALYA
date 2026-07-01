@@ -159,16 +159,19 @@
             </div>
           </div>
           <div class="mt-2 flex flex-col gap-2">
-            <div
+            <NuxtLink
+
+              to="mailto:aliyaconstructionplc@gmail.com"
               class="hover:text-brand-500 w-fit cursor-pointer border-b border-dashed border-gray-500 pb-1 /font-[Switzer] text-base text-white transition-colors"
             >
               aliyaconstructionplc@gmail.com
-            </div>
-            <div
+            </NuxtLink>
+            <NuxtLink
+              to="enterprise@aliya.co"
               class="hover:text-brand-500 w-fit cursor-pointer border-b border-dashed border-gray-500 pb-1 /font-[Switzer] text-base text-white transition-colors"
             >
               enterprise@aliya.co
-            </div>
+            </NuxtLink>
           </div>
         </div>
 
