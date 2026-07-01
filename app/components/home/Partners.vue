@@ -51,18 +51,22 @@ onMounted(() => {
           <img src="/part2.png" alt="Partner 2" class="h-12 lg:h-20 object-contain mx-4" />
           <img src="/part3.png" alt="Partner 3" class="h-12 lg:h-20 object-contain mx-4" />
           <img src="/part4.png" alt="Partner 4" class="h-12 lg:h-20 object-contain mx-4" />
+          <img src="/part5.jpg" alt="Partner 5" class="h-12 lg:h-20 object-contain mx-4" />
           <img src="/part1.png" alt="Partner 1" class="h-12 lg:h-20 object-contain mx-4" />
           <img src="/part2.png" alt="Partner 2" class="h-12 lg:h-20 object-contain mx-4" />
           <img src="/part3.png" alt="Partner 3" class="h-12 lg:h-20 object-contain mx-4" />
           <img src="/part4.png" alt="Partner 4" class="h-12 lg:h-20 object-contain mx-4" />
+          <img src="/part5.jpg" alt="Partner 5" class="h-12 lg:h-20 object-contain mx-4" />
           <img src="/part1.png" alt="Partner 1" class="h-12 lg:h-20 object-contain mx-4" />
           <img src="/part2.png" alt="Partner 2" class="h-12 lg:h-20 object-contain mx-4" />
           <img src="/part3.png" alt="Partner 3" class="h-12 lg:h-20 object-contain mx-4" />
           <img src="/part4.png" alt="Partner 4" class="h-12 lg:h-20 object-contain mx-4" />
+          <img src="/part5.jpg" alt="Partner 5" class="h-12 lg:h-20 object-contain mx-4" />
           <img src="/part1.png" alt="Partner 1" class="h-12 lg:h-20 object-contain mx-4" />
           <img src="/part2.png" alt="Partner 2" class="h-12 lg:h-20 object-contain mx-4" />
           <img src="/part3.png" alt="Partner 3" class="h-12 lg:h-20 object-contain mx-4" />
           <img src="/part4.png" alt="Partner 4" class="h-12 lg:h-20 object-contain mx-4" />
+          <img src="/part5.jpg" alt="Partner 5" class="h-12 lg:h-20 object-contain mx-4" />
         </div>
         
         <div class="marquee-track flex gap-16 items-center shrink-0 pr-16" aria-hidden="true">
@@ -70,18 +74,22 @@ onMounted(() => {
           <img src="/part2.png" alt="Partner 2" class="h-12 lg:h-20 object-contain mx-4" />
           <img src="/part3.png" alt="Partner 3" class="h-12 lg:h-20 object-contain mx-4" />
           <img src="/part4.png" alt="Partner 4" class="h-12 lg:h-20 object-contain mx-4" />
+          <img src="/part5.jpg" alt="Partner 5" class="h-12 lg:h-20 object-contain mx-4" />
           <img src="/part1.png" alt="Partner 1" class="h-12 lg:h-20 object-contain mx-4" />
           <img src="/part2.png" alt="Partner 2" class="h-12 lg:h-20 object-contain mx-4" />
           <img src="/part3.png" alt="Partner 3" class="h-12 lg:h-20 object-contain mx-4" />
           <img src="/part4.png" alt="Partner 4" class="h-12 lg:h-20 object-contain mx-4" />
+          <img src="/part5.jpg" alt="Partner 5" class="h-12 lg:h-20 object-contain mx-4" />
           <img src="/part1.png" alt="Partner 1" class="h-12 lg:h-20 object-contain mx-4" />
           <img src="/part2.png" alt="Partner 2" class="h-12 lg:h-20 object-contain mx-4" />
           <img src="/part3.png" alt="Partner 3" class="h-12 lg:h-20 object-contain mx-4" />
           <img src="/part4.png" alt="Partner 4" class="h-12 lg:h-20 object-contain mx-4" />
+          <img src="/part5.jpg" alt="Partner 5" class="h-12 lg:h-20 object-contain mx-4" />
           <img src="/part1.png" alt="Partner 1" class="h-12 lg:h-20 object-contain mx-4" />
           <img src="/part2.png" alt="Partner 2" class="h-12 lg:h-20 object-contain mx-4" />
           <img src="/part3.png" alt="Partner 3" class="h-12 lg:h-20 object-contain mx-4" />
           <img src="/part4.png" alt="Partner 4" class="h-12 lg:h-20 object-contain mx-4" />
+          <img src="/part5.jpg" alt="Partner 5" class="h-12 lg:h-20 object-contain mx-4" />
         </div>
       </div>
 

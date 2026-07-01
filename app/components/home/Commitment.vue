@@ -1,4 +1,4 @@
-<script setup lang="tsx">
+<<script setup lang="tsx">
   import gsap from "gsap";
   import ScrollTrigger from "gsap/ScrollTrigger";
   import { SplitText } from "gsap/all";
@@ -186,7 +186,6 @@
   <div
     class="parent /font-[Haas55] relative z-0  flex h-auto w-full flex-col gap-54 overflow-visible bg-white max-2xl:aspect-16/19 2xl:h-full"
   >
-    <!-- SVG Section -->
     <div
       class="absolute flex aspect-video w-full -translate-y-1/2 flex-col items-center justify-center"
     >
@@ -261,7 +260,6 @@
       <div
         class="absolute inset-0 h-full w-full overflow-hidden bg-transparent"
       >
-        <!-- src="/hero55.jpg" -->
         <NuxtImg
           src="/heroimg.png"
 	  :placeholder="1"
