@@ -1,11 +1,11 @@
 <script setup lang="tsx">
+import { ref, onMounted } from "vue";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { SplitText } from "gsap/SplitText";
 
 onMounted(() => {
-  gsap.registerPlugin(ScrollTrigger);
-  gsap.registerPlugin(SplitText);
+  gsap.registerPlugin(ScrollTrigger, SplitText);
 
   const spl = new SplitText(".antext", { type: "lines" });
   const tl = gsap.timeline({
@@ -34,42 +34,81 @@ onMounted(() => {
 </script>
 
 <template>
-  <div
-    class="/max-h-max /min-h-100 /lg:min-h-350 relative z-0 flex w-full flex-col items-center justify-center gap-7 bg-transparent pt-90 pb-20 text-white max-2xl:aspect-video">
-    <div class="flex w-full -translate-y-32 flex-col items-center gap-4 lg:gap-20">
-      <div class="absolute -bottom-20 left-0 z-30 h-full w-1/9 bg-linear-to-l from-transparent via-gray-950 to-gray-950">
+  <div class="relative z-0 flex w-full flex-col items-center justify-center gap-7 bg-transparent pt-32 pb-20 text-white">
+    <div class="flex w-full flex-col items-center gap-4 lg:gap-20">
+      
+      <div class="absolute top-0 bottom-0 left-0 z-30 w-1/12 bg-linear-to-l from-transparent to-gray-950 pointer-events-none"></div>
+      <div class="absolute top-0 bottom-0 right-0 z-30 w-1/12 bg-linear-to-r from-transparent to-gray-950 pointer-events-none"></div>
+
+      <div class="antext flex max-w-70 flex-col text-center text-[clamp(30px,5vw,76px)] leading-none font-bold lg:max-w-100">
+        <span class="text-nowrap">Our Trusted</span>
+        <span class="text-nowrap text-blue-400">Partners</span>
       </div>
-      <div class="absolute right-0 -bottom-20 z-30 h-full w-1/9 bg-linear-to-r from-transparent via-gray-950 to-gray-950">
+
+      <div class="marquee-container w-full overflow-hidden flex whitespace-nowrap">
+        <div class="marquee-track flex gap-16 items-center shrink-0 pr-16">
+          <img src="/part1.png" alt="Partner 1" class="h-12 lg:h-20 object-contain mx-4" />
+          <img src="/part2.png" alt="Partner 2" class="h-12 lg:h-20 object-contain mx-4" />
+          <img src="/part3.png" alt="Partner 3" class="h-12 lg:h-20 object-contain mx-4" />
+          <img src="/part4.png" alt="Partner 4" class="h-12 lg:h-20 object-contain mx-4" />
+          <img src="/part1.png" alt="Partner 1" class="h-12 lg:h-20 object-contain mx-4" />
+          <img src="/part2.png" alt="Partner 2" class="h-12 lg:h-20 object-contain mx-4" />
+          <img src="/part3.png" alt="Partner 3" class="h-12 lg:h-20 object-contain mx-4" />
+          <img src="/part4.png" alt="Partner 4" class="h-12 lg:h-20 object-contain mx-4" />
+          <img src="/part1.png" alt="Partner 1" class="h-12 lg:h-20 object-contain mx-4" />
+          <img src="/part2.png" alt="Partner 2" class="h-12 lg:h-20 object-contain mx-4" />
+          <img src="/part3.png" alt="Partner 3" class="h-12 lg:h-20 object-contain mx-4" />
+          <img src="/part4.png" alt="Partner 4" class="h-12 lg:h-20 object-contain mx-4" />
+          <img src="/part1.png" alt="Partner 1" class="h-12 lg:h-20 object-contain mx-4" />
+          <img src="/part2.png" alt="Partner 2" class="h-12 lg:h-20 object-contain mx-4" />
+          <img src="/part3.png" alt="Partner 3" class="h-12 lg:h-20 object-contain mx-4" />
+          <img src="/part4.png" alt="Partner 4" class="h-12 lg:h-20 object-contain mx-4" />
+        </div>
+        
+        <div class="marquee-track flex gap-16 items-center shrink-0 pr-16" aria-hidden="true">
+          <img src="/part1.png" alt="Partner 1" class="h-12 lg:h-20 object-contain mx-4" />
+          <img src="/part2.png" alt="Partner 2" class="h-12 lg:h-20 object-contain mx-4" />
+          <img src="/part3.png" alt="Partner 3" class="h-12 lg:h-20 object-contain mx-4" />
+          <img src="/part4.png" alt="Partner 4" class="h-12 lg:h-20 object-contain mx-4" />
+          <img src="/part1.png" alt="Partner 1" class="h-12 lg:h-20 object-contain mx-4" />
+          <img src="/part2.png" alt="Partner 2" class="h-12 lg:h-20 object-contain mx-4" />
+          <img src="/part3.png" alt="Partner 3" class="h-12 lg:h-20 object-contain mx-4" />
+          <img src="/part4.png" alt="Partner 4" class="h-12 lg:h-20 object-contain mx-4" />
+          <img src="/part1.png" alt="Partner 1" class="h-12 lg:h-20 object-contain mx-4" />
+          <img src="/part2.png" alt="Partner 2" class="h-12 lg:h-20 object-contain mx-4" />
+          <img src="/part3.png" alt="Partner 3" class="h-12 lg:h-20 object-contain mx-4" />
+          <img src="/part4.png" alt="Partner 4" class="h-12 lg:h-20 object-contain mx-4" />
+          <img src="/part1.png" alt="Partner 1" class="h-12 lg:h-20 object-contain mx-4" />
+          <img src="/part2.png" alt="Partner 2" class="h-12 lg:h-20 object-contain mx-4" />
+          <img src="/part3.png" alt="Partner 3" class="h-12 lg:h-20 object-contain mx-4" />
+          <img src="/part4.png" alt="Partner 4" class="h-12 lg:h-20 object-contain mx-4" />
+        </div>
       </div>
-      <div
-        class="antext flex max-w-70 flex-col text-center /font-[Switzer] text-[clamp(30px,5vw,76px)] leading-none font-bold lg:max-w-100">
-        <span class="antext text-nowrap">Our Trusted</span>
-        <span class="antext text-nowrap">Partners</span>
-      </div>
-      <div class="w-max flex gap-50 items-center justify-center overflow-scroll/">
-      <div v-for="id in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]" :key="id" class="anim flex flex-row gap-50 -translate-x-935 items-center justify-evenly overflow-hidden max-lg:h-10">
-        <img src="/part1.png" class="" />
-        <img src="/part2.png" class="" />
-        <img src="/part3.png" class="" />
-        <img src="/part4.png" class="" />
-      </div>
-      </div>
+
     </div>
   </div>
 </template>
 
-<style>
-.anim {
-  animation: scroll 50s linear infinite;
+<style scoped>
+.marquee-container {
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
 }
 
-@keyframes scroll {
-  0% {
-    transform: translateX(1870px);
-  }
+.marquee-track {
+  animation: scrollMarquee 10s linear infinite;
+}
 
+/* Pause animation on hover so users can look closer */
+.marquee-container:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+@keyframes scrollMarquee {
+  0% {
+    transform: translateX(-50%);
+  }
   100% {
-    transform: translateX(3740px);
+    transform: translateX(0%);
   }
 }
 </style>
