@@ -177,11 +177,13 @@
                 together to ensure successful project delivery.
               </p>
             </div>
-            <button
-              class="/font-[Switzer] hidden mt-4 w-fit rounded-full bg-white px-6 py-3 font-bold text-black transition-colors hover:bg-gray-200"
+            <a
+              href="/company_profile.docx"
+              download="aliya-co-profile.docx"
+              class="/font-[Switzer] mt-4 w-fit rounded-full bg-white px-6 py-3 font-bold text-black transition-colors hover:bg-gray-200"
             >
               Download Company Profile
-            </button>
+            </a>
           </div>
         </div>
 
