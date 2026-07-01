@@ -167,7 +167,7 @@
               aliyaconstructionplc@gmail.com
             </NuxtLink>
             <NuxtLink
-              to="enterprise@aliya.co"
+              to="mailto:enterprise@aliya.co"
               class="hover:text-brand-500 w-fit cursor-pointer border-b border-dashed border-gray-500 pb-1 /font-[Switzer] text-base text-white transition-colors"
             >
               enterprise@aliya.co
