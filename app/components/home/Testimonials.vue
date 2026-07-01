@@ -12,9 +12,11 @@
 
   const reviews = [
     {
-      name: "Ethiopia Catholic Church Society of Jesus",
-      title: "Exceptional Execution on Large Scale Educational Infrastructure",
-      desc: "Managing multiple construction phases for our Learning Institute required top-tier logistical coordination. Their execution on both the G+1 Residence and institutional blocks showcased absolute structural reliability.",
+
+            name: "Art. Ephrem Tamiru",
+            title:
+        "Meticulous Attention to Complex Multi-Level Residential Architecture",
+      desc: "Building a complex 2+B+G+3 residence requires careful multi-level structural balancing. Their seasoned site engineers maintained stringent oversight, making the final building layout feel premium.",
       image1: "/test3.jpg",
       image2: "/test2.jpg",
     },
@@ -42,10 +44,10 @@
       image2: "/place.webp",
     },
     {
-      name: "Art. Ephrem Tamiru",
-      title:
-        "Meticulous Attention to Complex Multi-Level Residential Architecture",
-      desc: "Building a complex 2+B+G+3 residence requires careful multi-level structural balancing. Their seasoned site engineers maintained stringent oversight, making the final building layout feel premium.",
+      name: "Ethiopia Catholic Church Society of Jesus",
+      title: "Exceptional Execution on Large Scale Educational Infrastructure",
+      desc: "Managing multiple construction phases for our Learning Institute required top-tier logistical coordination. Their execution on both the G+1 Residence and institutional blocks showcased absolute structural reliability.",
+
       image1: "/place.webp",
       image2: "/place.webp",
     },
