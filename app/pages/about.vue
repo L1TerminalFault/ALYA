@@ -208,7 +208,7 @@
           </div>
         </div>
         <div
-          class="/hidden mb-2 flex h-12 w-12 shrink-0 transform items-center justify-center rounded-full bg-white/5 transition-transform group-hover:scale-110"
+          class="/flex mb-2 hidden h-12 w-12 shrink-0 transform items-center justify-center rounded-full bg-white/5 transition-transform group-hover:scale-110"
         >
           <div class="/font-[Haas] mb-2 text-2xl font-bold text-white">
             Our Commitment
