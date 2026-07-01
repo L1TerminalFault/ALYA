@@ -6,7 +6,7 @@
     "/test3.jpg",
     "/pal4.jpeg",
     "/pal5.jpeg",
-    "/pal6.jpeg",
+    // "/pal6.jpeg",
     "/pal7.jpeg",
     "/pal8.jpeg",
     "/pal9.jpeg",
@@ -37,7 +37,7 @@
     "/pal35.jpeg",
     "/pal36.jpeg",
     "/pal37.jpeg",
-    "/pal38.jpeg",
+    // "/pal38.jpeg",
     "/pal39.jpeg",
   ];
 
