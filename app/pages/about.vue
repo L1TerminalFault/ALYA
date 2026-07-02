@@ -504,7 +504,7 @@
             class="group flex cursor-pointer items-center justify-center w-full flex-col gap-5"
           >
             <div
-              class="/aspect-3/4 relative w-2/3 overflow-hidden rounded-2xl bg-gray-800 shadow-lg"
+              class="/aspect-3/4 relative w-3/5 overflow-hidden rounded-2xl bg-gray-800 shadow-lg"
             >
               <img
                 :src="leader.img"
