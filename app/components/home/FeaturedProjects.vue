@@ -68,8 +68,8 @@
         Featured<br />Projects
       </div>
       <NuxtLink
-        to="/work"
-        class="group text-brand-500 border-brand-500 flex cursor-pointer items-center gap-3 overflow-hidden rounded-full border px-6 py-3 font-bold transition-colors hover:border-white hover:text-white"
+        to="/projects"
+        class="group hidden text-brand-500 border-brand-500 flex cursor-pointer items-center gap-3 overflow-hidden rounded-full border px-6 py-3 font-bold transition-colors hover:border-white hover:text-white"
       >
         <span class="/font-[Switzer] mt-1 text-[15px] uppercase"
           >Explore Portfolio</span
