@@ -252,8 +252,8 @@
                   zIndex: isFirstImageFront ? 0 : 10,
                   opacity: isFirstImageFront ? 0.5 : 1,
                 }"
-              />
-            </div -->
+              / -->
+            </div>
 
             <!-- Content Area -->
             <div class="flex h-full w-full lg:w-[60%] flex-col justify-between gap-10">
