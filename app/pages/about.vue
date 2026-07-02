@@ -486,7 +486,7 @@
             of combined industry experience and strategic oversight.
           </div>
         </div>
-        <div class="grid grid-cols-1 gap-10 md:grid-cols-2">
+        <div class="grid grid-cols-1 items-center justify-center gap-10 md:grid-cols-2">
           <div
             v-for="(leader, i) in leaders"
             :key="i"
