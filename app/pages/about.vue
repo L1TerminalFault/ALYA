@@ -1,6 +1,17 @@
 <script setup lang="ts">
   useHead({ title: "About Us" });
 
+
+
+  const downloadProfile = () => {
+    const link = document.createElement('a')
+    link.href = '/company_profile.docx'
+    link.setAttribute('download', 'aliya-co-profile.docx')
+    document.body.appendChild(link)
+    link.click()
+    document.body.removeChild(link)
+  }
+
   const leaders = [
     {
       name: "Belay Taye Gurmu",
@@ -177,13 +188,12 @@
                 together to ensure successful project delivery.
               </p>
             </div>
-            <a
-              href="/company_profile.docx"
-              download="aliya-co-profile.docx"
+
+	    <button @click="downloadProfile"
               class="/font-[Switzer] mt-4 w-fit rounded-full bg-white px-6 py-3 font-bold text-black transition-colors hover:bg-gray-200"
             >
               Download Company Profile
-            </a>
+            </button>
           </div>
         </div>
 
