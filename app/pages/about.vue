@@ -1,4 +1,4 @@
-rscript setup lang="ts">
+<script setup lang="ts">
   useHead({ title: "About Us" });
 
   const downloadProfile = () => {
@@ -526,7 +526,7 @@ rscript setup lang="ts">
           </div>
         </div>
 
-        <div class="grid hidden grid-cols-1 gap-10 md:grid-cols-3">
+        <div class="/grid hidden grid-cols-1 gap-10 md:grid-cols-3">
           <div
             v-for="(member, i) in members"
             :key="i"
