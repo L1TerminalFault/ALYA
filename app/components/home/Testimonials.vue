@@ -123,8 +123,8 @@
     if (isAnimating.value) return;
     isAnimating.value = true;
 
-    const topImg = isFirstImageFront.value ? ".image1" : ".image2";
-    const bottomImg = isFirstImageFront.value ? ".image2" : ".image1";
+    // const topImg = isFirstImageFront.value ? ".image1" : ".image2";
+    // const bottomImg = isFirstImageFront.value ? ".image2" : ".image1";
 
     const tl = gsap.timeline({
       onComplete: () => {
@@ -144,52 +144,52 @@
     });
 
     // 2. The Shuffle Palette Animation
-    tl.to(
-      topImg,
-      {
-        x: 100,
-        y: 40,
-        rotate: 8,
-        opacity: 0.5,
-        scale: 0.85,
-        duration: 0.5,
-        ease: "expo.inOut",
-      },
-      "-=0.3"
-    )
-      .fromTo(
-        bottomImg,
-        {
-          x: 0,
-          scale: 0.9,
-          zIndex: 0,
-          opacity: 0.5,
-        },
-        {
-          x: -120,
-          scale: 1.05,
-          opacity: 1,
-          rotate: -5,
-          zIndex: 20,
-          duration: 0.5,
-          ease: "expo.inOut",
-        },
-        "<"
-      )
+    // tl.to(
+    //   topImg,
+    //   {
+    //     x: 100,
+    //     y: 40,
+    //     rotate: 8,
+    //     opacity: 0.5,
+    //     scale: 0.85,
+    //     duration: 0.5,
+    //     ease: "expo.inOut",
+    //   },
+    //   "-=0.3"
+    // )
+    //   .fromTo(
+    //     bottomImg,
+    //     {
+    //       x: 0,
+    //       scale: 0.9,
+    //       zIndex: 0,
+    //       opacity: 0.5,
+    //     },
+    //     {
+    //       x: -120,
+    //       scale: 1.05,
+    //       opacity: 1,
+    //       rotate: -5,
+    //       zIndex: 20,
+    //       duration: 0.5,
+    //       ease: "expo.inOut",
+    //     },
+    //     "<"
+    //   )
       // Synchronize layered ordering heights mid-flight
-      .set(topImg, { zIndex: 0 })
-      .set(bottomImg, { zIndex: 10 })
+      // .set(topImg, { zIndex: 0 })
+      // .set(bottomImg, { zIndex: 10 })
       // Re-center system sets smoothly
-      .to([topImg, bottomImg], {
-        x: 0,
-        y: 0,
-        rotate: 0,
-        opacity: (i) => (i === 0 ? 0.5 : 1),
-        scale: (i) => (i === 0 ? 0.6 : 1),
-        duration: 0.6,
-        stagger: 0.05,
-        ease: "elastic.out(1, 0.8)",
-      })
+      // .to([topImg, bottomImg], {
+      //   x: 0,
+      //   y: 0,
+      //   rotate: 0,
+      //   opacity: (i) => (i === 0 ? 0.5 : 1),
+      //   scale: (i) => (i === 0 ? 0.6 : 1),
+      //   duration: 0.6,
+      //   stagger: 0.05,
+      //   ease: "elastic.out(1, 0.8)",
+      // })
       // 3. Re-split and text entrance
       .add(async () => {
         await nextTick();
@@ -244,12 +244,8 @@
               <img
                 :src="image1Source"
                 class="image1 absolute h-[280px] w-[240px] lg:h-130 lg:w-120 rounded-[40px] lg:rounded-[100px] object-cover"
-                :style="{
-                  zIndex: isFirstImageFront ? 10 : 0,
-                  opacity: isFirstImageFront ? 1 : 0.5,
-                }"
               />
-              <img
+              <!-- img
                 :src="image2Source"
                 class="image2 absolute mt-10 h-[280px] w-[240px] lg:h-130 lg:w-120 rounded-[40px] lg:rounded-[100px] object-cover"
                 :style="{
@@ -257,7 +253,7 @@
                   opacity: isFirstImageFront ? 0.5 : 1,
                 }"
               />
-            </div>
+            </div -->
 
             <!-- Content Area -->
             <div class="flex h-full w-full lg:w-[60%] flex-col justify-between gap-10">
