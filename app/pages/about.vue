@@ -1,4 +1,4 @@
-<script setup lang="ts">
+rscript setup lang="ts">
   useHead({ title: "About Us" });
 
   const downloadProfile = () => {
@@ -501,7 +501,7 @@
           <div
             v-for="(leader, i) in leaders"
             :key="i"
-            class="group flex cursor-pointer flex-col gap-5"
+            class="group flex cursor-pointer items-center justify-center w-full flex-col gap-5"
           >
             <div
               class="/aspect-3/4 relative w-2/3 overflow-hidden rounded-2xl bg-gray-800 shadow-lg"
