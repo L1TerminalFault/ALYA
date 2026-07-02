@@ -5,7 +5,7 @@
 
   const services = [
     {
-      title: "Residential Buildings",
+      title: "Mixed Use Building",
       desc: "Private homes to multi-story apartment developments with finishing works.",
       img: "/hero55.jpg",
     },
