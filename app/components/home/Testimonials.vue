@@ -143,7 +143,7 @@
       ease: "power2.inOut",
     });
 
-    2. The Shuffle Palette Animation
+    // 2. The Shuffle Palette Animation
     tl.to(
       topImg,
       {
