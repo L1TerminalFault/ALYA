@@ -182,7 +182,7 @@
           <div class="relative overflow-hidden rounded-3xl shadow-2xl">
             <!-- Google Map -->
             <iframe
-              src="https://maps.google.com/maps?q=Alya%20Construction%20Plc%20Addis%20Ababa&z=15&output=embed"
+              src="https://maps.google.com/maps?q=Aliya%20Construction%20Plc%20Addis%20Ababa&z=15&output=embed"
               class="h-[500px] w-full"
               style="border: 0"
               allow="fullscreen"
