@@ -190,7 +190,7 @@
         stagger: 0.05,
         ease: "elastic.out(1, 0.8)",
       })
-      3. Re-split and text entrance
+      // 3. Re-split and text entrance
       .add(async () => {
         await nextTick();
         splitElements();
