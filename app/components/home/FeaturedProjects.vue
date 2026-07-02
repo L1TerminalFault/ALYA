@@ -62,10 +62,10 @@
     class="projects-section flex w-full flex-col items-center justify-center gap-15 bg-gray-950 px-5 py-30 text-white"
   >
     <div
-      class="flex w-full max-w-7xl flex-col items-end justify-between gap-10 md:flex-row"
+      class="flex w-full max-w-7xl /flex-col items-end justify-between gap-10 /md: flex-row"
     >
       <div class="/font-[Haas] text-4xl leading-[1.1] font-bold lg:text-[70px]">
-        Featured<br />Projects
+        Featured<br />Project
       </div>
       <NuxtLink
         to="/projects"

@@ -146,7 +146,7 @@
     <div v-if="introDone" class="flex h-max w-full flex-col text-white">
       <HomeHero />
       <div
-        class="/bg-black/5 /p-140 pointer-events-none aspect-8/7 h-auto w-full"
+        class="/bg-black/5 /p-140 pointer-events-none h-[100svh] w-full lg:h-auto lg:aspect-[8/7]"
       ></div>
       <div
         class="relative z-10 flex h-max w-full flex-col items-center justify-center shadow-[0_-20px_50px_rgba(0,0,0,0.5)]"

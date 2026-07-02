@@ -224,26 +224,26 @@
 </script>
 
 <template>
-  <div class="my-40 w-svw overflow-hidden bg-transparent py-40 text-white">
+  <div class="w-svw overflow-hidden bg-transparent py-20 lg:my-40 lg:py-40 text-white">
     <div class="max-467.5 mx-auto w-full">
       <div class="flex flex-col items-center gap-25">
         <div
-          class="revhead /font-[Haas] flex w-full justify-center px-10 text-center text-[clamp(30px,4vw,48px)] uppercase"
+          class="revhead /font-[Haas] flex w-full justify-center leading-[110%] px-10 text-center text-[clamp(30px,4vw,48px)] uppercase"
         >
           what others think about us
         </div>
 
         <div
-          class="aspect-[2.8/1] h-auto w-full max-w-467.5 px-10 py-5 lg:px-17 lg:py-10"
+          class="h-auto w-full flex max-w-467.5 lg:aspect-[2.8/1] px-5 py-5 lg:px-17 lg:py-10"
         >
-          <div class="flex h-full w-full gap-10 px-5 lg:gap-30">
+          <div class="flex h-full w-full flex-col lg:flex-row gap-10 px-0 lg:px-5 lg:gap-30">
             <!-- Dynamic Image Swapping Stack -->
             <div
-              class="test relative flex h-auto flex-1 items-center justify-center overflow-visible lg:h-full"
+              class="test relative flex h-[380px] max-lg:my-40 lg:h-auto w-full flex-1 items-center justify-center overflow-visible lg:h-full"
             >
               <img
                 :src="image1Source"
-                class="image1 absolute h-130 w-120 rounded-[100px] object-cover"
+                class="image1 absolute h-[280px] w-[240px] lg:h-130 lg:w-120 rounded-[40px] lg:rounded-[100px] object-cover"
                 :style="{
                   zIndex: isFirstImageFront ? 10 : 0,
                   opacity: isFirstImageFront ? 1 : 0.5,
@@ -251,7 +251,7 @@
               />
               <img
                 :src="image2Source"
-                class="image2 absolute mt-10 h-130 w-120 rounded-[100px] object-cover"
+                class="image2 absolute mt-10 h-[280px] w-[240px] lg:h-130 lg:w-120 rounded-[40px] lg:rounded-[100px] object-cover"
                 :style="{
                   zIndex: isFirstImageFront ? 0 : 10,
                   opacity: isFirstImageFront ? 0.5 : 1,
@@ -260,10 +260,10 @@
             </div>
 
             <!-- Content Area -->
-            <div class="flex h-full w-[60%] flex-col justify-between gap-10">
-              <div class="flex flex-col gap-10.5">
+            <div class="flex h-full w-full lg:w-[60%] flex-col justify-between gap-10">
+              <div class="flex flex-col gap-6 lg:gap-10.5">
                 <div
-                  class="review-title /font-[Haas] pr-10 text-[clamp(20px,3vw,58px)] leading-tight font-thin uppercase italic"
+                  class="review-title /font-[Haas] pr-0 lg:pr-10 text-[clamp(24px,3vw,58px)] leading-tight font-thin uppercase italic"
                 >
                   {{ currentReview.title }}
                 </div>

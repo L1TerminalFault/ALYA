@@ -150,19 +150,19 @@
     class="relative z-0 flex h-full w-full flex-col items-center justify-center overflow-hidden bg-white px-5 pt-50 pb-10"
   >
     <div
-      class="animfooter relative z-10 flex aspect-[2.11/1] size-full h-max min-h-125 max-w-467.5 flex-col justify-between rounded-[31px] border border-gray-800 bg-[#0F0F0F] px-10 py-12 text-white shadow-[0_30px_60px_rgba(0,0,0,0.4)] lg:px-15.5"
+      class="animfooter relative z-10 flex flex-col justify-between h-max min-h-125 w-full max-w-467.5 rounded-[31px] border border-gray-800 bg-[#0F0F0F] px-6 py-10 lg:px-15.5 lg:py-12 text-white shadow-[0_30px_60px_rgba(0,0,0,0.4)] lg:aspect-[2.11/1]"
     >
       <div class="flex w-full flex-col gap-8">
         <div
-          class="/font-[Switzer] flex w-full justify-center text-center text-[48px] font-bold text-white"
+          class="/font-[Switzer] flex w-full justify-center text-center text-[32px] lg:text-[48px] font-bold text-white"
         >
           <span class="footer-alya-text">ALIYA CONSTRUCTION PLC</span>
         </div>
 
-        <div class="mt-10 flex flex-col justify-between gap-10 lg:flex-row">
-          <div class="flex max-w-125 flex-col gap-6">
+        <div class="mt-6 lg:mt-10 flex flex-col justify-between gap-10 lg:flex-row">
+          <div class="flex max-w-125 flex-col gap-4 lg:gap-6">
             <div
-              class="footer-build-text /font-[Haas75] text-[38px] leading-tight text-white perspective-[1000px]"
+              class="footer-build-text /font-[Haas75] text-[28px] lg:text-[38px] leading-tight text-white perspective-[1000px]"
             >
               BUILDING TOGETHER
             </div>
@@ -204,21 +204,21 @@
       </div>
 
       <div
-        class="mt-12 flex flex-col items-center justify-between border-t border-gray-800 pt-8 lg:flex-row"
+        class="mt-12 flex flex-col items-center justify-between gap-6 border-t border-gray-800 pt-8 lg:flex-row"
       >
         <div
-          class="/font-[Switzer] order-2 mt-6 text-[15px] font-medium text-gray-500 lg:order-1 lg:mt-0"
+          class="/font-[Switzer] order-2 text-center text-[13px] lg:text-[15px] font-medium text-gray-500 lg:order-1"
         >
           © 2026 ALIYA CONSTRUCTION PLC. All rights reserved.
         </div>
 
-        <div class="order-1 flex items-center gap-4 lg:order-2">
+        <div class="order-1 flex flex-wrap items-center justify-center gap-3 lg:gap-4 lg:order-2">
           <NuxtLink
             v-for="social in SOCIALS"
             :key="social.name"
             :to="social.link"
             target="_blank"
-            class="hover:border-brand-500 hover:bg-brand-500 flex size-12 cursor-pointer items-center justify-center rounded-full border border-gray-600 text-xl text-white transition-all duration-500 hover:text-black"
+            class="hover:border-brand-500 hover:bg-brand-500 flex size-10 lg:size-12 cursor-pointer items-center justify-center rounded-full border border-gray-600 text-lg lg:text-xl text-white transition-all duration-500 hover:text-black"
           >
             <Icon :name="social.icon" />
           </NuxtLink>
@@ -230,7 +230,7 @@
       class="mega-text pointer-events-none mt-30 flex h-full w-full flex-col gap-16 pb-20"
     >
       <div
-        class="mega-text-inner /font-[Haas] my-10 w-full overflow-visible text-center text-[clamp(60px,8vw,125px)] font-black whitespace-nowrap text-[#f3f3f3] uppercase"
+        class="mega-text-inner /font-[Haas] my-10 w-full overflow-visible text-center leading-tight text-[clamp(40px,8vw,125px)] font-black whitespace-normal lg:whitespace-nowrap text-[#f3f3f3] uppercase px-5 lg:px-0"
       >
         ALIYA CONSTRUCTION PLC
       </div>

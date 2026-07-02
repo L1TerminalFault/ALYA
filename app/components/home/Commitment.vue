@@ -179,20 +179,16 @@
     style="width: 6px; height: 6px; margin-left: -3px; margin-top: -3px"
   ></div>
 
-  <div class="h-screen w-svw bg-[#0003] hidden">
-	  
-  </div>
-
   <div
-    class="parent /font-[Haas55] relative z-0  flex h-auto w-full flex-col gap-54 overflow-visible bg-white max-2xl:aspect-16/19 2xl:h-full"
+    class="parent /font-[Haas55] relative z-0 flex h-auto w-full flex-col gap-20 overflow-visible /bg-white max-lg:h-auto /max-lg:py-30 lg:gap-54 max-2xl:aspect-[16/19] 2xl:h-full"
   >
     <div
-      class="absolute flex aspect-video w-full -translate-y-1/2 flex-col items-center justify-center"
+      class="absolute flex w-full flex-col items-center justify-center max-lg:aspect-[4/3] max-lg:-translate-y-[25%] lg:aspect-video lg:-translate-y-1/2"
     >
       <div :class="loaded ? '' : 'hidden'" class="lparent z-0 h-full w-full">
         <svg
           id="curve"
-          class="h-max w-full"
+          class="h-max w-full max-lg:hidden shadow-lg shadow-black"
           width="1920"
           height="1940"
           viewBox="0 0 1920 1940"
@@ -220,10 +216,10 @@
     </div>
 
     <div
-      class="relative z-10 flex min-h-screen items-center justify-center text-white"
+      class="relative z-10 flex lg:aspect-video h-max w-full max-lg:min-h-[70vh] max-lg:bg-[#7f1d1d] items-center justify-center text-white"
     >
       <div
-        class="focus /font-[Haas75] relative flex flex-col items-center justify-center gap-12 text-2xl font-bold 2xl:text-8xl"
+        class="focus /font-[Haas75] relative flex flex-col items-center justify-center gap-8 px-5 lg:gap-12 lg:px-0 text-2xl font-bold 2xl:text-8xl"
       >
         <div
           class="sptext perspective-text max-w-[85%] text-center text-[clamp(2.5rem,6vw,8.5rem)] leading-[1.1] font-bold 2xl:max-w-[75%]"
@@ -231,7 +227,7 @@
           OUR COMMITMENT TO QUALITY, SAFETY,
         </div>
         <div
-          class="cptext /font-[Haas55] max-w-[75%] text-center text-[clamp(16px,2.2vw,32px)] leading-[1.4] font-thin 2xl:max-w-[45%]"
+          class="cptext /font-[Haas55] max-w-[90%] lg:max-w-[75%] text-center text-[clamp(16px,2.2vw,32px)] leading-[1.4] font-thin 2xl:max-w-[45%]"
         >
           At the heart of every project we take on is a dedication to delivering
           reliability. We build results that stand the test of time.
@@ -255,7 +251,7 @@
     </div>
 
     <div
-      class="relative z-0 -mt-43 flex min-h-screen w-full items-center justify-center bg-[#7f1d1d]"
+      class="relative z-0 -mt-43 flex lg:aspect-video h-max w-full max-lg:min-h-[70vh] w-full items-center justify-center bg-[#7f1d1d]"
     >
       <div
         class="absolute inset-0 h-full w-full overflow-hidden bg-transparent"
