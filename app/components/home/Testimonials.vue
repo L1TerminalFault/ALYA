@@ -191,7 +191,7 @@
       //   ease: "elastic.out(1, 0.8)",
       // })
       // 3. Re-split and text entrance
-      .add(async () => {
+      tl.add(async () => {
         await nextTick();
         splitElements();
 
