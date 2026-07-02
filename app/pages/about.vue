@@ -7,11 +7,11 @@
       role: "General Manager (20 Yrs Exp)",
       img: "/person1.jpg",
     },
-    {
-      name: "Ashebir Taye Gurmu",
-      role: "Administrator (10 Yrs Exp)",
-      img: "/person2.jpg",
-    },
+    // {
+    //   name: "Ashebir Taye Gurmu",
+    //   role: "Administrator (10 Yrs Exp)",
+    //   img: "/person2.jpg",
+    // },
   ];
 
   const members = [
@@ -515,7 +515,7 @@
           </div>
         </div>
 
-        <div class="grid grid-cols-1 gap-10 md:grid-cols-3">
+        <div class="hidden grid grid-cols-1 gap-10 md:grid-cols-3">
           <div
             v-for="(member, i) in members"
             :key="i"
