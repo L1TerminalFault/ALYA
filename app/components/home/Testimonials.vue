@@ -97,15 +97,15 @@
 
   // Dynamically map resources to prevent swapping artifacts
   const image1Source = computed(() =>
-    // isFirstImageFront.value ?
+    isFirstImageFront.value ?
       currentReview.value?.image1
-      // : nextReview.value?.image1
+      : nextReview.value?.image1
   );
-  // const image2Source = computed(() =>
-  //   isFirstImageFront.value
-  //     ? nextReview.value?.image2
-  //     : currentReview.value?.image2
-  // );
+  const image2Source = computed(() =>
+    isFirstImageFront.value
+      ? nextReview.value?.image2
+      : currentReview.value?.image2
+  );
 
   const splitElements = () => {
     if (titleSplit) titleSplit.revert();
@@ -123,13 +123,13 @@
     if (isAnimating.value) return;
     isAnimating.value = true;
 
-    // const topImg = isFirstImageFront.value ? ".image1" : ".image2";
-    // const bottomImg = isFirstImageFront.value ? ".image2" : ".image1";
+    const topImg = isFirstImageFront.value ? ".image1" : ".image2";
+    const bottomImg = isFirstImageFront.value ? ".image2" : ".image1";
 
     const tl = gsap.timeline({
       onComplete: () => {
         counter.value = (counter.value + 1) % reviews.length;
-        // isFirstImageFront.value = !isFirstImageFront.value;
+        isFirstImageFront.value = !isFirstImageFront.value;
         isAnimating.value = false;
       },
     });
@@ -143,55 +143,55 @@
       ease: "power2.inOut",
     });
 
-    // 2. The Shuffle Palette Animation
-    // tl.to(
-    //   topImg,
-    //   {
-    //     x: 100,
-    //     y: 40,
-    //     rotate: 8,
-    //     opacity: 0.5,
-    //     scale: 0.85,
-    //     duration: 0.5,
-    //     ease: "expo.inOut",
-    //   },
-    //   "-=0.3"
-    // )
-    //   .fromTo(
-    //     bottomImg,
-    //     {
-    //       x: 0,
-    //       scale: 0.9,
-    //       zIndex: 0,
-    //       opacity: 0.5,
-    //     },
-    //     {
-    //       x: -120,
-    //       scale: 1.05,
-    //       opacity: 1,
-    //       rotate: -5,
-    //       zIndex: 20,
-    //       duration: 0.5,
-    //       ease: "expo.inOut",
-    //     },
-    //     "<"
-    //   )
+    2. The Shuffle Palette Animation
+    tl.to(
+      topImg,
+      {
+        x: 100,
+        y: 40,
+        rotate: 8,
+        opacity: 0.5,
+        scale: 0.85,
+        duration: 0.5,
+        ease: "expo.inOut",
+      },
+      "-=0.3"
+    )
+      .fromTo(
+        bottomImg,
+        {
+          x: 0,
+          scale: 0.9,
+          zIndex: 0,
+          opacity: 0.5,
+        },
+        {
+          x: -120,
+          scale: 1.05,
+          opacity: 1,
+          rotate: -5,
+          zIndex: 20,
+          duration: 0.5,
+          ease: "expo.inOut",
+        },
+        "<"
+      )
       // Synchronize layered ordering heights mid-flight
-      // .set(topImg, { zIndex: 0 })
-      // .set(bottomImg, { zIndex: 10 })
+      .set(topImg, { zIndex: 0 })
+      .set(bottomImg, { zIndex: 10 })
       // Re-center system sets smoothly
-      // .to([topImg, bottomImg], {
-      //   x: 0,
-      //   y: 0,
-      //   rotate: 0,
-      //   opacity: (i) => (i === 0 ? 0.5 : 1),
-      //   scale: (i) => (i === 0 ? 0.6 : 1),
-      //   duration: 0.6,
-      //   stagger: 0.05,
-      //   ease: "elastic.out(1, 0.8)",
-      // })
-      // 3. Re-split and text entrance
-      tl.add(async () => {
+      .to([topImg, bottomImg], {
+        x: 0,
+        y: 0,
+        rotate: 0,
+        opacity: (i) => (i === 0 ? 0.5 : 1),
+        scale: (i) => (i === 0 ? 0.6 : 1),
+        duration: 0.6,
+        stagger: 0.05,
+        ease: "elastic.out(1, 0.8)",
+      })
+      3. Re-split and text entrance
+      .add(async () => {
         await nextTick();
         splitElements();
 
@@ -242,8 +242,8 @@
               class="test relative flex h-[380px] max-lg:my-40 lg:h-auto w-full flex-1 items-center justify-center overflow-visible lg:h-full"
             >
               <img
-                :src="image1Source"
-                class="image1 absolute h-[280px] w-[240px] lg:h-130 lg:w-120 rounded-[40px] lg:rounded-[100px] object-cover"
+                src="/test3.jpg"
+                class="/image1 absolute h-[280px] w-[240px] lg:h-130 lg:w-120 rounded-[40px] lg:rounded-[100px] object-cover"
               />
               <!-- img
                 :src="image2Source"
