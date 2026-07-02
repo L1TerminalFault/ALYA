@@ -1,16 +1,14 @@
 <script setup lang="ts">
   useHead({ title: "About Us" });
 
-
-
   const downloadProfile = () => {
-    const link = document.createElement('a')
-    link.href = '/company_profile.docx'
-    link.setAttribute('download', 'aliya-co-profile.docx')
-    document.body.appendChild(link)
-    link.click()
-    document.body.removeChild(link)
-  }
+    const link = document.createElement("a");
+    link.href = "/company_profile.docx";
+    link.setAttribute("download", "aliya-co-profile.docx");
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
   const leaders = [
     {
@@ -189,7 +187,8 @@
               </p>
             </div>
 
-	    <button @click="downloadProfile"
+            <button
+              @click="downloadProfile"
               class="/font-[Switzer] mt-4 w-fit rounded-full bg-white px-6 py-3 font-bold text-black transition-colors hover:bg-gray-200"
             >
               Download Company Profile
@@ -496,14 +495,16 @@
             of combined industry experience and strategic oversight.
           </div>
         </div>
-        <div class="/grid /grid-cols-1 flex w-full items-center justify-center /gap-10 /md:grid-cols-2">
+        <div
+          class="/grid /grid-cols-1 /gap-10 /md:grid-cols-2 flex w-full items-center justify-center"
+        >
           <div
             v-for="(leader, i) in leaders"
             :key="i"
             class="group flex cursor-pointer flex-col gap-5"
           >
             <div
-              class="relative aspect-3/4 w-full overflow-hidden rounded-2xl bg-gray-800 shadow-lg"
+              class="/aspect-3/4 relative w-2/3 overflow-hidden rounded-2xl bg-gray-800 shadow-lg"
             >
               <img
                 :src="leader.img"
@@ -525,7 +526,7 @@
           </div>
         </div>
 
-        <div class="hidden grid grid-cols-1 gap-10 md:grid-cols-3">
+        <div class="grid hidden grid-cols-1 gap-10 md:grid-cols-3">
           <div
             v-for="(member, i) in members"
             :key="i"
