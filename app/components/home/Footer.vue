@@ -27,7 +27,7 @@
       icon: "i-ph-linkedin-logo",
       link: "https://www.linkedin.com/",
     },
-    { name: "Whatsapp", icon: "i-ph-whatsapp-logo", link: "https://wa.me/" },
+    { name: "Whatsapp", icon: "i-ph-whatsapp-logo", link: "https://wa.me/251949007777" },
     {
       name: "Email",
       icon: "i-ph-envelope-simple",
