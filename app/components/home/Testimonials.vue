@@ -97,15 +97,15 @@
 
   // Dynamically map resources to prevent swapping artifacts
   const image1Source = computed(() =>
-    isFirstImageFront.value
-      ? currentReview.value?.image1
-      : nextReview.value?.image1
+    // isFirstImageFront.value ?
+      currentReview.value?.image1
+      // : nextReview.value?.image1
   );
-  const image2Source = computed(() =>
-    isFirstImageFront.value
-      ? nextReview.value?.image2
-      : currentReview.value?.image2
-  );
+  // const image2Source = computed(() =>
+  //   isFirstImageFront.value
+  //     ? nextReview.value?.image2
+  //     : currentReview.value?.image2
+  // );
 
   const splitElements = () => {
     if (titleSplit) titleSplit.revert();
@@ -129,7 +129,7 @@
     const tl = gsap.timeline({
       onComplete: () => {
         counter.value = (counter.value + 1) % reviews.length;
-        isFirstImageFront.value = !isFirstImageFront.value;
+        // isFirstImageFront.value = !isFirstImageFront.value;
         isAnimating.value = false;
       },
     });
