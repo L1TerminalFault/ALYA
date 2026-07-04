@@ -157,6 +157,9 @@
             <div class="text-brand-500 /font-[Switzer] text-lg font-bold">
               +251 - 116 67 07 77
             </div>
+            <div class="text-brand-500 /font-[Switzer] text-lg font-bold">
+              +251 - 940 22 22 23
+            </div>
           </div>
           <div class="mt-2 flex flex-col gap-2">
             <NuxtLink
