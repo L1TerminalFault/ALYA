@@ -13,14 +13,14 @@
   const leaders = [
     {
       name: "Belay Taye Gurmu",
-      role: "General Manager (20 Yrs Exp)",
+      role: "General Manager (21 Yrs Exp)",
       img: "/person1.jpg",
     },
-    // {
-    //   name: "Ashebir Taye Gurmu",
-    //   role: "Administrator (10 Yrs Exp)",
-    //   img: "/person2.jpg",
-    // },
+    {
+      name: "Ashebir Taye Gurmu",
+      role: "Company Owner",
+      img: "/person3.jpg",
+    },
   ];
 
   const members = [
@@ -496,12 +496,12 @@
           </div>
         </div>
         <div
-          class="/grid /grid-cols-1 /gap-10 /md:grid-cols-2 flex w-full items-center justify-center"
+          class="/flex grid w-full grid-cols-1 items-center justify-center gap-10 md:grid-cols-2"
         >
           <div
             v-for="(leader, i) in leaders"
             :key="i"
-            class="group flex cursor-pointer items-center justify-center w-full flex-col gap-5"
+            class="group flex w-full cursor-pointer flex-col items-center justify-center gap-5"
           >
             <div
               class="/aspect-3/4 relative w-2/5 overflow-hidden rounded-2xl bg-gray-800 shadow-lg"
