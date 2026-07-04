@@ -496,12 +496,12 @@
           </div>
         </div>
         <div
-          class="flex /grid w-full /grid-cols-1 items-center max-h-[65vh] justify-evenly gap-20 /md:grid-cols-2"
+          class="flex /grid w-full /grid-cols-1 items-center justify-evenly gap-20 /md:grid-cols-2"
         >
           <div
             v-for="(leader, i) in leaders"
             :key="i"
-            class="group flex w-full cursor-pointer flex-col items-center justify-center gap-5"
+            class="group flex w-full cursor-pointer max-h-[65vh] flex-col items-center justify-center gap-5"
           >
             <div
               class="aspect-3/4 relative /w-2/5 overflow-hidden rounded-2xl bg-gray-800 shadow-lg"
