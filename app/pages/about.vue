@@ -496,7 +496,7 @@
           </div>
         </div>
         <div
-          class="flex /grid w-full /grid-cols-1 items-center max-h-svh justify-evenly gap-20 /md:grid-cols-2"
+          class="flex /grid w-full /grid-cols-1 items-center max-h-[80vh] justify-evenly gap-20 /md:grid-cols-2"
         >
           <div
             v-for="(leader, i) in leaders"
