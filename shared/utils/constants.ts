@@ -127,12 +127,12 @@ export const PROJECTS = [
   },
   {
     id: "ab1bc2cc-078a-4bd4-887d-8c283c79dfb3",
-    name: "Ariyo Catholic School (Learning Institute) (G+1 Residence)",
+    name: "Proposed Ariyo Catholic School (Learning Institute) (G+1 Residence)",
     category: "Institutional",
     status: "Completed",
     client: "Ethiopia Catholic Church Society of Jesus",
     value: "28,476,075.52",
     location: "Bonga, Keffa",
-    img: "/work1.png",
+    img: "/work1.jpg",
   },
 ];
