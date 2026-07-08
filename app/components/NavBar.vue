@@ -190,7 +190,7 @@
 
 <template>
   <nav
-    class="perspective-1000 pointer-events-none fixed top-0 left-0 z-45 flex w-full items-start justify-between p-0 lg:p-5"
+    class="perspective-1000 pointer-events-none fixed top-0 left-0 z-45 flex w-full items-start justify-between p-0 p-5"
   >
     <div
       class="nav-pill nav-left nav-container pointer-events-auto flex items-center gap-8 rounded-full border border-white/15 bg-black/35 p-2 px-6 shadow-2xl backdrop-blur-xl transition-all duration-300"
