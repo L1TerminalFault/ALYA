@@ -49,7 +49,7 @@
         class="relative min-h-125 w-full overflow-hidden rounded-3xl border border-white/5 shadow-2xl lg:w-1/2"
       >
         <img
-          src="/innovation.jpg"
+          src="/pal41.jpg"
           class="absolute inset-0 size-full object-cover transition-transform duration-1000 hover:scale-105"
         />
       </div>
