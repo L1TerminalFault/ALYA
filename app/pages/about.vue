@@ -12,7 +12,7 @@
 
   const leaders = [
     {
-      name: "Belay Taye Gurmu",
+      name: "Engineer Belay Taye Gurmu",
       role: "General Manager (21 Yrs Exp)",
       img: "/person1.jpg",
     },
@@ -374,7 +374,7 @@
     </div>
 
     <!-- Capabilities & Machinery Section -->
-    <div class="flex w-full flex-col items-center bg-gray-900 px-5 py-30">
+    <div class="/flex hidden w-full /flex-col items-center bg-gray-900 px-5 py-30">
       <div class="flex w-full max-w-7xl flex-col gap-15">
         <div class="flex flex-col items-center gap-12 text-center">
           <div
