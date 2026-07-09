@@ -110,7 +110,7 @@
         </div>
       </div>
       <div
-        class="group relative h-125 w-full overflow-hidden rounded-2xl lg:w-1/2"
+        class="group relative h-125/ aspect-3/4 w-full overflow-hidden rounded-2xl lg:w-1/2"
       >
         <img
           src="/section.jpg"
