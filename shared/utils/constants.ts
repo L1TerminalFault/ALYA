@@ -143,6 +143,6 @@ export const PROJECTS = [
     client: "Ethiopia Catholic Church Society of Jesus",
     value: "28,476,075.52",
     location: "Bonga, Keffa",
-    img: "/work13.jpg",
+    img: "/pal39.jpg",
   },
 ];
