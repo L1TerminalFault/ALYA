@@ -5,7 +5,6 @@
     // col 1
     "/pal1.jpg",
     "/pal2.jpeg",
-    "/pal43.jpg",
 
     "/pal5.jpeg",
     "/pal41.jpg",
@@ -15,6 +14,7 @@
 
     "/pal6.jpeg",
     "/pal7.jpeg",
+    "/pal31.jpeg",
     "/test3.jpg",
 
 
@@ -31,7 +31,7 @@
 
     "/pal12.jpeg",
     "/pal18.jpeg",
-    "/pal31.jpeg",
+    "/pal43.jpg",
 
 
 
