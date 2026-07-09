@@ -133,7 +133,7 @@
           </span>
           <span
             :class="
-              animate ? 'text-2xl text-black/75' : 'text-[50px] text-black'
+              animate ? '/text-2xl text-black/75' : 'text-[50px] text-black'
             "
             class="span-text pt-3 transition-all delay-3500 duration-800 ease-in-out"
           >
