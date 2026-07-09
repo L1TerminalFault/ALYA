@@ -114,7 +114,7 @@
       >
         <img
           src="/section.jpg"
-          class="h-full /w-full object-cover origin-top transition-transform duration-1000 group-hover:scale-105"
+          class="h-full /w-full object-cover rounded-2xl origin-top transition-transform duration-1000 group-hover:scale-105"
         />
       </div>
     </div>
