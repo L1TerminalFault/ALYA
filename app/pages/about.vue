@@ -110,7 +110,7 @@
         </div>
       </div>
       <div
-        class="group relative h-full /aspect-3/4 w-full overflow-hidden rounded-2xl lg:w-1/2"
+        class="group relative h-full aspect-3/4 w-full overflow-hidden rounded-2xl lg:w-1/2"
       >
         <img
           src="/pal40.jpg"
