@@ -113,7 +113,7 @@
         class="group relative h-full /aspect-3/4 w-full overflow-hidden rounded-2xl lg:w-1/2"
       >
         <img
-          src="/section.jpg"
+          src="/pal40.jpg"
           class="h-full w-3/4 object-cover rounded-2xl origin-top transition-transform duration-1000 group-hover:scale-105"
         />
       </div>
