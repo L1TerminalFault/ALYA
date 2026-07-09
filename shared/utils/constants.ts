@@ -136,7 +136,7 @@ export const PROJECTS = [
     img: "/work1.jpg",
   },
   {
-    id: "ab1bc2cc-078a-4bd4-887d-8c283c79dfb3",
+    id: "ab1bc2cc-078b-4bd4-887d-8c283c79dfb3",
     name: "Proposed Ariyo Residence (G+1)",
     category: "Institutional",
     status: "Completed",
