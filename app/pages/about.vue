@@ -113,7 +113,7 @@
         class="group relative h-125 w-full overflow-hidden rounded-2xl lg:w-1/2"
       >
         <img
-          src="https://aliyaconstructionplc.com/wp-content/uploads/2026/05/unnamed-4-1.jpg"
+          src="section.jpg"
           class="h-full w-full object-cover transition-transform duration-1000 group-hover:scale-105"
         />
       </div>
