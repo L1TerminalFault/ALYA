@@ -110,11 +110,11 @@
         </div>
       </div>
       <div
-        class="group relative h-125/ aspect-3/4 w-full overflow-hidden rounded-2xl lg:w-1/2"
+        class="group relative h-max /aspect-3/4 /w-full overflow-hidden rounded-2xl lg:w-1/2"
       >
         <img
           src="/section.jpg"
-          class="h-full w-full object-cover origin-top transition-transform duration-1000 group-hover:scale-105"
+          class="h-full /w-full object-cover origin-top transition-transform duration-1000 group-hover:scale-105"
         />
       </div>
     </div>
