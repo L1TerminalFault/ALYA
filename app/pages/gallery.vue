@@ -2,55 +2,52 @@
   import { ref } from "vue";
   useHead({ title: "Site Gallery" });
   const images = [
+    // col 1
     "/pal1.jpg",
     "/pal2.jpeg",
     "/test3.jpg",
-    "/pal40.jpg",
-    "/pal17.jpg",
-    "/pal43.jpg",
-    "/pal39.jpeg",
 
     "/pal5.jpeg",
     "/pal41.jpg",
     "/pal30.jpeg",
     "/pal48.jpg",
     "/pal4.jpeg",
+
+    "/pal6.jpeg",
+    "/pal7.jpeg",
+    "/pal10.jpeg",
+
+
+
+    // col 2
+    "/pal40.jpg",
+    "/pal17.jpg",
+
     "/pal44.jpg",
     "/pal46.jpg",
     "/pal42.jpg",
     "/pal32.jpeg",
     "/pal47.jpg",
+
+    "/pal12.jpeg",
+    "/pal18.jpeg",
+    "/pal31.jpeg",
+
+
+
+    // col 3
+    "/pal43.jpg",
+    "/pal39.jpeg",
+
     "/pal33.jpeg",
     "/pal35.jpeg",
     "/pal19.jpg",
     "/pal37.jpeg",
 
-    "/pal6.jpeg",
-    "/pal7.jpeg",
-    "/pal10.jpeg",
-    "/pal12.jpeg",
-    "/pal18.jpeg",
-    "/pal31.jpeg",
     "/pal34.jpeg",
     "/pal36.jpeg",
     "/pal39.jpg",
     "/pal45.jpg",
-    // "/pal38.jpeg",
-    // "/pal11.jpeg",
-    // "/pal8.jpeg",
-    // "/pal9.jpeg",
-    // "/pal13.jpeg",
-    // "/pal15.jpeg",
-    // "/pal16.jpg",
-    // "/pal20.jpeg",
-    // "/pal21.jpeg",
-    // "/pal22.jpeg",
-    // "/pal23.jpeg",
-    // "/pal24.jpeg",
-    // "/pal26.jpeg",
-    // "/pal27.jpeg",
-    // "/pal28.jpeg",
-    // "/pal28.jpeg",
   ];
 
   const selectedImage = ref<string | null>(null);
@@ -74,7 +71,7 @@
     />
 
     <div class="w-full max-w-350 px-5 py-30">
-      <div class="/columns-1 grid grid-cols-1 items-start md:grid-cols-2 lg:grid-cols-3 gap-6 /space-y-6 grid-flow-row /md:columns-2 /lg:columns-3">
+      <div class="columns-1 gap-6 space-y-6 md:columns-2 lg:columns-3">
         <div
           v-for="(img, i) in images"
           :key="i"

@@ -114,7 +114,7 @@
       >
         <img
           src="/pal40.jpg"
-          class="h-full w-3/4 object-cover rounded-2xl origin-top transition-transform duration-1000 group-hover:scale-105"
+          class="h-full w-3/4 object-cover rounded-2xl origin-top transition-transform duration-1000 group-hover:scale-100.4"
         />
       </div>
     </div>
