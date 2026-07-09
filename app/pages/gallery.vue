@@ -2,43 +2,44 @@
   import { ref } from "vue";
   useHead({ title: "Site Gallery" });
   const images = [
-    "/pal2.jpeg",
     "/pal1.jpg",
+    "/pal2.jpeg",
     "/test3.jpg",
-    "/pal4.jpeg",
+    "/pal40.jpg",
+    "/pal17.jpg",
+    "/pal43.jpg",
+    "/pal39.jpeg",
+
     "/pal5.jpeg",
+    "/pal41.jpg",
+    "/pal30.jpeg",
+    "/pal48.jpg",
+    "/pal4.jpeg",
+    "/pal44.jpg",
+    "/pal46.jpg",
+    "/pal42.jpg",
+    "/pal32.jpeg",
+    "/pal47.jpg",
+    "/pal33.jpeg",
+    "/pal35.jpeg",
+    "/pal19.jpg",
+    "/pal37.jpeg",
+
     "/pal6.jpeg",
     "/pal7.jpeg",
     "/pal10.jpeg",
-    "/pal39.jpeg",
     "/pal12.jpeg",
-    "/pal17.jpg",
     "/pal18.jpeg",
-    "/pal19.jpg",
-    "/pal30.jpeg",
     "/pal31.jpeg",
-    "/pal32.jpeg",
-    "/pal33.jpeg",
     "/pal34.jpeg",
-    "/pal35.jpeg",
     "/pal36.jpeg",
-    "/pal37.jpeg",
     "/pal39.jpg",
-    "/pal40.jpg",
-    "/pal41.jpg",
-    "/pal42.jpg",
-    "/pal43.jpg",
-    "/pal44.jpg",
     "/pal45.jpg",
-    "/pal46.jpg",
-    "/pal47.jpg",
-    "/pal48.jpg",
     // "/pal38.jpeg",
     // "/pal11.jpeg",
     // "/pal8.jpeg",
     // "/pal9.jpeg",
     // "/pal13.jpeg",
-    // "/pal14.jpg",
     // "/pal15.jpeg",
     // "/pal16.jpg",
     // "/pal20.jpeg",
@@ -73,7 +74,7 @@
     />
 
     <div class="w-full max-w-350 px-5 py-30">
-      <div class="columns-1 gap-6 space-y-6 md:columns-2 lg:columns-3">
+      <div class="columns-1 gap-6 space-y-6 grid-flow-row md:columns-2 lg:columns-3">
         <div
           v-for="(img, i) in images"
           :key="i"
