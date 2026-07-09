@@ -129,15 +129,14 @@
             :class="animate ? 'text-brand-600 text-shadow-lg' : 'text-black'"
             class="transition-all delay-3500 duration-1000 ease-out"
           >
-            ALIYA
+            ALIYA CONSTRUCTION PLC
           </span>
           <span
             :class="
-              animate ? '/text-2xl text-black/75' : 'text-[50px] text-black'
+              animate ? 'text-2xl text-black/75' : 'text-[50px] text-black'
             "
-            class="span-text pt-3 transition-all delay-3500 duration-800 ease-in-out"
+            class="hidden span-text pt-3 transition-all delay-3500 duration-800 ease-in-out"
           >
-            CONSTRUCTION PLC
           </span>
         </div>
       </div>
