@@ -5,17 +5,17 @@
     // col 1
     "/pal1.jpg",
     "/pal2.jpeg",
-    "/test3.jpg",
+    "/pal43.jpg",
 
     "/pal5.jpeg",
     "/pal41.jpg",
+    "/pal35.jpeg",
+    "/pal19.jpg",
     "/pal30.jpeg",
-    "/pal48.jpg",
-    "/pal4.jpeg",
 
     "/pal6.jpeg",
     "/pal7.jpeg",
-    "/pal43.jpg",
+    "/test3.jpg",
 
 
 
@@ -39,8 +39,8 @@
     "/pal39.jpeg",
 
     "/pal33.jpeg",
-    "/pal35.jpeg",
-    "/pal19.jpg",
+    "/pal48.jpg",
+    "/pal4.jpeg",
     "/pal37.jpeg",
 
     "/pal34.jpeg",
