@@ -90,7 +90,7 @@
         <NuxtImg
           :src="projectImage"
 			:placeholder="1"
-          class="h-full w-full object-cover transition-all duration-1000"
+          class="h-full max-h-[70svh] w-full object-cover transition-all duration-1000"
         />
       </div>
     </div>

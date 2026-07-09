@@ -25,7 +25,7 @@
           <NuxtImg
             :src="project.img"
 			  :placeholder="1"
-            class="absolute inset-0 max-h-[70svh] /size-full object-cover transition-transform duration-1000 group-hover:scale-110"
+            class="absolute inset-0 size-full object-cover transition-transform duration-1000 group-hover:scale-110"
           />
           <div
             class="absolute inset-0 bg-linear-to-t from-gray-950 via-gray-950/70 to-transparent opacity-90 transition-opacity duration-500 group-hover:opacity-100"
