@@ -120,7 +120,7 @@
         <div
           :class="
             animate
-              ? 'blur-0 max-w-180 opacity-100'
+              ? 'blur-0 /max-w-180 opacity-100'
               : 'max-w-0 opacity-0 blur-lg'
           "
           class="/font-[Inter] block items-baseline justify-center gap-2 overflow-hidden pt-5 pl-1 text-6xl font-bold text-nowrap text-black transition-all delay-1200 duration-2500 ease-in-out"
