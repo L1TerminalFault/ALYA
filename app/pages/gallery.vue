@@ -21,8 +21,8 @@
 
 
     // col 2
-    "/pal40.jpg",
     "/pal17.jpg",
+    "/pal40.jpg",
 
     "/pal44.jpg",
     "/pal46.jpg",
