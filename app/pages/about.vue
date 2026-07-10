@@ -13,12 +13,12 @@
   const leaders = [
     {
       name: "Engineer Belay Taye Gurmu",
-      role: "General Manager (21 Yrs Exp)",
+      role: "CEO (21 Yrs Exp)",
       img: "/person1.jpg",
     },
     {
       name: "Ashebir Taye Gurmu",
-      role: "Company Owner",
+      role: "Share Holder",
       img: "/person3.jpg",
     },
   ];
