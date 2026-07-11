@@ -104,7 +104,7 @@
       <NuxtImg
         :src="selectedImage"
         :placeholder="1"
-        class="max-h-[90vh] max-w-[90vw] rounded-lg object-contain shadow-2xl"
+        class="max-h-[90vh] max-w-[90vw] min-h-[60svh] min-w-[60svw] w-full h-full rounded-lg object-contain shadow-2xl"
         @click.stop
       />
 
