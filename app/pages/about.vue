@@ -159,7 +159,7 @@
             class="flex flex-col gap-6 rounded-3xl border border-white/5 bg-gray-900 p-10 shadow-2xl lg:w-1/2"
           >
             <div class="/font-[Haas] text-3xl font-bold">
-              Founded by Belay Taye
+              Founded by Engineer Belay Taye
             </div>
             <div
               class="text-brand-500 /font-[Switzer] -mt-4 text-sm font-bold uppercase"
@@ -171,7 +171,7 @@
             >
               <p>
                 Founded by
-                <strong>Belay Taye</strong>
+                <strong>Engineer Belay Taye</strong>
                 , Aliya Construction PLC was established to participate in
                 Ethiopia’s expanding construction industry and provide
                 dependable building solutions for both public and private sector
@@ -208,7 +208,7 @@
             Our Background
           </div>
           <div class="/font-[Switzer] text-base leading-relaxed text-gray-400">
-            ALIYA CONSTRUCTION PLC is company established by BELAY TAYE in 2014
+            ALIYA CONSTRUCTION PLC is company established by ENGINEER BELAY TAYE in 2014
             G.C. to play a major role in the booming local construction
             industry. The capital of the company has been fully paid at the time
             of its establishment and since then it has continued to increase
@@ -217,7 +217,7 @@
             OR/AND Grade-4 Building Contractor. It has TIN certificate given
             from Federal Democratic Republic of Ethiopia Bureau of Revenue. And
             also registered for VAT and received certificate from the same
-            office. At present the Company’s general manager is Belay Taye all
+            office. At present the Company’s general manager is Engineer Belay Taye all
             his legal papers are attached herewith.
           </div>
         </div>

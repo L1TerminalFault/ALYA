@@ -12,6 +12,7 @@
     "/pal19.jpg",
     "/pal35.jpeg",
     "/pal30.jpeg",
+    "/pal49.jpg",
 
     "/pal6.jpeg",
     "/pal7.jpeg",
@@ -29,6 +30,8 @@
     "/pal42.jpg",
     "/pal32.jpeg",
     "/pal47.jpg",
+    "/pal50.jpg",
+    "/pal52.jpg",
 
     "/pal12.jpeg",
     "/pal18.jpeg",
@@ -43,6 +46,8 @@
     "/pal48.jpg",
     "/pal4.jpeg",
     "/pal37.jpeg",
+    "/pal53.jpg",
+    "/pal51.jpg",
 
     "/pal34.jpeg",
     "/pal36.jpeg",
