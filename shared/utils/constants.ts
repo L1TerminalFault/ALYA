@@ -57,16 +57,16 @@ export const PROJECTS = [
   },
 
   // TODO: Edit this project data
-  {
-    id: "ee6fe3d4-4e23-485d-b7b7-d4c87c00591c",
-    name: "Project_ECS - Renovation Work",
-    category: "Commercial",
-    status: "Completed",
-    client: "Unknown",
-    value: "1,181,868.92",
-    location: "Addis Ababa",
-    img: "/work14.jpg",
-  },
+  // {
+  //   id: "ee6fe3d4-4e23-485d-b7b7-d4c87c00591c",
+  //   name: "Project_ECS - Renovation Work",
+  //   category: "Commercial",
+  //   status: "Completed",
+  //   client: "Unknown",
+  //   value: "1,181,868.92",
+  //   location: "Addis Ababa",
+  //   img: "/work14.jpg",
+  // },
   {
     id: "08479ce4-c33f-4458-a9c5-ded50e129c7c",
     name: "Mixed-Use Building (B+G+6) Finishing Work",
