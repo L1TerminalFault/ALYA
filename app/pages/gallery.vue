@@ -42,8 +42,8 @@
     // col 3
     "/pal39.jpeg",
 
-    "/pal33.jpeg",
     "/pal48.jpg",
+    "/pal33.jpeg",
     "/pal4.jpeg",
     "/pal37.jpeg",
     "/pal53.jpg",
