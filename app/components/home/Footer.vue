@@ -15,7 +15,12 @@
     {
       name: "Instagram",
       icon: "i-ph-instagram-logo",
-      link: "https://www.instagram.com/",
+      link: "https://www.instagram.com",
+    },
+    {
+      name: "Telegram",
+      icon: "i-ph-telegram-logo",
+      link: "https://t.me/aliyaconstructionplc/",
     },
     {
       name: "Facebook",
