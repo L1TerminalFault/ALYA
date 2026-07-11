@@ -27,11 +27,11 @@
       icon: "i-ph-facebook-logo",
       link: "https://www.facebook.com/",
     },
-    {
-      name: "LinkedIn",
-      icon: "i-ph-linkedin-logo",
-      link: "https://www.linkedin.com/",
-    },
+    // {
+    //   name: "LinkedIn",
+    //   icon: "i-ph-linkedin-logo",
+    //   link: "https://www.linkedin.com/",
+    // },
     { name: "Whatsapp", icon: "i-ph-whatsapp-logo", link: "https://wa.me/251949007777" },
     {
       name: "Email",
