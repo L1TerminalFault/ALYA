@@ -17,6 +17,7 @@
     "/pal6.jpeg",
     "/pal7.jpeg",
     "/pal31.jpeg",
+    "/work14.jpg",
     "/test3.jpg",
 
 
