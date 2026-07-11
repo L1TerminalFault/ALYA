@@ -55,9 +55,11 @@ export const PROJECTS = [
     location: "Addis Ababa",
     img: "/work6.png",
   },
+
+  // TODO: Edit this project data
   {
     id: "ee6fe3d4-4e23-485d-b7b7-d4c87c00591c",
-    name: "New Project",
+    name: "Project_ECS - Renovation Work",
     category: "Commercial",
     status: "Completed",
     client: "Unknown",
