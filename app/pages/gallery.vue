@@ -75,8 +75,8 @@
             class="absolute inset-0 size-full object-cover transition-transform duration-1000 group-hover:scale-110"
           />
           <div
-            class="bg-brand-900/40 absolute inset-0 text-4xl opacity-0 mix-blend-multiply transition-opacity duration-500 group-hover:opacity-100"
-	    >{{ i }}</div>
+            class="bg-brand-900/40 absolute inset-0 opacity-0 mix-blend-multiply transition-opacity duration-500 group-hover:opacity-100"
+	    ></div>
         </div>
       </div>
     </div>
