@@ -29,7 +29,6 @@
     "/pal53.jpg",
     "/pal45.jpg",
     "/pal51.jpg",
-    "/pal6.jpeg",
     "/pal7.jpeg",
     "/pal31.jpeg",
     "/work14.jpg",
