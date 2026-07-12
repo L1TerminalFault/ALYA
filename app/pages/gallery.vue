@@ -3,11 +3,11 @@
   useHead({ title: "Site Gallery" });
   const images = [
     "/pal1.jpg",
+    "/test3.jpg",
+    "/pal39.jpeg",
     "/pal2.jpeg",
     "/pal17.jpg",
     "/pal40.jpg",
-    "/test3.jpg",
-    "/pal39.jpeg",
 
     "/pal5.jpeg",
     "/pal41.jpg",
@@ -77,8 +77,8 @@
             class="absolute inset-0 size-full object-cover transition-transform duration-1000 group-hover:scale-110"
           />
           <div
-            class="bg-brand-900/40 absolute inset-0 opacity-0 mix-blend-multiply transition-opacity duration-500 group-hover:opacity-100"
-          ></div>
+            class="bg-brand-900/40 absolute inset-0 text-2xl opacity-0 mix-blend-multiply transition-opacity duration-500 group-hover:opacity-100"
+	    >{{ i }}</div>
         </div>
       </div>
     </div>
