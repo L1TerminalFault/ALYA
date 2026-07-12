@@ -40,10 +40,7 @@
             methodology. Blending sustainable practices with extreme structural
             integrity, this project was successfully delivered on time and
             within our client's stringent budget. <br /><br />
-            Our team utilized advanced BIM modeling to predict spatial
-            constraints, saving weeks of rework on site. High-grade industrial
-            composites were sourced globally, ensuring a finish that meets the
-            highest enterprise standards.
+	    Our company utilized advanced digital spatial analysis to predict layout constraints, saving weeks of rework on site. High-grade industrial composites were sourced globally, ensuring a finish that meets the highest enterprise standards.
           </div>
         </div>
 
