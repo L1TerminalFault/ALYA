@@ -2,43 +2,43 @@
   import { ref } from "vue";
   useHead({ title: "Site Gallery" });
   const images = [
-    "/pal1.jpg", // 1
-    "/test3.jpg", // 2
-    "/pal39.jpeg", // 3
-    "/pal2.jpeg", // 4
-    "/pal18.jpeg", // 32
-    "/pal17.jpg", // 5
-    "/pal40.jpg", // 6
-    "/pal10.jpeg", // 20
-    "/pal35.jpeg", // 7
-    "/pal44.jpg", // 10
-    "/pal46.jpg", // 11
-    "/pal32.jpeg", // 13
-    "/pal47.jpg", // 14
-    "/pal50.jpg", // 15
-    "/pal52.jpg", // 16
-    "/pal48.jpg", // 17
-    "/pal5.jpeg", // 18
-    "/pal41.jpg", // 19
-    "/pal19.jpg", // 21
-    "/pal33.jpeg", // 22
-    "/pal4.jpeg", // 23
-    "/pal30.jpeg", // 8
-    "/pal49.jpg", // 9
-    "/pal42.jpg", // 12
-    "/pal37.jpeg", // 24
-    "/pal53.jpg", // 25
-    "/pal51.jpg", // 26
-    "/pal6.jpeg", // 27
-    "/pal7.jpeg", // 28
-    "/pal31.jpeg", // 29
-    "/work14.jpg", // 30
-    "/pal12.jpeg", // 31
-    "/pal43.jpg", // 33
-    "/pal34.jpeg", // 34
-    "/pal36.jpeg", // 35
-    "/pal39.jpg", // 36
-    "/pal45.jpg", // 37
+    "/pal1.jpg",
+    "/test3.jpg",
+    "/pal39.jpeg",
+    "/pal2.jpeg",
+    "/pal17.jpg",
+    "/pal40.jpg",
+    "/pal10.jpeg",
+    "/pal35.jpeg",
+    "/pal44.jpg",
+    "/pal46.jpg",
+    "/pal32.jpeg",
+    "/pal47.jpg",
+    "/pal50.jpg",
+    "/pal52.jpg",
+    "/pal48.jpg",
+    "/pal5.jpeg",
+    "/pal41.jpg",
+    "/pal19.jpg",
+    "/pal33.jpeg",
+    "/pal4.jpeg",
+    "/pal30.jpeg",
+    "/pal49.jpg",
+    "/pal42.jpg",
+    "/pal37.jpeg",
+    "/pal53.jpg",
+    "/pal51.jpg",
+    "/pal6.jpeg",
+    "/pal7.jpeg",
+    "/pal31.jpeg",
+    "/work14.jpg",
+    "/pal18.jpeg",
+    "/pal12.jpeg",
+    "/pal34.jpeg",
+    "/pal43.jpg",
+    "/pal36.jpeg",
+    "/pal39.jpg",
+    "/pal45.jpg",
   ];
 
   const selectedImage = ref<string | null>(null);
