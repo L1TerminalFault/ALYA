@@ -53,7 +53,7 @@ export const PROJECTS = [
     client: "W/ro Etenesh Haile",
     value: "9,789,682.22",
     location: "Addis Ababa",
-    img: "/pal39.jpeg",
+    img: "/pal49.jpg",
   },
   {
     id: "ee6fe3d4-4e23-485d-b7b7-d4c87c00591c",
