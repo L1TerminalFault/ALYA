@@ -27,6 +27,7 @@
     "/pal42.jpg",
     "/pal37.jpeg",
     "/pal53.jpg",
+    "/pal45.jpg",
     "/pal51.jpg",
     "/pal6.jpeg",
     "/pal7.jpeg",
@@ -38,7 +39,6 @@
     "/pal34.jpeg",
     "/pal36.jpeg",
     "/pal39.jpg",
-    "/pal45.jpg",
   ];
 
   const selectedImage = ref<string | null>(null);
