@@ -32,11 +32,11 @@ const services = [
     desc: "Proper supervision is essential for successful construction delivery. Our team ensures effective coordination throughout project execution.", 
     list: ["Site planning", "Work supervision", "Progress monitoring", "Resource coordination", "Quality assurance"]
   },
-  { 
-    title: "Equipment & Construction Support", 
-    desc: "Aliya Construction PLC operates construction equipment and machinery to support project execution and operational efficiency.", 
-    list: ["Concrete mixers", "Lifting equipment", "Compactors", "Dump trucks", "Scaffolding systems", "Site equipment support"]
-  }
+  // { 
+  //   title: "Equipment & Construction Support", 
+  //   desc: "Aliya Construction PLC operates construction equipment and machinery to support project execution and operational efficiency.", 
+  //   list: ["Concrete mixers", "Lifting equipment", "Compactors", "Dump trucks", "Scaffolding systems", "Site equipment support"]
+  // }
 ];
 </script>
 
