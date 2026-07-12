@@ -77,7 +77,7 @@
     />
 
     <div class="w-full max-w-350 px-5 py-30">
-      <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+      <div class="grid grid-cols-1 grid-flow-row gap-8 md:grid-cols-2 lg:grid-cols-3">
         <div
           v-for="(img, i) in images"
           :key="i"
@@ -100,13 +100,13 @@
     <!-- Image Modal -->
     <div
       v-if="selectedImage"
-      class="fixed inset-0 z-100 flex cursor-zoom-out items-center justify-center bg-gray-950/90 p-5 backdrop-blur-sm"
+      class="fixed max-h-[80vh] max-w-[80vw] min-h-[60svh] min-w-[60svw] rounded-lg inset-0 z-100 flex cursor-zoom-out items-center justify-center bg-gray-950/90 p-5 backdrop-blur-sm"
       @click="closeModal"
     >
       <NuxtImg
         :src="selectedImage"
         :placeholder="1"
-        class="max-h-[80vh] max-w-[80vw] min-h-[60svh] min-w-[60svw] w-full h-full rounded-lg object-contain shadow-2xl"
+        class="inset-0 w-full h-full rounded-lg object-contain shadow-2xl"
         @click.stop
       />
 
