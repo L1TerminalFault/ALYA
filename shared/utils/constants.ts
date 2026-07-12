@@ -103,7 +103,7 @@ export const PROJECTS = [
     client: "Ato Girma Amare & W/ro Martha Negash",
     value: "8,008,878.53",
     location: "Addis Ababa",
-    img: "/work7.png",
+    img: "/pal51.jpg",
   },
   {
     id: "48f6d1a1-6eb5-455e-8daa-9c57d3f4e060",
