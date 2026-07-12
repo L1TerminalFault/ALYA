@@ -82,7 +82,7 @@
           data-name="Layer 6"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 238.56 205.68"
-          class="size-34"
+          class="size-38"
         >
           <defs></defs>
           <polyline
