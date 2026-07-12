@@ -3,8 +3,8 @@
 
   const downloadProfile = () => {
     const link = document.createElement("a");
-    link.href = "/company_profile.docx";
-    link.setAttribute("download", "aliya-co-profile.docx");
+    link.href = "/company_profile.pdf";
+    link.setAttribute("download", "aliya-co-profile.pdf");
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
