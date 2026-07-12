@@ -53,11 +53,11 @@ export const PROJECTS = [
     client: "W/ro Etenesh Haile",
     value: "9,789,682.22",
     location: "Addis Ababa",
-    img: "/work6.png",
+    img: "/pal39.jpeg",
   },
   {
     id: "ee6fe3d4-4e23-485d-b7b7-d4c87c00591c",
-    name: "Project_ECS - Renovation Work",
+    name: "Renovation Work",
     category: "Institutional",
     status: "Completed",
     client: "Ethiopian Catholic Secretariat",

@@ -12,8 +12,8 @@
 
   const leaders = [
     {
-      name: "Engineer Belay Taye Gurmu",
-      role: "CEO (21 Yrs Exp)",
+      name: "Eng. Belay Taye Gurmu",
+      role: "CEO (21 Years Exp.)",
       img: "/person1.jpg",
     },
     {

@@ -77,16 +77,17 @@
     />
 
     <div class="w-full max-w-350 px-5 py-30">
-      <div class="columns-1 gap-6 space-y-6 md:columns-2 lg:columns-3">
+      <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
         <div
           v-for="(img, i) in images"
           :key="i"
-          class="group relative cursor-zoom-in break-inside-avoid overflow-hidden rounded-2xl border border-white/5"
+          class="group relative block h-125 w-full cursor-pointer overflow-hidden rounded-2xl"
           @click="openModal(img)"
         >
-          <img
+          <NuxtImg
             :src="img"
-            class="h-auto w-full object-cover transition-transform duration-1000 group-hover:scale-105"
+            :placeholder="1"
+            class="absolute inset-0 size-full object-cover transition-transform duration-1000 group-hover:scale-110"
           />
           <div
             class="bg-brand-900/40 absolute inset-0 opacity-0 mix-blend-multiply transition-opacity duration-500 group-hover:opacity-100"
