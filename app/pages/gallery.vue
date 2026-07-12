@@ -9,6 +9,7 @@
     "/pal18.jpeg", // 32
     "/pal17.jpg", // 5
     "/pal40.jpg", // 6
+    "/pal10.jpeg", // 20
     "/pal35.jpeg", // 7
     "/pal44.jpg", // 10
     "/pal46.jpg", // 11
@@ -19,7 +20,6 @@
     "/pal48.jpg", // 17
     "/pal5.jpeg", // 18
     "/pal41.jpg", // 19
-    "/pal10.jpeg", // 20
     "/pal19.jpg", // 21
     "/pal33.jpeg", // 22
     "/pal4.jpeg", // 23
