@@ -82,7 +82,7 @@
           data-name="Layer 6"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 238.56 205.68"
-          class="size-40"
+          class="md:size-40 size-20"
         >
           <defs></defs>
           <polyline
@@ -123,7 +123,7 @@
               ? 'blur-0 /max-w-180 opacity-100'
               : 'max-w-0 opacity-0 blur-lg'
           "
-          class="/font-[Inter] block items-baseline justify-center gap-2 overflow-hidden pt-5 pl-1 text-6xl font-bold text-nowrap text-black transition-all delay-1200 duration-2500 ease-in-out"
+          class="/font-[Inter] block items-baseline justify-center gap-2 overflow-hidden pt-5 pl-1 text-2xl md:text-6xl font-bold text-nowrap text-black transition-all delay-1200 duration-2500 ease-in-out"
         >
           <span
             :class="animate ? 'text-brand-600 text-shadow-lg' : 'text-black'"
