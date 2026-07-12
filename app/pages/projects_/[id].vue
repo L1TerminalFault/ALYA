@@ -82,12 +82,12 @@
       </div>
 
       <div
-        class="relative h-max w-full overflow-hidden rounded-3xl border border-white/5 shadow-2xl"
+        class="relative h-max w-auto overflow-hidden rounded-3xl border border-white/5 shadow-2xl"
       >
         <NuxtImg
           :src="projectImage"
 			:placeholder="1"
-          class="h-full max-h-[70svh] w-full object-cover transition-all duration-1000"
+          class="h-full max-h-[50svh] w-auto object-cover transition-all duration-1000"
         />
       </div>
     </div>
