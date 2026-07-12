@@ -27,7 +27,7 @@
       bgImage="https://aliyaconstructionplc.com/wp-content/uploads/2026/05/WhatsApp-Image-2026-05-17-at-10.16.10-AM-2-1024x724.jpeg"
     />
 
-    <div class="flex w-full max-w-7xl flex-col gap-20 px-5 py-30">
+    <div class="flex w-full items-center max-w-7xl flex-col gap-20 px-5 py-30">
       <div class="flex flex-col gap-15 lg:flex-row">
         <div class="flex w-full flex-col gap-8 lg:w-2/3">
           <div
@@ -82,7 +82,7 @@
       </div>
 
       <div
-        class="relative h-max w-auto overflow-hidden rounded-3xl border border-white/5 shadow-2xl"
+        class="relative h-max overflow-hidden rounded-3xl border border-white/5 shadow-2xl"
       >
         <NuxtImg
           :src="projectImage"
