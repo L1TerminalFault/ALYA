@@ -2,9 +2,12 @@
   import { ref } from "vue";
   useHead({ title: "Site Gallery" });
   const images = [
-    // col 1
     "/pal1.jpg",
     "/pal2.jpeg",
+    "/pal17.jpg",
+    "/pal40.jpg",
+    "/test3.jpg",
+    "/pal39.jpeg",
 
     "/pal5.jpeg",
     "/pal41.jpg",
@@ -13,19 +16,6 @@
     "/pal35.jpeg",
     "/pal30.jpeg",
     "/pal49.jpg",
-
-    "/pal6.jpeg",
-    "/pal7.jpeg",
-    "/pal31.jpeg",
-    "/work14.jpg",
-    "/test3.jpg",
-
-
-
-    // col 2
-    "/pal17.jpg",
-    "/pal40.jpg",
-
     "/pal44.jpg",
     "/pal46.jpg",
     "/pal42.jpg",
@@ -33,16 +23,6 @@
     "/pal47.jpg",
     "/pal50.jpg",
     "/pal52.jpg",
-
-    "/pal12.jpeg",
-    "/pal18.jpeg",
-    "/pal43.jpg",
-
-
-
-    // col 3
-    "/pal39.jpeg",
-
     "/pal48.jpg",
     "/pal33.jpeg",
     "/pal4.jpeg",
@@ -50,6 +30,13 @@
     "/pal53.jpg",
     "/pal51.jpg",
 
+    "/pal6.jpeg",
+    "/pal7.jpeg",
+    "/pal31.jpeg",
+    "/work14.jpg",
+    "/pal12.jpeg",
+    "/pal18.jpeg",
+    "/pal43.jpg",
     "/pal34.jpeg",
     "/pal36.jpeg",
     "/pal39.jpg",
