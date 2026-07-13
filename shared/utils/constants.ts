@@ -17,7 +17,7 @@ export const NAV_ROUTES = [
 export const PROJECTS = [
   {
     id: "ab1bc2cc-078a-4bd4-887d-8c283c79dfb3",
-    name: "Ariyo Catholic School (Learning Institute)",
+    name: "Ariyo Catholic Learning Institute",
     category: "Institutional",
     status: "Completed",
     client: "Ethiopia Catholic Church Society of Jesus",
@@ -27,7 +27,7 @@ export const PROJECTS = [
   },
   {
     id: "ab1bc2cc-078b-4bd4-887d-8c283c79dfb3",
-    name: "Ariyo Residence (G+1)",
+    name: "Ariyo Catholic Learning Institute G+1 Of Residential Building",
     category: "Institutional",
     status: "Completed",
     client: "Ethiopia Catholic Church Society of Jesus",
