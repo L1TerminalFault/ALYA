@@ -126,21 +126,24 @@ onMounted(() => {
       const percentX = e.clientX / window.innerWidth - 0.5;
       const percentY = e.clientY / window.innerHeight - 0.5;
       
-      const x = Math.round(percentX * 40);
-      const y = Math.round(percentY * 40);
-
+      const bgX = percentX * 40;
+      const bgY = percentY * 40;
+      
+      const textX = -percentX * 12;
+      const textY = -percentY * 12;
+      
       gsap.to(heroBgWrapper.value, {
-        x: -x,
-        y: -y,
-        duration: 2.2,
+        x: bgX,
+        y: bgY,
+        duration: 1.3,
         ease: "power2.out",
         overwrite: "auto",
       });
-
+      
       gsap.to(".heroheader", {
-        x: x * 0.18,
-        y: y * 0.18,
-        duration: 2.2,
+        x: textX,
+        y: textY,
+        duration: 1.3,
         ease: "power2.out",
         overwrite: "auto",
       });
