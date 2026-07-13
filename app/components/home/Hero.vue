@@ -255,7 +255,7 @@ onUnmounted(() => {
    BACKGROUND
    ========================================================================== */
 
-.hero-bg-wrapper {
+/* .hero-bg-wrapper {
   position: absolute;
   inset: -10%;
 
@@ -272,6 +272,32 @@ onUnmounted(() => {
 
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
+} */
+
+.hero-bg-wrapper {
+  position: absolute;
+  inset: -10%;
+
+  overflow: hidden;
+
+  isolation: isolate;
+}
+
+.hero-bg-wrapper::after {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  z-index: 5;
+
+  pointer-events: none;
+
+  background:
+    rgba(0, 0, 0, 0.6);
+
+  box-shadow:
+    inset 0 0 100px rgba(0, 0, 0, 0.85);
 }
 
 .hero-bg-img {
