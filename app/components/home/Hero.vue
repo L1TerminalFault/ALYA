@@ -3,9 +3,6 @@
   import { SplitText } from "gsap/all";
   import { ref, onMounted, onUnmounted } from "vue";
 
-  import AnimatedCtaBtn from "../AnimatedCtaBtn.vue";
-
-  const router = useRouter();
   const root = ref<HTMLElement | null>(null);
   const heroBg = ref<HTMLElement | null>(null);
   let ctx: gsap.Context;
@@ -84,7 +81,8 @@
             duration: 2.5,
             ease: "power2.out",
           });
-          gsap.to("heroheader", {
+          // FIXED: Added missing "." selector for heroheader
+          gsap.to(".heroheader", {
             x: -x,
             y: -y,
             duration: 2.5,
@@ -104,11 +102,11 @@
   <div
     ref="root"
     class="fixed top-0 z-0 flex aspect-8/7 h-screen w-full max-w-svw justify-center overflow-visible lg:p-5"
+    style="perspective: 1000px;"
   >
     <div
       class="pointer-events-none absolute inset-0 -top-[12.5%] -left-[7.5%] z-0 h-[115%] w-[115%]"
     >
-      <!-- src="/hero.png" -->
       <img
         ref="heroBg"
         src="/hero.png"
@@ -116,12 +114,12 @@
       />
     </div>
 
-    <!-- Content -->
     <div
       class="pointer-events-none relative z-20 flex aspect-video h-full w-full justify-center pt-20"
+      style="transform-style: preserve-3d;"
     >
       <div
-        class="heroheader w-full flex flex-col-center pointer-events-auto gap-3 p-6 text-black opacity-0 lg:gap-8"
+        class="heroheader safari-layering-fix w-full flex flex-col items-center pointer-events-auto gap-3 p-6 text-black opacity-0 lg:gap-8"
       >
         <div class="cutbwu">
           <NuxtLink
@@ -133,31 +131,34 @@
             </div>
             <NuxtImg
               src="/arrow.svg"
-	      :placeholder="1"
+              :placeholder="1"
               class="bounce-back w-4 shrink-0 invert transition-all group-hover:ml-3.5"
             />
           </NuxtLink>
         </div>
 
-        <div class="/perspective-container hero-text-large">
+        <div class="perspective-container hero-text-large">
           <span class="spt text-nowrap italic drop-shadow-2xl">
             WE DO WHAT IS RIGHT,
           </span>
-          <span class="spt text-nowrap italic drop-shadow-2xl">NOT WHAT IS EASY!</span></div>
+          <span class="spt text-nowrap italic drop-shadow-2xl">NOT WHAT IS EASY!</span>
+        </div>
+        
         <div
           class="cpt fluid-subtext text-center text-white italic drop-shadow-xl"
         >
           Creating spaces with purpose
         </div>
 
-		<NuxtLink
-				to="/contact"
-			class="animated-cta">
-        <AnimatedCtaBtn
-          text="Get Started"
-          class="z-0 bg-white"
-        />
-		</NuxtLink>
+        <NuxtLink
+          to="/contact"
+          class="animated-cta"
+        >
+          <AnimatedCtaBtn
+            text="Get Started"
+            class="z-0 bg-white"
+          />
+        </NuxtLink>
       </div>
     </div>
   </div>
@@ -166,8 +167,20 @@
 <style>
   @reference "tailwindcss";
 
+  /* FIXED: Added Safari layer breakout */
+  .safari-layering-fix {
+    position: relative;
+    z-index: 30;
+    -webkit-transform: translateZ(10px);
+    transform: translateZ(10px);
+    transform-style: preserve-3d;
+  }
+
   .fluid-subtext {
     @apply text-lg leading-6.5 text-[#E7E7E7] lg:max-w-160 lg:text-3xl;
+    /* Keeps the blurred lines on their own layer cleanly */
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
   }
 
   .hero-text-large {
@@ -183,11 +196,15 @@
   .perspective-container {
     perspective: 1000px;
     transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
   }
 
   :deep(.spt) {
     display: inline-block;
     overflow: visible !important;
     padding-bottom: 0.05em;
+    /* Required for Safari 3D rotations to work cleanly with SplitText */
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
   }
 </style>
