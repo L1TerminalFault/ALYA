@@ -308,7 +308,6 @@ onUnmounted(() => {
   object-fit: cover;
 
   display: block;
-  opacity: 0.7;
 
   user-select: none;
   -webkit-user-select: none;
