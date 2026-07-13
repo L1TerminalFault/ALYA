@@ -132,14 +132,14 @@ onMounted(() => {
       const textX = -percentX * 12;
       const textY = -percentY * 12;
       
-      gsap.to(heroBgWrapper.value, {
-        x: bgX,
-        y: bgY,
-        duration: 1.3,
-        ease: "power2.out",
-        overwrite: "auto",
-      });
-      
+     gsap.to(heroBg.value, {
+       x: percentX * 35,
+       y: percentY * 35,
+       duration: 1.4,
+       ease: "power2.out",
+       overwrite: "auto",
+     }); 
+
       gsap.to(".heroheader", {
         x: textX,
         y: textY,
@@ -175,7 +175,7 @@ onUnmounted(() => {
     >
       <img
         ref="heroBg"
-        src="/hero.png"
+        src="/hero-en.png"
         class="hero-bg-img saturate-200 h-full w-full rounded-xl border border-gray-800 object-cover shadow-[inset_0_0_100px_rgba(0,0,0,0.8)]"
       />
     </div>
