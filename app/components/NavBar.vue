@@ -190,10 +190,10 @@
 
 <template>
   <nav
-    class="perspective-1000 pointer-events-none fixed top-0 left-0 z-45 flex w-full items-start justify-between p-0 p-5"
+    class="perspective-1000 pointer-events-none fixed top-0 left-0 z-45 flex w-full items-start justify-between p-3 md:p-5"
   >
     <div
-      class="nav-pill nav-left nav-container pointer-events-auto flex items-center gap-8 rounded-full border border-white/15 bg-black/35 p-2 px-6 shadow-2xl backdrop-blur-xl transition-all duration-300"
+      class="nav-pill nav-left nav-container pointer-events-auto flex items-center gap-8 rounded-full border border-white/15 bg-black/35 p-2 px-4 md:px-6 shadow-2xl backdrop-blur-xl transition-all duration-300"
     >
       <div id="google_translate_element" class="hidden"></div>
       <NuxtLink
@@ -269,7 +269,7 @@
             CONSTRUCTION PLC
           </span>
           <span class="/font-[Futura]! md:hidden text-lg font-thin">
-            CO. PLC
+            CO.
           </span>
         </span>
         <div
@@ -280,7 +280,7 @@
     </div>
 
     <div
-      class="nav-pill nav-right nav-container pointer-events-auto flex items-center gap-4 rounded-full border border-white/15 bg-black/35 p-0 px-6 shadow-2xl backdrop-blur-2xl transition-all duration-300"
+      class="nav-pill nav-right nav-container pointer-events-auto flex items-center gap-4 rounded-full border border-white/15 bg-black/35 p-0 px-4 md:px-6 shadow-2xl backdrop-blur-2xl transition-all duration-300"
     >
       <!-- @click="toggleLanguage" --
       <button
