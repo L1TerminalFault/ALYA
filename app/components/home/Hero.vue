@@ -3,6 +3,9 @@
   import { SplitText } from "gsap/all";
   import { ref, onMounted, onUnmounted } from "vue";
 
+  import AnimatedCtaBtn from "../AnimatedCtaBtn.vue";
+
+  const router = useRouter();
   const root = ref<HTMLElement | null>(null);
   const heroBg = ref<HTMLElement | null>(null);
   let ctx: gsap.Context;
@@ -70,12 +73,18 @@
           "-=0.6"
         );
 
-      // Mouse Parallax effect (FIXED: Only targeting the background image now)
+      // Mouse Parallax effect
       if (root.value && heroBg.value) {
         root.value.addEventListener("mousemove", (e) => {
           const x = (e.clientX / window.innerWidth - 0.5) * 50;
           const y = (e.clientY / window.innerHeight - 0.5) * 50;
           gsap.to(".hero-bg-img", {
+            x: -x,
+            y: -y,
+            duration: 2.5,
+            ease: "power2.out",
+          });
+          gsap.to("heroheader", {
             x: -x,
             y: -y,
             duration: 2.5,
@@ -95,7 +104,6 @@
   <div
     ref="root"
     class="fixed top-0 z-0 flex aspect-8/7 h-screen w-full max-w-svw justify-center overflow-visible lg:p-5"
-    style="perspective: 1000px;"
   >
     <div
       class="pointer-events-none absolute inset-0 -top-[12.5%] -left-[7.5%] z-0 h-[115%] w-[115%]"
@@ -109,10 +117,9 @@
 
     <div
       class="pointer-events-none relative z-20 flex aspect-video h-full w-full justify-center pt-20"
-      style="transform-style: preserve-3d;"
     >
       <div
-        class="heroheader safari-layering-fix w-full flex flex-col items-center pointer-events-auto gap-3 p-6 text-black opacity-0 lg:gap-8"
+        class="heroheader safari-fix w-full flex flex-col-center pointer-events-auto gap-3 p-6 text-black opacity-0 lg:gap-8"
       >
         <div class="cutbwu">
           <NuxtLink
@@ -130,13 +137,12 @@
           </NuxtLink>
         </div>
 
-        <div class="perspective-container hero-text-large">
+        <div class="/perspective-container hero-text-large">
           <span class="spt text-nowrap italic drop-shadow-2xl">
             WE DO WHAT IS RIGHT,
           </span>
           <span class="spt text-nowrap italic drop-shadow-2xl">NOT WHAT IS EASY!</span>
         </div>
-        
         <div
           class="cpt fluid-subtext text-center text-white italic drop-shadow-xl"
         >
@@ -160,20 +166,18 @@
 <style>
   @reference "tailwindcss";
 
-  /* FIXED: Direct Safari Layer Elevation Hack */
-  .safari-layering-fix {
+  /* The Safari Fix Layering Hook */
+  .safari-fix {
     position: relative;
     z-index: 50;
-    -webkit-transform: translateZ(50px);
-    transform: translateZ(50px);
-    transform-style: preserve-3d;
+    -webkit-transform: translate3d(0, 0, 50px);
+    transform: translate3d(0, 0, 50px);
     -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
   }
 
   .fluid-subtext {
     @apply text-lg leading-6.5 text-[#E7E7E7] lg:max-w-160 lg:text-3xl;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
   }
 
   .hero-text-large {
@@ -189,14 +193,11 @@
   .perspective-container {
     perspective: 1000px;
     transform-style: preserve-3d;
-    -webkit-transform-style: preserve-3d;
   }
 
   :deep(.spt) {
     display: inline-block;
     overflow: visible !important;
     padding-bottom: 0.05em;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
   }
 </style>
