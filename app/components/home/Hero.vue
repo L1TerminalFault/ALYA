@@ -175,7 +175,7 @@ onUnmounted(() => {
     >
       <img
         ref="heroBg"
-        src="/hero-en.png"
+        src="/hero.jpg"
         class="hero-bg-img saturate-200 h-full w-full rounded-xl border border-gray-800 object-cover shadow-[inset_0_0_100px_rgba(0,0,0,0.8)]"
       />
     </div>
@@ -281,6 +281,7 @@ onUnmounted(() => {
   object-fit: cover;
 
   display: block;
+  opacity: 0.7;
 
   user-select: none;
   -webkit-user-select: none;
