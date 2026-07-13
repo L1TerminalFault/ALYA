@@ -159,7 +159,7 @@
     >
       <div class="flex w-full flex-col gap-8">
         <div
-          class="/font-[Switzer] flex w-full justify-center text-center text-[32px] lg:text-[48px] font-bold text-white"
+          class="/font-[Switzer] flex w-full leading-relaxed justify-center text-center text-[32px] lg:text-[48px] font-bold text-white"
         >
           <span class="footer-alya-text">ALIYA CONSTRUCTION PLC</span>
         </div>
@@ -167,7 +167,7 @@
         <div class="mt-6 lg:mt-10 flex flex-col justify-between gap-10 lg:flex-row">
           <div class="flex max-w-125 flex-col gap-4 lg:gap-6">
             <div
-              class="footer-build-text /font-[Haas75] text-[28px] lg:text-[38px] leading-tight text-white perspective-[1000px]"
+              class="footer-build-text /font-[Haas75] text-[28px] lg:text-[38px] text-white perspective-[1000px]"
             >
               BUILDING TOGETHER
             </div>
