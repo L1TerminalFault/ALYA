@@ -176,7 +176,7 @@ onUnmounted(() => {
       <img
         ref="heroBg"
         src="/hero.jpg"
-        class="hero-bg-img saturate-200 h-full w-full rounded-xl border border-gray-800 object-cover shadow-[inset_0_0_100px_rgba(0,0,0,0.8)]"
+        class="hero-bg-img saturate-200 h-full w-full max-md:origin-right rounded-xl border border-gray-800 object-cover shadow-[inset_0_0_100px_rgba(0,0,0,0.8)]"
       />
       <div class="hero-overlay"></div>
     </div>
@@ -337,7 +337,7 @@ onUnmounted(() => {
 
   pointer-events: none;
 
-  background: rgba(0, 0, 0, 0.70);
+  background: rgba(0, 0, 0, 0.60);
 
   border-radius: inherit;
 
