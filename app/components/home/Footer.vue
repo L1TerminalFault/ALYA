@@ -155,11 +155,11 @@
     class="relative z-0 flex h-full w-full flex-col items-center justify-center overflow-hidden bg-white px-5 pt-50 pb-10"
   >
     <div
-      class="animfooter relative z-10 flex leading-wide flex-col justify-between h-max min-h-125 w-full max-w-467.5 rounded-[31px] border border-gray-800 bg-[#0F0F0F] px-6 py-10 lg:px-15.5 lg:py-12 text-white shadow-[0_30px_60px_rgba(0,0,0,0.4)] lg:aspect-[2.11/1]"
+      class="animfooter relative z-10 flex flex-col justify-between h-max min-h-125 w-full max-w-467.5 rounded-[31px] border border-gray-800 bg-[#0F0F0F] px-6 py-10 lg:px-15.5 lg:py-12 text-white shadow-[0_30px_60px_rgba(0,0,0,0.4)] lg:aspect-[2.11/1]"
     >
       <div class="flex w-full flex-col gap-8">
         <div
-          class="/font-[Switzer] flex w-full justify-center text-center text-[32px] lg:text-[48px] font-bold text-white"
+          class="/font-[Switzer] flex w-full leading-wide justify-center text-center text-[32px] lg:text-[48px] font-bold text-white"
         >
           <span class="footer-alya-text">ALIYA CONSTRUCTION PLC</span>
         </div>
@@ -171,7 +171,7 @@
             >
               BUILDING TOGETHER
             </div>
-            <div class="/font-[Switzer] max-w-115 text-[20px] text-gray-400">
+            <div class="/font-[Switzer] max-w-115 leading-wide text-[20px] text-gray-400">
               Transforming visions into structural reality with precision
               engineering and sustainable design.
             </div>
