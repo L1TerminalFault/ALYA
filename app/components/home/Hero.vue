@@ -126,11 +126,11 @@ onMounted(() => {
       const percentX = e.clientX / window.innerWidth - 0.5;
       const percentY = e.clientY / window.innerHeight - 0.5;
       
-      const bgX = percentX * 40;
-      const bgY = percentY * 40;
+      const bgX = -percentX * 40;
+      const bgY = -percentY * 40;
       
-      const textX = -percentX * 12;
-      const textY = -percentY * 12;
+      const textX = percentX * 28;
+      const textY = percentY * 28;
       
      gsap.to(heroBg.value, {
        x: percentX * 35,
