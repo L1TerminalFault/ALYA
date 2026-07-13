@@ -159,7 +159,7 @@
     >
       <div class="flex w-full flex-col gap-8">
         <div
-          class="/font-[Switzer] flex w-full leading-wide justify-center text-center text-[32px] lg:text-[48px] font-bold text-white"
+          class="/font-[Switzer] flex w-full leading-normal justify-center text-center text-[32px] lg:text-[48px] font-bold text-white"
         >
           <span class="footer-alya-text">ALIYA CONSTRUCTION PLC</span>
         </div>
@@ -171,7 +171,7 @@
             >
               BUILDING TOGETHER
             </div>
-            <div class="/font-[Switzer] max-w-115 leading-wide text-[20px] text-gray-400">
+            <div class="/font-[Switzer] max-w-115 leading-normal text-[20px] text-gray-400">
               Transforming visions into structural reality with precision
               engineering and sustainable design.
             </div>
