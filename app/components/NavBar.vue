@@ -265,8 +265,11 @@
           class="/font-[FuturaExtraBold]! text-xl font-black text-white -translate-y-0.25 transition-transform group-hover:scale-101"
         >
           ALIYA
-          <span class="/font-[Futura]! text-lg font-thin">
+          <span class="/font-[Futura]! md:inline hidden text-lg font-thin">
             CONSTRUCTION PLC
+          </span>
+          <span class="/font-[Futura]! md:hidden text-lg font-thin">
+            CO. PLC
           </span>
         </span>
         <div
