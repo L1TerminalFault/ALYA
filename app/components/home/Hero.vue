@@ -70,19 +70,12 @@
           "-=0.6"
         );
 
-      // Mouse Parallax effect
+      // Mouse Parallax effect (FIXED: Only targeting the background image now)
       if (root.value && heroBg.value) {
         root.value.addEventListener("mousemove", (e) => {
           const x = (e.clientX / window.innerWidth - 0.5) * 50;
           const y = (e.clientY / window.innerHeight - 0.5) * 50;
           gsap.to(".hero-bg-img", {
-            x: -x,
-            y: -y,
-            duration: 2.5,
-            ease: "power2.out",
-          });
-          // FIXED: Added missing "." selector for heroheader
-          gsap.to(".heroheader", {
             x: -x,
             y: -y,
             duration: 2.5,
@@ -167,18 +160,18 @@
 <style>
   @reference "tailwindcss";
 
-  /* FIXED: Added Safari layer breakout */
+  /* FIXED: Direct Safari Layer Elevation Hack */
   .safari-layering-fix {
     position: relative;
-    z-index: 30;
-    -webkit-transform: translateZ(10px);
-    transform: translateZ(10px);
+    z-index: 50;
+    -webkit-transform: translateZ(50px);
+    transform: translateZ(50px);
     transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
   }
 
   .fluid-subtext {
     @apply text-lg leading-6.5 text-[#E7E7E7] lg:max-w-160 lg:text-3xl;
-    /* Keeps the blurred lines on their own layer cleanly */
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
   }
@@ -203,7 +196,6 @@
     display: inline-block;
     overflow: visible !important;
     padding-bottom: 0.05em;
-    /* Required for Safari 3D rotations to work cleanly with SplitText */
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
   }
