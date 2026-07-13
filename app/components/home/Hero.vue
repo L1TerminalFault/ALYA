@@ -129,8 +129,8 @@ onMounted(() => {
       const bgX = percentX * 40;
       const bgY = percentY * 40;
       
-      const textX = -percentX * 40;
-      const textY = -percentY * 40;
+      const textX = -percentX * 20;
+      const textY = -percentY * 20;
       
      gsap.to(heroBg.value, {
        x: percentX * 35,
@@ -295,7 +295,7 @@ onUnmounted(() => {
   pointer-events: none;
 
   background:
-    rgba(0, 0, 0, 0.6);
+    rgba(0, 0, 0, 0.7);
 
   box-shadow:
     inset 0 0 100px rgba(0, 0, 0, 0.85);
@@ -337,7 +337,7 @@ onUnmounted(() => {
 
   pointer-events: none;
 
-  background: rgba(0, 0, 0, 0.55);
+  background: rgba(0, 0, 0, 0.75);
 
   border-radius: inherit;
 
