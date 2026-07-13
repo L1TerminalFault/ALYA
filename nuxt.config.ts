@@ -44,7 +44,7 @@ export default defineNuxtConfig({
       title: "Home",
       titleTemplate: "%s - ALIYA",
       link: [
-        { rel: "icon", type: "image/x-icon", href: "/favicon.png" },
+        { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
         {
           rel: "stylesheet",
           href: "https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap",
