@@ -1,103 +1,165 @@
 <script lang="ts" setup>
-  import gsap from "gsap";
-  import { SplitText } from "gsap/all";
-  import { ref, onMounted, onUnmounted } from "vue";
+import gsap from "gsap";
+import { SplitText } from "gsap/all";
+import { ref, onMounted, onUnmounted } from "vue";
 
-  import AnimatedCtaBtn from "../AnimatedCtaBtn.vue";
+import AnimatedCtaBtn from "../AnimatedCtaBtn.vue";
 
-  const router = useRouter();
-  const root = ref<HTMLElement | null>(null);
-  const heroBg = ref<HTMLElement | null>(null);
-  let ctx: gsap.Context;
+const router = useRouter();
 
-  onMounted(async () => {
-    if (!root.value) return;
-    ctx = gsap.context(() => {
-      gsap.registerPlugin(SplitText);
+const root = ref<HTMLElement | null>(null);
+const heroBgWrapper = ref<HTMLElement | null>(null);
+const heroBg = ref<HTMLImageElement | null>(null);
 
-      const splitedText1 = new SplitText(".spt", { type: "words,chars" });
-      const charssplit = new SplitText(".cpt", { type: "lines" });
+let ctx: gsap.Context | undefined;
+let splitTitle: SplitText | undefined;
+let splitSubtitle: SplitText | undefined;
 
-      gsap.set(".heroheader", { opacity: 1 });
+let mouseHandler: ((e: MouseEvent) => void) | undefined;
 
-      const tl = gsap.timeline({
-        defaults: { ease: "expo.out" },
-      });
+onMounted(() => {
+  if (!root.value) return;
 
-      tl.fromTo(
-        ".hero-bg-img",
-        { scale: 1.05, filter: "brightness(0.3)" },
+  gsap.registerPlugin(SplitText);
+  gsap.defaults({
+    force3D: true,
+  });
+
+  gsap.ticker.lagSmoothing(500, 33);
+
+  ctx = gsap.context(() => {
+    splitTitle = new SplitText(".spt", {
+      type: "words,chars",
+    });
+
+    splitSubtitle = new SplitText(".cpt", {
+      type: "lines",
+    });
+
+    gsap.set(".heroheader", {
+      opacity: 1,
+    });
+
+    gsap.set(heroBgWrapper.value, {
+      scale: 1.05,
+    });
+    
+    gsap.set(".hero-overlay", {
+      opacity: 0.85,
+    });
+
+    const tl = gsap.timeline({
+      defaults: {
+        ease: "expo.out",
+      },
+    });
+
+    tl.to(
+      heroBgWrapper.value,
+      {
+        scale: 1,
+        duration: 2.5,
+        ease: "power2.out",
+      }
+    )
+    .to(
+      ".hero-overlay",
+      {
+        opacity: 1,
+        duration: 2,
+        ease: "power2.out",
+      },
+      "<"
+    )
+
+      .fromTo(
+        ".cutbwu",
+        {
+          scale: 0.8,
+          opacity: 0,
+        },
         {
           scale: 1,
-          filter: "brightness(0.55)",
-          duration: 2.5,
-          ease: "power2.out",
-        }
+          opacity: 1,
+          duration: 0.8,
+          ease: "back.out(1.7)",
+        },
+        "-=1.5"
       )
-        .fromTo(
-          ".cutbwu",
-          { scale: 0.8, opacity: 0 },
-          { scale: 1, opacity: 1, duration: 0.8, ease: "back.out(1.7)" },
-          "-=1.5"
-        )
-        .from(
-          splitedText1.chars,
-          {
-            opacity: 0,
-            y: 80,
-            rotateX: -90,
-            stagger: 0.02,
-            duration: 1.2,
-            transformOrigin: "50% 50% -50",
-          },
-          "-=1.2"
-        )
-        .from(
-          charssplit.lines,
-          {
-            opacity: 0,
-            y: 20,
-            filter: "blur(10px)",
-            stagger: 0.1,
-            duration: 1,
-          },
-          "-=0.8"
-        )
-        .from(
-          ".heroheader .animated-cta",
-          {
-            opacity: 0,
-            y: 20,
-            duration: 0.8,
-          },
-          "-=0.6"
-        );
 
-      // Mouse Parallax effect
-      if (root.value && heroBg.value) {
-        root.value.addEventListener("mousemove", (e) => {
-          const x = (e.clientX / window.innerWidth - 0.5) * 50;
-          const y = (e.clientY / window.innerHeight - 0.5) * 50;
-          gsap.to(".hero-bg-img", {
-            x: -x,
-            y: -y,
-            duration: 2.5,
-            ease: "power2.out",
-          });
-          gsap.to("heroheader", {
-            x: -x,
-            y: -y,
-            duration: 2.5,
-            ease: "power2.out",
-          });
-        });
-      }
-    }, root.value);
-  });
+      .from(
+        splitTitle!.chars,
+        {
+          opacity: 0,
+          y: 80,
+          rotateX: -90,
+          stagger: 0.02,
+          duration: 1.2,
+          transformOrigin: "50% 50% -50",
+        },
+        "-=1.2"
+      )
 
-  onUnmounted(() => {
-    ctx?.revert();
-  });
+      .from(
+        splitSubtitle!.lines,
+        {
+          opacity: 0,
+          y: 20,
+          filter: "blur(10px)",
+          stagger: 0.1,
+          duration: 1,
+        },
+        "-=0.8"
+      )
+
+      .from(
+        ".heroheader .animated-cta",
+        {
+          opacity: 0,
+          y: 20,
+          duration: 0.8,
+        },
+        "-=0.6"
+      );
+
+    mouseHandler = (e: MouseEvent) => {
+      const percentX = e.clientX / window.innerWidth - 0.5;
+      const percentY = e.clientY / window.innerHeight - 0.5;
+      
+      const x = Math.round(percentX * 40);
+      const y = Math.round(percentY * 40);
+
+      gsap.to(heroBgWrapper.value, {
+        x: -x,
+        y: -y,
+        duration: 2.2,
+        ease: "power2.out",
+        overwrite: "auto",
+      });
+
+      gsap.to(".heroheader", {
+        x: x * 0.18,
+        y: y * 0.18,
+        duration: 2.2,
+        ease: "power2.out",
+        overwrite: "auto",
+      });
+    };
+
+    root.value?.addEventListener("mousemove", mouseHandler);
+  }, root.value);
+});
+
+onUnmounted(() => {
+  if (mouseHandler && root.value) {
+    root.value.removeEventListener("mousemove", mouseHandler);
+  }
+
+  splitTitle?.revert();
+  splitSubtitle?.revert();
+
+  ctx?.revert();
+});
 </script>
 
 <template>
@@ -119,7 +181,7 @@
       class="pointer-events-none relative z-20 flex aspect-video h-full w-full justify-center pt-20"
     >
       <div
-        class="heroheader safari-fix w-full flex flex-col-center pointer-events-auto gap-3 p-6 text-black opacity-0 lg:gap-8"
+        class="heroheader safari-fix w-full flex flex-col items-center justify-center pointer-events-auto gap-3 p-6 text-black opacity-0 lg:gap-8"
       >
         <div class="cutbwu">
           <NuxtLink
@@ -164,46 +226,206 @@
 </template>
 
 <style>
-  @reference "tailwindcss";
+@reference "tailwindcss";
 
-  /* The Safari Fix Layering Hook */
-  .safari-fix {
-    position: relative;
-    z-index: 50;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-    -webkit-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-    isolation: isolate;
+/* ==========================================================================
+   ROOT HERO
+   ========================================================================== */
+
+.hero {
+  position: fixed;
+  inset: 0;
+
+  isolation: isolate;
+  overflow: hidden;
+
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+
+  will-change: transform;
+
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+/* ==========================================================================
+   BACKGROUND
+   ========================================================================== */
+
+.hero-bg-wrapper {
+  position: absolute;
+  inset: -10%;
+
+  z-index: 0;
+
+  overflow: hidden;
+
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+
+  will-change: transform;
+
+  isolation: isolate;
+
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.hero-bg-img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+
+  user-select: none;
+  -webkit-user-select: none;
+
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+
+  will-change: transform;
+
+  image-rendering: auto;
+
+  -webkit-user-drag: none;
+
+  pointer-events: none;
+
+  /* Keep the image vivid */
+  filter: saturate(2);
+}
+
+/* Overlay replaces animated brightness filter */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+
+  pointer-events: none;
+
+  background: rgba(0, 0, 0, 0.45);
+
+  border-radius: inherit;
+
+  box-shadow:
+    inset 0 0 100px rgba(0,0,0,.85);
+}
+
+/* ==========================================================================
+   HERO CONTENT
+   ========================================================================== */
+
+.heroheader {
+  position: relative;
+
+  z-index: 100;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  isolation: isolate;
+
+  opacity: 0;
+
+  transform: translateZ(1px);
+  -webkit-transform: translateZ(1px);
+
+  will-change: transform;
+
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+/* ==========================================================================
+   TYPOGRAPHY
+   ========================================================================== */
+
+.hero-text-large {
+  @apply flex
+    w-full
+    flex-col
+    items-center
+    justify-center
+    text-center
+    font-black;
+
+  line-height: 1.1;
+
+  font-size: clamp(30px, 5vw, 160px);
+
+  color: white;
+}
+
+.fluid-subtext {
+  @apply text-lg
+    leading-6.5
+    text-[#E7E7E7]
+    lg:max-w-160
+    lg:text-3xl;
+}
+
+/* ==========================================================================
+   CTA
+   ========================================================================== */
+
+.bounce-back {
+  transition:
+    margin .4s cubic-bezier(.34,1.56,.64,1),
+    transform .4s cubic-bezier(.34,1.56,.64,1);
+}
+
+/* ==========================================================================
+   GSAP SPLITTEXT SUPPORT
+   ========================================================================== */
+
+.perspective-container {
+  perspective: 1200px;
+}
+
+/* Safari behaves much better WITHOUT preserve-3d */
+
+.spt,
+.spt *,
+.cpt,
+.cpt * {
+  display: inline-block;
+
+  overflow: visible !important;
+
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+
+  will-change: transform;
+}
+
+/* ==========================================================================
+   SAFARI FIXES
+   ========================================================================== */
+
+@supports (-webkit-touch-callout: none) {
+
+  .hero,
+  .hero-bg-wrapper,
+  .hero-bg-img,
+  .heroheader {
+
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
   }
 
-  .fluid-subtext {
-    @apply text-lg leading-6.5 text-[#E7E7E7] lg:max-w-160 lg:text-3xl;
+  .heroheader {
+    z-index: 999;
   }
-
-  .hero-text-large {
-    @apply flex w-full flex-col items-center justify-center text-center leading-[1.1] font-black;
-    font-size: clamp(30px, 5vw, 160px);
-    color: white;
-  }
-
-  .bounce-back {
-    transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
-  }
-
-  .perspective-container {
-    perspective: 1000px;
-    transform-style: preserve-3d;
-  }
-
-  /* Target dynamic SplitText items to maintain 3D orientation layers on Safari */
-  :deep(.spt), :deep(.spt *) {
-    display: inline-block;
-    overflow: visible !important;
-    padding-bottom: 0.05em;
-    -webkit-transform-style: preserve-3d !important;
-    transform-style: preserve-3d !important;
-    -webkit-backface-visibility: hidden !important;
-    backface-visibility: hidden !important;
-  }
+}
 </style>
