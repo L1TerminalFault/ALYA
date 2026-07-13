@@ -126,11 +126,11 @@ onMounted(() => {
       const percentX = e.clientX / window.innerWidth - 0.5;
       const percentY = e.clientY / window.innerHeight - 0.5;
       
-      const bgX = -percentX * 40;
-      const bgY = -percentY * 40;
+      const bgX = percentX * 40;
+      const bgY = percentY * 40;
       
-      const textX = percentX * 28;
-      const textY = percentY * 28;
+      const textX = -percentX * 40;
+      const textY = -percentY * 40;
       
      gsap.to(heroBg.value, {
        x: percentX * 35,
@@ -178,6 +178,7 @@ onUnmounted(() => {
         src="/hero.jpg"
         class="hero-bg-img saturate-200 h-full w-full rounded-xl border border-gray-800 object-cover shadow-[inset_0_0_100px_rgba(0,0,0,0.8)]"
       />
+      <div class="hero-overlay"></div>
     </div>
 
     <div
