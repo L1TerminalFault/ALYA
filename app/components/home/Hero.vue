@@ -284,7 +284,7 @@ onUnmounted(() => {
   isolation: isolate;
 }
 
-.hero-bg-wrapper::after {
+/* .hero-bg-wrapper::after {
   content: "";
 
   position: absolute;
@@ -299,7 +299,7 @@ onUnmounted(() => {
 
   box-shadow:
     inset 0 0 100px rgba(0, 0, 0, 0.85);
-}
+} */
 
 .hero-bg-img {
   width: 100%;
@@ -337,7 +337,7 @@ onUnmounted(() => {
 
   pointer-events: none;
 
-  background: rgba(0, 0, 0, 0.45);
+  background: rgba(0, 0, 0, 0.55);
 
   border-radius: inherit;
 
