@@ -170,10 +170,11 @@
   .safari-fix {
     position: relative;
     z-index: 50;
-    -webkit-transform: translate3d(0, 0, 50px);
-    transform: translate3d(0, 0, 50px);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
+    isolation: isolate;
   }
 
   .fluid-subtext {
@@ -195,9 +196,14 @@
     transform-style: preserve-3d;
   }
 
-  :deep(.spt) {
+  /* Target dynamic SplitText items to maintain 3D orientation layers on Safari */
+  :deep(.spt), :deep(.spt *) {
     display: inline-block;
     overflow: visible !important;
     padding-bottom: 0.05em;
+    -webkit-transform-style: preserve-3d !important;
+    transform-style: preserve-3d !important;
+    -webkit-backface-visibility: hidden !important;
+    backface-visibility: hidden !important;
   }
 </style>
