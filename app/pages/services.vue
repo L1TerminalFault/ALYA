@@ -29,7 +29,7 @@ const services = [
   },
   { 
     title: "Site Management & Supervision", 
-    desc: "Proper supervision is essential for successful construction delivery. Our team ensures effective coordination throughout project execution.", 
+    desc: "Proper supervision is essential for successful construction delivery. Our company ensures effective coordination throughout project execution.", 
     list: ["Site planning", "Work supervision", "Progress monitoring", "Resource coordination", "Quality assurance"]
   },
   // { 

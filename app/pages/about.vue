@@ -181,7 +181,7 @@
                 The company is registered and licensed under Ethiopian
                 regulations and continues to grow through experience,
                 professional management, and practical execution. Today, our
-                team includes engineers, project managers, financial
+                company includes engineers, project managers, financial
                 professionals, and skilled construction personnel working
                 together to ensure successful project delivery.
               </p>
@@ -397,13 +397,13 @@
             class="hover:border-brand-500/30 flex flex-col gap-6 rounded-3xl border border-white/5 bg-gray-950 p-10 shadow-2xl transition-colors"
           >
             <div class="/font-[Haas55] text-3xl font-bold text-white">
-              Our Staff (34+ Core Team)
+              Our Staff (34+ Core Professionals)
             </div>
             <div
               class="/font-[Switzer] flex flex-col gap-4 text-lg leading-relaxed text-gray-400"
             >
               <p>
-                We boast a foundational team of highly skilled
+                We boast a foundational company of highly skilled
                 <strong>
                   Civil Engineers, Building Engineers, and Construction Managers
                 </strong>
@@ -488,7 +488,7 @@
       <div class="flex w-full max-w-7xl flex-col gap-15">
         <div class="flex flex-col items-center gap-8 text-center">
           <div class="/font-[Haas] text-[clamp(40px,5vw,70px)] font-bold">
-            Leadership Team
+            Leadership Sector
           </div>
           <div class="/font-[Switzer] max-w-2xl text-lg text-gray-400">
             The visionaries guiding our projects to perfection, bringing decades
