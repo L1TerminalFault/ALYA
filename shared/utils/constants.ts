@@ -143,7 +143,7 @@ export const PROJECTS = [
     client: "Tigist Asefa",
     value: "2,165,583.40",
     location: "Addis Ababa",
-    img: "/work11.png",
+    img: "/hero-en.png",
   },
   {
     id: "ee6fe3d4-4e76-485d-b7b7-d4c87c00591c",
